@@ -13,7 +13,7 @@ Instead of only recommending _what_ to grow, ফসল-Cycle focuses on **when t
 
 ## Preview
 
-<img src="/image.png"/>
+<img src="./public/image.png"/>
 
 ---
 
