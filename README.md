@@ -13,9 +13,7 @@ Instead of only recommending _what_ to grow, ফসল-Cycle focuses on **when t
 
 ## Preview
 
-> Add the homepage screenshot to your repository, for example at `docs/homepage-preview.png`, then uncomment the line below.
-
-<!-- ![ফসল-Cycle Homepage](./docs/homepage-preview.png) -->
+<img src="/image.png"/>
 
 ---
 
