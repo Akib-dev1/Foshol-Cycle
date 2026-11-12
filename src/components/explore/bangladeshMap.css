@@ -1,0 +1,24 @@
+.bangladesh-map.leaflet-container {
+  background: #eef3ee;
+  font-family: inherit;
+}
+
+.bangladesh-map .leaflet-control-zoom a {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  color: #163d2b;
+}
+
+.bangladesh-map .bangladesh-map-district.leaflet-interactive {
+  cursor: pointer;
+  pointer-events: visibleFill;
+}
+
+.bangladesh-map .bangladesh-map-district:hover {
+  fill-opacity: 0.78;
+}
+
+.bangladesh-map-pin {
+  filter: drop-shadow(0 2px 3px #163d2b55);
+}

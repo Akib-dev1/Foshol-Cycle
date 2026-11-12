@@ -1,0 +1,386 @@
+[
+  {
+    "id": "16705992B77600989823530",
+    "name": "Bagerhat",
+    "center": [22.61556, 89.72833],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B23463827258150",
+    "name": "Bandarban",
+    "center": [21.88715, 92.33204],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B13795829103768",
+    "name": "Barguna",
+    "center": [22.17311, 90.20336],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B66943755852345",
+    "name": "Barishal",
+    "center": [22.82326, 90.24983],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B37732832620169",
+    "name": "Bhola",
+    "center": [22.4008, 90.76771],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B87441692505107",
+    "name": "Bogura",
+    "center": [24.82977, 89.3315],
+    "isRajshahiDivision": true
+  },
+  {
+    "id": "16705992B2831557138260",
+    "name": "Brahmanbaria",
+    "center": [24.01948, 91.14105],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B70711841490613",
+    "name": "Chandpur",
+    "center": [23.1921, 90.82408],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B76725860359822",
+    "name": "Chapai Nawabganj",
+    "center": [24.69125, 88.25963],
+    "isRajshahiDivision": true
+  },
+  {
+    "id": "16705992B94200136889214",
+    "name": "Chattogram",
+    "center": [22.31032, 91.98308],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B19758630986204",
+    "name": "Chuadanga",
+    "center": [23.60125, 88.8217],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B34517682786426",
+    "name": "Cox's Bazar",
+    "center": [21.45043, 92.09421],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B59490572634285",
+    "name": "Cumilla",
+    "center": [23.49658, 90.96579],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B90744549146712",
+    "name": "Dhaka",
+    "center": [23.73102, 90.36915],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B66423446659680",
+    "name": "Dinajpur",
+    "center": [25.55854, 88.80005],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B67131385183639",
+    "name": "Faridpur",
+    "center": [23.51734, 89.83046],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B83268326466345",
+    "name": "Feni",
+    "center": [22.96856, 91.41541],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B74857221285320",
+    "name": "Gaibandha",
+    "center": [25.28235, 89.50871],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B50862305652789",
+    "name": "Gazipur",
+    "center": [24.04274, 90.39877],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B87804307332289",
+    "name": "Gopalganj",
+    "center": [23.05592, 89.91992],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B7772300815487",
+    "name": "Habiganj",
+    "center": [24.33535, 91.43184],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B65705561019803",
+    "name": "Jamalpur",
+    "center": [24.9131, 89.84464],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B28022870637862",
+    "name": "Jashore",
+    "center": [23.02696, 89.19334],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B14602656752780",
+    "name": "Jhalokati",
+    "center": [22.60668, 90.22363],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B77509092527129",
+    "name": "Jhenaidah",
+    "center": [23.49495, 89.12302],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B2288856744536",
+    "name": "Joypurhat",
+    "center": [25.06323, 89.09117],
+    "isRajshahiDivision": true
+  },
+  {
+    "id": "16705992B35326431749719",
+    "name": "Khagrachhari",
+    "center": [23.10622, 91.99822],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B21968895988188",
+    "name": "Khulna",
+    "center": [22.50244, 89.41902],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B82604838368079",
+    "name": "Kishoreganj",
+    "center": [24.33684, 90.9277],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B97164497642406",
+    "name": "Kurigram",
+    "center": [25.71892, 89.66132],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B21124734124900",
+    "name": "Kushtia",
+    "center": [23.94303, 89.02463],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B31973889793084",
+    "name": "Lakshmipur",
+    "center": [22.93161, 90.85454],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B84214314165922",
+    "name": "Lalmonirhat",
+    "center": [26.05447, 89.18666],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B87985099055959",
+    "name": "Madaripur",
+    "center": [23.17781, 90.12882],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B78415132034426",
+    "name": "Magura",
+    "center": [23.42695, 89.43863],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B79131283702140",
+    "name": "Manikganj",
+    "center": [23.79538, 90.01419],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B11914188004823",
+    "name": "Meherpur",
+    "center": [23.82586, 88.71889],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B62450131352427",
+    "name": "Moulvibazar",
+    "center": [24.55638, 91.93755],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B99884694518333",
+    "name": "Munshiganj",
+    "center": [23.5266, 90.43802],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B54511139091050",
+    "name": "Mymensingh",
+    "center": [24.62727, 90.45322],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B34203284467157",
+    "name": "Naogaon",
+    "center": [24.94168, 88.71705],
+    "isRajshahiDivision": true
+  },
+  {
+    "id": "16705992B56503274196630",
+    "name": "Narail",
+    "center": [23.13233, 89.52886],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B28796010313895",
+    "name": "Narayanganj",
+    "center": [23.75168, 90.60689],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B95243043657125",
+    "name": "Narsingdi",
+    "center": [23.95833, 90.78712],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B43065208682222",
+    "name": "Natore",
+    "center": [24.33449, 89.07362],
+    "isRajshahiDivision": true
+  },
+  {
+    "id": "16705992B47191620994273",
+    "name": "Netrokona",
+    "center": [24.82448, 90.84636],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B74406959438199",
+    "name": "Nilphamari",
+    "center": [25.96272, 88.92643],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B96773862439533",
+    "name": "Noakhali",
+    "center": [22.85707, 91.13932],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B46384724638491",
+    "name": "Pabna",
+    "center": [24.02641, 89.37414],
+    "isRajshahiDivision": true
+  },
+  {
+    "id": "16705992B66536058617583",
+    "name": "Panchagarh",
+    "center": [26.25761, 88.55413],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B49808088196813",
+    "name": "Patuakhali",
+    "center": [22.31946, 90.38645],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B46028667424095",
+    "name": "Pirojpur",
+    "center": [22.5149, 89.99575],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B48875454234518",
+    "name": "Rajbari",
+    "center": [23.73532, 89.57559],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B51815672792645",
+    "name": "Rajshahi",
+    "center": [24.41523, 88.59683],
+    "isRajshahiDivision": true
+  },
+  {
+    "id": "16705992B35610473312733",
+    "name": "Rangamati",
+    "center": [22.79609, 92.22329],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B34260815515495",
+    "name": "Rangpur",
+    "center": [25.69958, 89.2257],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B60176987344662",
+    "name": "Satkhira",
+    "center": [22.56906, 89.0927],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B92388810566131",
+    "name": "Shariatpur",
+    "center": [23.22934, 90.42255],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B90842308963557",
+    "name": "Sherpur",
+    "center": [25.09241, 90.09499],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B55394931042500",
+    "name": "Sirajganj",
+    "center": [24.39867, 89.52341],
+    "isRajshahiDivision": true
+  },
+  {
+    "id": "16705992B61059366245275",
+    "name": "Sunamganj",
+    "center": [24.952, 91.33855],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B47932115867008",
+    "name": "Sylhet",
+    "center": [24.94965, 92.07709],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B55867939933107",
+    "name": "Tangail",
+    "center": [24.2933, 90.02107],
+    "isRajshahiDivision": false
+  },
+  {
+    "id": "16705992B44482388014877",
+    "name": "Thakurgaon",
+    "center": [25.99008, 88.33015],
+    "isRajshahiDivision": false
+  }
+]
