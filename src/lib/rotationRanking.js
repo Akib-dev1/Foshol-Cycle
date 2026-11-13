@@ -1,5 +1,3 @@
-import { cycleLocales } from "./cycleLocale.js";
-
 export const rankingDescriptions = {
   fastest_completion: "Shorter upper estimate first, measured from first planting to final harvest. Overlapping windows can finish in either order.",
   more_crop_diversity: "Rotations with more distinct crop families come first. Family count describes the sequence, not the condition of the soil.",
@@ -14,21 +12,18 @@ export function climateView(preference) {
   return null;
 }
 
-export function rankingValue(value, preference, { t, number } = cycleLocales.en) {
-  if (!Number.isFinite(value)) return t("Unavailable — no comparable data");
-  if (preference === "more_crop_diversity") return t(value === 1 ? "{value} crop family" : "{value} crop families", { value });
-  if (preference === "closest_temperature_match") return t("{value} °C from guidance", { value: number(value, 2, true) });
-  if (preference === "least_dry_spell_exposure") return t("{value} dry-spell days", { value: number(value, 2, true) });
-  if (preference === "least_heavy_rain_exposure") return t("{value} heavy days / growing day", { value: number(value, 5, true) });
-  return t(value === 1 ? "Up to {value} day" : "Up to {value} days", { value });
+export function rankingValue(value, preference) {
+  if (!Number.isFinite(value)) return "Unavailable — no comparable data";
+  if (preference === "more_crop_diversity") return `${value} crop ${value === 1 ? "family" : "families"}`;
+  if (preference === "closest_temperature_match") return `${value.toLocaleString("en-GB", { maximumFractionDigits: 2 })} °C from guidance`;
+  if (preference === "least_dry_spell_exposure") return `${value.toLocaleString("en-GB", { maximumFractionDigits: 2 })} dry-spell days`;
+  if (preference === "least_heavy_rain_exposure") return `${value.toLocaleString("en-GB", { maximumFractionDigits: 5 })} heavy days / growing day`;
+  return `Up to ${value} ${value === 1 ? "day" : "days"}`;
 }
 
-export function seasonLabel(years, { t, number } = cycleLocales.en) {
-  if (!years?.length) return t("No common complete seasons");
-  return t(years.length === 1 ? "{count} complete season ({years})" : "{count} complete seasons ({years})", {
-    count: years.length,
-    years: years.length === 1 ? number(years[0]) : `${number(years[0])}–${number(years.at(-1))}`,
-  });
+export function seasonLabel(years) {
+  if (!years?.length) return "No common complete seasons";
+  return `${years.length} complete ${years.length === 1 ? "season" : "seasons"} (${years[0]}${years.length > 1 ? `–${years.at(-1)}` : ""})`;
 }
 
 export function cropExposure(crop, preference) {
