@@ -1,0 +1,78 @@
+{
+    "location": {
+        "region": "Rajshahi",
+        "area": "Godagari"
+    },
+    "current_crop": {
+        "crop_id": "aman_br11",
+        "planting_date": "2026-07-15",
+        "actual_harvest_date": null
+    },
+    "next_crop": {
+        "crop_id": "wheat_bari_gom33"   
+    },
+    "field": {
+        "soil_ph": 6.5,
+        "irrigation": "limited",
+        "turnaround_days": 3
+    },  
+    "priorities": {
+        "soil_health": 5,
+        "water_saving": 4,
+        "income": 3,
+        "risk_reduction": 5
+    },
+
+"_test_scenarios_for_reference": [
+{
+"_comment": "SCENARIO 2: Farmer does NOT know what to plant next, and already harvested on Dec 5",
+"location": {
+"region": "Rajshahi",
+"area": "Tanore"
+},
+"current_crop": {
+"crop_id": "aman_br11",
+"planting_date": "2026-07-10",
+"actual_harvest_date": "2026-12-05"
+},
+"next_crop": {
+"crop_id": null
+},
+"field": {
+"soil_ph": null,
+"irrigation": "none",
+"turnaround_days": 4
+},
+"priorities": {
+"water_saving": 5,
+"risk_reduction": 5
+}
+},
+{
+"_comment": "SCENARIO 3: Winter Boro crop planning with adequate irrigation",
+"location": {
+"region": "Rajshahi",
+"area": "Paba"
+},
+"current_crop": {
+"crop_id": "mustard_binasarisha9",
+"planting_date": "2026-11-10",
+"actual_harvest_date": null
+},
+"next_crop": {
+"crop_id": "boro_brridhan28"
+},
+"field": {
+"soil_ph": 6.8,
+"irrigation": "adequate",
+"turnaround_days": 5
+},
+"priorities": {
+"soil_health": 2,
+"water_saving": 2,
+"income": 5,
+"risk_reduction": 3
+}
+}
+]
+}

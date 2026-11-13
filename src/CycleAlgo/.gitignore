@@ -1,0 +1,11 @@
+/token.txt
+/appeears_token.txt
+/.venv/
+/.cache/
+/__pycache__/
+*.log
+*.pyc
+.env
+.env.*
+*.local
+*.local.json

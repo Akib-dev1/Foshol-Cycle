@@ -1,0 +1,7 @@
+{
+  "district_id": "rajshahi",
+  "start_date": "2026-11-06",
+  "first_crop_id": "boro_brri_dhan28",
+  "water_access": "unknown",
+  "preference": "least_dry_spell_exposure"
+}

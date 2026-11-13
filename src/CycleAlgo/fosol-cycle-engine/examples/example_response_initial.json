@@ -1,0 +1,1526 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-11-12T12:00:00+00:00",
+  "request": {
+    "district_id": "rajshahi",
+    "start_date": "2026-11-06",
+    "first_crop_id": null,
+    "water_access": "unknown",
+    "preference": "fastest_completion",
+    "max_initial_wait_days": 180,
+    "max_waiting_days": null
+  },
+  "status": "partial",
+  "district": {
+    "district_id": "rajshahi",
+    "display_name": "Rajshahi",
+    "supported": true,
+    "geographic_scope": "representative point/grid"
+  },
+  "assumptions": [
+    {
+      "code": "INITIAL_WAIT_LIMIT",
+      "message": "Maximum initial wait is 180 days; this is a product relevance limit, not a scientific maximum."
+    },
+    {
+      "code": "TRANSITION_WAIT_LIMIT",
+      "message": "No maximum transition wait policy is configured."
+    },
+    {
+      "code": "THREE_CROP_SEQUENCE_NOT_REPEATING_ROTATION",
+      "message": "A branch is one three-crop sequence, not a verified repeating rotation; repeated cycles require separate evidence."
+    },
+    {
+      "code": "CLIMATE_EXPOSURE_DEFERRED",
+      "message": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option."
+    },
+    {
+      "code": "ECONOMICS_UNAVAILABLE",
+      "message": "No sourced economic evidence; cost, net return, and upfront cash remain unavailable."
+    },
+    {
+      "code": "SOIL_EVIDENCE_MISSING",
+      "message": "No local district soil evidence was supplied; soil fit remains unknown rather than an automatic pass."
+    },
+    {
+      "code": "PREPARATION_EVIDENCE_MISSING",
+      "message": "Preparation evidence was not supplied; readiness and waiting remain unknown rather than zero."
+    },
+    {
+      "code": "DURATION_REFERENCE_UNVERIFIED",
+      "message": "Crop duration reference stage (sowing versus transplanting) is unconfirmed; timing remains conditional."
+    }
+  ],
+  "data_sources": [
+    {
+      "source_id": "crop_profiles_rajshahi_v1",
+      "provider": "Local crop dataset",
+      "product": "Fosol-Cycle Rajshahi crop dataset",
+      "version": "1",
+      "coverage": "Rajshahi crop profiles",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "https://www.bamis.gov.bd/en/calendar/1/74/2/",
+      "provider": "External reference",
+      "product": "Crop dataset cited reference",
+      "version": "referenced",
+      "coverage": "External reference cited by the crop dataset",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "https://www.bamis.gov.bd/en/calendar/1/75/2/",
+      "provider": "External reference",
+      "product": "Crop dataset cited reference",
+      "version": "referenced",
+      "coverage": "External reference cited by the crop dataset",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "https://www.bamis.gov.bd/en/calendar/1/79/2/",
+      "provider": "External reference",
+      "product": "Crop dataset cited reference",
+      "version": "referenced",
+      "coverage": "External reference cited by the crop dataset",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "https://www.bamis.gov.bd/en/calendar/1/9/2/",
+      "provider": "External reference",
+      "product": "Crop dataset cited reference",
+      "version": "referenced",
+      "coverage": "External reference cited by the crop dataset",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "https://www.fao.org/4/S2022E/s2022e07.htm",
+      "provider": "External reference",
+      "product": "Crop dataset cited reference",
+      "version": "referenced",
+      "coverage": "External reference cited by the crop dataset",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "nasa_power_daily",
+      "provider": "NASA POWER",
+      "product": "NASA POWER Daily Point",
+      "version": "v2.10.3",
+      "coverage": "1991-01-01..2025-12-31",
+      "observation_start": "1991-01-01",
+      "observation_end": "2025-12-31",
+      "retrieved_at": "2026-11-12T12:13:00+00:00",
+      "temporal_resolution": "daily",
+      "spatial_resolution": "0.5 x 0.625 degree lat/lon region (MERRA-2)",
+      "is_forecast": false,
+      "cache": {
+        "hit": true,
+        "stale": false,
+        "age_seconds": 14392.737641
+      },
+      "warnings": []
+    },
+    {
+      "source_id": "source_local_calendar",
+      "provider": "Local crop dataset",
+      "product": "Fosol-Cycle Rajshahi crop dataset",
+      "version": "1",
+      "coverage": "Rajshahi crop profile or evaluator field",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "source_planting_window",
+      "provider": "Local crop dataset",
+      "product": "Fosol-Cycle Rajshahi crop dataset",
+      "version": "1",
+      "coverage": "Rajshahi crop profile or evaluator field",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "variety_duration_max_days",
+      "provider": "Local crop dataset",
+      "product": "Fosol-Cycle Rajshahi crop dataset",
+      "version": "1",
+      "coverage": "Rajshahi crop profile or evaluator field",
+      "retrieved_at": null
+    },
+    {
+      "source_id": "variety_duration_min_days",
+      "provider": "Local crop dataset",
+      "product": "Fosol-Cycle Rajshahi crop dataset",
+      "version": "1",
+      "coverage": "Rajshahi crop profile or evaluator field",
+      "retrieved_at": null
+    }
+  ],
+  "crop_options": [
+    {
+      "crop_id": "aman_br11",
+      "name_en": "T. Aman rice",
+      "name_bn": "আমন ধান",
+      "reference_variety": "BR11",
+      "status": "unsupported",
+      "shown": false,
+      "initial_wait_days": 246,
+      "checks": {
+        "calendar": {
+          "status": "unsupported",
+          "code": "OUTSIDE_SUPPORTED_WINDOW",
+          "reason": "The proposed date is outside the documented window (2026-07-10 to 2026-07-24). No documented late window exists for this profile. This is outside documented planting support; it is not a biological impossibility and the preferred end is not a proven deadline.",
+          "source_ids": [
+            "source_planting_window",
+            "source_local_calendar"
+          ],
+          "details": {
+            "planting_date": "2026-11-06",
+            "plant_now": false,
+            "preferred_start": "2026-07-10",
+            "preferred_end": "2026-07-24",
+            "supported_late_end": null,
+            "next_window_start": null,
+            "waiting_days": null,
+            "waiting_limit_days": 180,
+            "waiting_limit_status": "not_applicable",
+            "window_start_year": 2026,
+            "date_precision": "DAY",
+            "hard_deadline_validated": false,
+            "window_basis": "Rajshahi BR11 study: 10-24 July recommended; transplanting after 24 July increased irrigation demand and reduced yield.",
+            "window_type": "RECOMMENDED_RAJSHI_EXACT",
+            "window_guard_readiness": "HIGH",
+            "algorithm_use_note": "Use 07-10..07-24 as recommended transplanting window for this BR11 Rajshahi profile; do not treat 07-24 as biological impossibility."
+          }
+        },
+        "climate": {
+          "status": "unknown",
+          "code": "CLIMATE_EXPOSURE_DEFERRED",
+          "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+          "source_ids": [],
+          "missing_evidence": [
+            "current_season_climate_exposure"
+          ]
+        },
+        "soil": {
+          "status": "unknown",
+          "code": "SOIL_PH_EVIDENCE_MISSING",
+          "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+          "source_ids": [],
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity"
+          ],
+          "checks": {
+            "ph": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_ph"
+              ],
+              "details": {
+                "local": null
+              }
+            },
+            "texture": {
+              "status": "unknown",
+              "code": "SOIL_TEXTURE_EVIDENCE_MISSING",
+              "reason": "No local district texture evidence was supplied; texture fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_texture"
+              ],
+              "details": {
+                "ecocrop_guidance": "wide"
+              }
+            },
+            "drainage": {
+              "status": "unknown",
+              "code": "SOIL_DRAINAGE_EVIDENCE_MISSING",
+              "reason": "No local district drainage evidence was supplied; drainage fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_drainage"
+              ],
+              "details": {
+                "ecocrop_guidance": "poorly (saturated >50% of year)"
+              }
+            },
+            "salinity": {
+              "status": "unknown",
+              "code": "SOIL_SALINITY_EVIDENCE_MISSING",
+              "reason": "No local district salinity evidence was supplied; salinity fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_salinity"
+              ],
+              "details": {
+                "local": null,
+                "unit": null
+              }
+            }
+          },
+          "moisture_context": {
+            "used_for_status": false,
+            "threshold_validated": false,
+            "surface": null,
+            "rootzone": null,
+            "source_ids": []
+          }
+        },
+        "water": {
+          "status": "caution",
+          "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+          "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+          "source_ids": [
+            "https://www.fao.org/4/S2022E/s2022e07.htm",
+            "https://www.bamis.gov.bd/en/calendar/1/74/2/"
+          ],
+          "missing_evidence": [],
+          "water_access": "unknown",
+          "has_quantified_demand": true,
+          "demand_evidence": {
+            "fao_crop_water_need_min_mm": 450.0,
+            "fao_crop_water_need_max_mm": 700.0,
+            "local_phase_water_total_mm": 631.0,
+            "is_crop_guidance": true,
+            "unit": "mm"
+          },
+          "irrigation_guidance": "Rainfed T. Aman may still need supplemental irrigation when rainfall is delayed/insufficient; BR11 study found later transplanting increased reproductive-stage irrigation demand.",
+          "irrigation_demand_calculated": false,
+          "environment_used_for_status": false
+        },
+        "rotation": null
+      },
+      "reasons": [
+        "The proposed date is outside the documented window (2026-07-10 to 2026-07-24). No documented late window exists for this profile. This is outside documented planting support; it is not a biological impossibility and the preferred end is not a proven deadline.",
+        "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+        "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+        "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+        "The next documented window starts 2027-07-10 (246 days after the reference date), which exceeds this explorer's maximum waiting gap of 180 days. The limit is a product relevance cutoff, not a scientifically safe maximum and not a biological impossibility; longer fallow is not claimed impossible."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "current_season_climate_exposure"
+      ],
+      "source_ids": [
+        "source_planting_window",
+        "source_local_calendar",
+        "https://www.fao.org/4/S2022E/s2022e07.htm",
+        "https://www.bamis.gov.bd/en/calendar/1/74/2/"
+      ]
+    },
+    {
+      "crop_id": "boro_brri_dhan28",
+      "name_en": "Boro rice",
+      "name_bn": "বোরো ধান",
+      "reference_variety": "BRRI dhan28",
+      "status": "conditional",
+      "shown": true,
+      "initial_wait_days": 49,
+      "checks": {
+        "calendar": {
+          "status": "caution",
+          "code": "FUTURE_WINDOW_WITHIN_LIMIT",
+          "reason": "The next documented preferred window starts 2026-12-25 (49 days after the proposed date), within the configured maximum waiting limit of 180 days. This is a future option, not a plant-now option.",
+          "source_ids": [
+            "source_planting_window",
+            "source_local_calendar"
+          ],
+          "details": {
+            "planting_date": "2026-11-06",
+            "plant_now": false,
+            "preferred_start": "2026-12-25",
+            "preferred_end": "2027-01-10",
+            "supported_late_end": "2027-02-28",
+            "next_window_start": "2026-12-25",
+            "waiting_days": 49,
+            "waiting_limit_days": 180,
+            "waiting_limit_status": "within_limit",
+            "window_start_year": 2026,
+            "date_precision": "DAY",
+            "hard_deadline_validated": false,
+            "window_basis": "PLOS NW study reports BRRI recommended BRRI dhan28 transplanting 25 Dec-10 Jan; fields in NW were observed from late Dec through end Feb, with delay reducing yield.",
+            "window_type": "BRRI_RECOMMENDED_VARIETY_WINDOW_PLUS_NW_OBSERVED_LATE_BOUND",
+            "window_guard_readiness": "HIGH_WITH_LATE_WINDOW_CAUTION",
+            "algorithm_use_note": "SAFE inside 12-25..01-10; after 01-10 and through 02-28 can be treated as COMPRESSED/LATE for prototype; do not label biologically impossible without expert validation."
+          }
+        },
+        "soil": {
+          "status": "unknown",
+          "code": "SOIL_PH_EVIDENCE_MISSING",
+          "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+          "source_ids": [],
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity"
+          ],
+          "checks": {
+            "ph": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_ph"
+              ],
+              "details": {
+                "local": null
+              }
+            },
+            "texture": {
+              "status": "unknown",
+              "code": "SOIL_TEXTURE_EVIDENCE_MISSING",
+              "reason": "No local district texture evidence was supplied; texture fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_texture"
+              ],
+              "details": {
+                "ecocrop_guidance": "wide"
+              }
+            },
+            "drainage": {
+              "status": "unknown",
+              "code": "SOIL_DRAINAGE_EVIDENCE_MISSING",
+              "reason": "No local district drainage evidence was supplied; drainage fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_drainage"
+              ],
+              "details": {
+                "ecocrop_guidance": "poorly (saturated >50% of year)"
+              }
+            },
+            "salinity": {
+              "status": "unknown",
+              "code": "SOIL_SALINITY_EVIDENCE_MISSING",
+              "reason": "No local district salinity evidence was supplied; salinity fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_salinity"
+              ],
+              "details": {
+                "local": null,
+                "unit": null
+              }
+            }
+          },
+          "moisture_context": {
+            "used_for_status": false,
+            "threshold_validated": false,
+            "surface": null,
+            "rootzone": null,
+            "source_ids": []
+          }
+        },
+        "water": {
+          "status": "caution",
+          "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+          "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+          "source_ids": [
+            "https://www.fao.org/4/S2022E/s2022e07.htm",
+            "https://www.bamis.gov.bd/en/calendar/1/75/2/"
+          ],
+          "missing_evidence": [],
+          "water_access": "unknown",
+          "has_quantified_demand": true,
+          "demand_evidence": {
+            "fao_crop_water_need_min_mm": 450.0,
+            "fao_crop_water_need_max_mm": 700.0,
+            "local_phase_water_total_mm": 631.0,
+            "is_crop_guidance": true,
+            "unit": "mm"
+          },
+          "irrigation_guidance": "High irrigation dependence; NW study notes March-April groundwater limitations can delay irrigation and reduce yield.",
+          "irrigation_demand_calculated": false,
+          "environment_used_for_status": false
+        },
+        "rotation": null,
+        "climate": {
+          "status": "unknown",
+          "code": "CLIMATE_EXPOSURE_DEFERRED",
+          "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+          "source_ids": [],
+          "missing_evidence": [
+            "current_season_climate_exposure"
+          ]
+        }
+      },
+      "reasons": [
+        "calendar: The next documented preferred window starts 2026-12-25 (49 days after the proposed date), within the configured maximum waiting limit of 180 days. This is a future option, not a plant-now option.",
+        "soil: Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+        "water: Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+        "No preparation-time evidence was supplied for this crop; harvest is known but field readiness is unknown, never zero.",
+        "The variety duration range does not record whether it starts at sowing or transplanting; timing is conditional until that reference stage is verified."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "preparation_time",
+        "current_season_climate_exposure"
+      ],
+      "source_ids": [
+        "source_planting_window",
+        "source_local_calendar",
+        "https://www.fao.org/4/S2022E/s2022e07.htm",
+        "https://www.bamis.gov.bd/en/calendar/1/75/2/",
+        "variety_duration_min_days",
+        "variety_duration_max_days"
+      ]
+    },
+    {
+      "crop_id": "lentil_binamasur9",
+      "name_en": "Lentil",
+      "name_bn": "মসুর",
+      "reference_variety": "Binamasur-9",
+      "status": "conditional",
+      "shown": true,
+      "initial_wait_days": 0,
+      "checks": {
+        "calendar": {
+          "status": "caution",
+          "code": "PREFERRED_WINDOW_APPROXIMATE",
+          "reason": "The proposed date is inside the documented preferred window (2026-10-25 to 2026-11-14), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+          "source_ids": [
+            "source_planting_window",
+            "source_local_calendar"
+          ],
+          "details": {
+            "planting_date": "2026-11-06",
+            "plant_now": true,
+            "preferred_start": "2026-10-25",
+            "preferred_end": "2026-11-14",
+            "supported_late_end": null,
+            "next_window_start": null,
+            "waiting_days": null,
+            "waiting_limit_days": 180,
+            "waiting_limit_status": "not_applicable",
+            "window_start_year": 2026,
+            "date_precision": "WEEK_APPROX",
+            "hard_deadline_validated": false,
+            "window_basis": "BINA: optimum sowing from last week of October to second week of November; encoded as 10-25..11-14.",
+            "window_type": "RECOMMENDED_WEEK_APPROX",
+            "window_guard_readiness": "HIGH",
+            "algorithm_use_note": "Use variety duration and the approximate 10-25..11-14 optimum window. Do not create an unsupported hard latest date."
+          }
+        },
+        "soil": {
+          "status": "unknown",
+          "code": "SOIL_PH_EVIDENCE_MISSING",
+          "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+          "source_ids": [],
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity"
+          ],
+          "checks": {
+            "ph": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_ph"
+              ],
+              "details": {
+                "local": null
+              }
+            },
+            "texture": {
+              "status": "unknown",
+              "code": "SOIL_TEXTURE_EVIDENCE_MISSING",
+              "reason": "No local district texture evidence was supplied; texture fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_texture"
+              ],
+              "details": {
+                "ecocrop_guidance": "heavy, medium"
+              }
+            },
+            "drainage": {
+              "status": "unknown",
+              "code": "SOIL_DRAINAGE_EVIDENCE_MISSING",
+              "reason": "No local district drainage evidence was supplied; drainage fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_drainage"
+              ],
+              "details": {
+                "ecocrop_guidance": "well (dry spells)"
+              }
+            },
+            "salinity": {
+              "status": "unknown",
+              "code": "SOIL_SALINITY_EVIDENCE_MISSING",
+              "reason": "No local district salinity evidence was supplied; salinity fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_salinity"
+              ],
+              "details": {
+                "local": null,
+                "unit": null
+              }
+            }
+          },
+          "moisture_context": {
+            "used_for_status": false,
+            "threshold_validated": false,
+            "surface": null,
+            "rootzone": null,
+            "source_ids": []
+          }
+        },
+        "water": {
+          "status": "unknown",
+          "code": "WATER_DEMAND_EVIDENCE_MISSING",
+          "reason": "The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+          "source_ids": [],
+          "missing_evidence": [
+            "crop_water_demand_evidence"
+          ],
+          "water_access": "unknown",
+          "has_quantified_demand": false,
+          "demand_evidence": {
+            "fao_crop_water_need_min_mm": null,
+            "fao_crop_water_need_max_mm": null,
+            "local_phase_water_total_mm": null,
+            "is_crop_guidance": true,
+            "unit": "mm"
+          },
+          "irrigation_guidance": "No exact lentil-specific seasonal water total inserted here; use local agronomic guidance rather than an analog crop value.",
+          "irrigation_demand_calculated": false,
+          "environment_used_for_status": false
+        },
+        "rotation": null,
+        "climate": {
+          "status": "unknown",
+          "code": "CLIMATE_EXPOSURE_DEFERRED",
+          "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+          "source_ids": [],
+          "missing_evidence": [
+            "current_season_climate_exposure"
+          ]
+        }
+      },
+      "reasons": [
+        "calendar: The proposed date is inside the documented preferred window (2026-10-25 to 2026-11-14), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+        "soil: Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+        "water: The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+        "No preparation-time evidence was supplied for this crop; harvest is known but field readiness is unknown, never zero.",
+        "The variety duration range does not record whether it starts at sowing or transplanting; timing is conditional until that reference stage is verified."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "crop_water_demand_evidence",
+        "preparation_time",
+        "current_season_climate_exposure"
+      ],
+      "source_ids": [
+        "source_planting_window",
+        "source_local_calendar",
+        "variety_duration_min_days",
+        "variety_duration_max_days"
+      ]
+    },
+    {
+      "crop_id": "maize_rabi_bari_hybrid13",
+      "name_en": "Maize",
+      "name_bn": "ভুট্টা",
+      "reference_variety": "BARI Hybrid Maize-13",
+      "status": "conditional",
+      "shown": true,
+      "initial_wait_days": 0,
+      "checks": {
+        "calendar": {
+          "status": "pass",
+          "code": "PREFERRED_WINDOW",
+          "reason": "The proposed date is inside the documented preferred window (2026-10-15 to 2026-11-15). The window end is a sourced calendar boundary, not a proven biological deadline.",
+          "source_ids": [
+            "source_planting_window",
+            "source_local_calendar"
+          ],
+          "details": {
+            "planting_date": "2026-11-06",
+            "plant_now": true,
+            "preferred_start": "2026-10-15",
+            "preferred_end": "2026-11-15",
+            "supported_late_end": null,
+            "next_window_start": null,
+            "waiting_days": null,
+            "waiting_limit_days": 180,
+            "waiting_limit_status": "not_applicable",
+            "window_start_year": 2026,
+            "date_precision": "DAY",
+            "hard_deadline_validated": false,
+            "window_basis": "BAMIS package: Rabi maize sowing 15 Oct-15 Nov.",
+            "window_type": "BAMIS_RECOMMENDED_EXACT_RABI",
+            "window_guard_readiness": "VERY_HIGH",
+            "algorithm_use_note": "Use 10-15..11-15 for Rabi sowing and 140-145 d for this selected variety. Keep the 112-d regional generic duration only as contextual reference."
+          }
+        },
+        "soil": {
+          "status": "unknown",
+          "code": "SOIL_PH_EVIDENCE_MISSING",
+          "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+          "source_ids": [],
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity"
+          ],
+          "checks": {
+            "ph": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_ph"
+              ],
+              "details": {
+                "local": null
+              }
+            },
+            "texture": {
+              "status": "unknown",
+              "code": "SOIL_TEXTURE_EVIDENCE_MISSING",
+              "reason": "No local district texture evidence was supplied; texture fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_texture"
+              ],
+              "details": {
+                "ecocrop_guidance": null
+              }
+            },
+            "drainage": {
+              "status": "unknown",
+              "code": "SOIL_DRAINAGE_EVIDENCE_MISSING",
+              "reason": "No local district drainage evidence was supplied; drainage fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_drainage"
+              ],
+              "details": {
+                "ecocrop_guidance": null
+              }
+            },
+            "salinity": {
+              "status": "unknown",
+              "code": "SOIL_SALINITY_EVIDENCE_MISSING",
+              "reason": "No local district salinity evidence was supplied; salinity fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_salinity"
+              ],
+              "details": {
+                "local": null,
+                "unit": null
+              }
+            }
+          },
+          "moisture_context": {
+            "used_for_status": false,
+            "threshold_validated": false,
+            "surface": null,
+            "rootzone": null,
+            "source_ids": []
+          }
+        },
+        "water": {
+          "status": "caution",
+          "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+          "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+          "source_ids": [
+            "https://www.fao.org/4/S2022E/s2022e07.htm",
+            "https://www.bamis.gov.bd/en/calendar/1/79/2/"
+          ],
+          "missing_evidence": [],
+          "water_access": "unknown",
+          "has_quantified_demand": true,
+          "demand_evidence": {
+            "fao_crop_water_need_min_mm": 500.0,
+            "fao_crop_water_need_max_mm": 800.0,
+            "local_phase_water_total_mm": 631.0,
+            "is_crop_guidance": true,
+            "unit": "mm"
+          },
+          "irrigation_guidance": "BAMIS: irrigate about 15-20, 30-35, 60-70 and 85-89 DAS; avoid waterlogging. BARI Hybrid Maize-13 can produce under one pre-flowering irrigation in drought conditions, but with lower yield than normal irrigation.",
+          "irrigation_demand_calculated": false,
+          "environment_used_for_status": false
+        },
+        "rotation": null,
+        "climate": {
+          "status": "unknown",
+          "code": "CLIMATE_EXPOSURE_DEFERRED",
+          "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+          "source_ids": [],
+          "missing_evidence": [
+            "current_season_climate_exposure"
+          ]
+        }
+      },
+      "reasons": [
+        "soil: Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+        "water: Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+        "No preparation-time evidence was supplied for this crop; harvest is known but field readiness is unknown, never zero.",
+        "The variety duration range does not record whether it starts at sowing or transplanting; timing is conditional until that reference stage is verified."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "preparation_time",
+        "current_season_climate_exposure"
+      ],
+      "source_ids": [
+        "source_planting_window",
+        "source_local_calendar",
+        "https://www.fao.org/4/S2022E/s2022e07.htm",
+        "https://www.bamis.gov.bd/en/calendar/1/79/2/",
+        "variety_duration_min_days",
+        "variety_duration_max_days"
+      ]
+    },
+    {
+      "crop_id": "mung_bari_mung6_kharif1",
+      "name_en": "Mung bean",
+      "name_bn": "মুগ",
+      "reference_variety": "BARI Mung-6",
+      "status": "unsupported",
+      "shown": false,
+      "initial_wait_days": 129,
+      "checks": {
+        "calendar": {
+          "status": "unknown",
+          "code": "WINDOW_GEOGRAPHY_UNKNOWN",
+          "reason": "The window is not Rajshahi-exact (planting_window_type=MODELLED_OPTIMUM_BANGLADESH_NOT_RAJSHI_EXACT, date_precision=DAY_BUT_LOCATION_TRANSFERABILITY_MEDIUM); it cannot support a calendar pass for this district even when the date falls inside the encoded dates.",
+          "source_ids": [
+            "source_planting_window",
+            "source_local_calendar"
+          ],
+          "details": {
+            "planting_date": "2026-11-06",
+            "plant_now": false,
+            "preferred_start": "2027-03-15",
+            "preferred_end": "2027-03-25",
+            "supported_late_end": null,
+            "next_window_start": null,
+            "waiting_days": null,
+            "waiting_limit_days": 180,
+            "waiting_limit_status": "not_applicable",
+            "window_start_year": 2027,
+            "date_precision": "DAY_BUT_LOCATION_TRANSFERABILITY_MEDIUM",
+            "hard_deadline_validated": false,
+            "window_basis": "PLOS APSIM study: BARI Mung-6 optimum 15-25 March in South-central Bangladesh; Rajshahi BAMIS confirms local Kharif-I crop calendar but not this exact day window.",
+            "window_type": "MODELLED_OPTIMUM_BANGLADESH_NOT_RAJSHI_EXACT",
+            "window_guard_readiness": "MEDIUM_HIGH",
+            "algorithm_use_note": "Do not present 03-15..03-25 as Rajshahi-validated exact window; label as Bangladesh modeled optimum supported by a Rajshahi regional Kharif-I calendar."
+          }
+        },
+        "climate": {
+          "status": "unknown",
+          "code": "CLIMATE_EXPOSURE_DEFERRED",
+          "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+          "source_ids": [],
+          "missing_evidence": [
+            "current_season_climate_exposure"
+          ]
+        },
+        "soil": {
+          "status": "unknown",
+          "code": "SOIL_PH_EVIDENCE_MISSING",
+          "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+          "source_ids": [],
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity"
+          ],
+          "checks": {
+            "ph": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_ph"
+              ],
+              "details": {
+                "local": null
+              }
+            },
+            "texture": {
+              "status": "unknown",
+              "code": "SOIL_TEXTURE_EVIDENCE_MISSING",
+              "reason": "No local district texture evidence was supplied; texture fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_texture"
+              ],
+              "details": {
+                "ecocrop_guidance": "medium, organic"
+              }
+            },
+            "drainage": {
+              "status": "unknown",
+              "code": "SOIL_DRAINAGE_EVIDENCE_MISSING",
+              "reason": "No local district drainage evidence was supplied; drainage fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_drainage"
+              ],
+              "details": {
+                "ecocrop_guidance": "well (dry spells)"
+              }
+            },
+            "salinity": {
+              "status": "unknown",
+              "code": "SOIL_SALINITY_EVIDENCE_MISSING",
+              "reason": "No local district salinity evidence was supplied; salinity fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_salinity"
+              ],
+              "details": {
+                "local": null,
+                "unit": null
+              }
+            }
+          },
+          "moisture_context": {
+            "used_for_status": false,
+            "threshold_validated": false,
+            "surface": null,
+            "rootzone": null,
+            "source_ids": []
+          }
+        },
+        "water": {
+          "status": "unknown",
+          "code": "WATER_DEMAND_EVIDENCE_MISSING",
+          "reason": "The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+          "source_ids": [],
+          "missing_evidence": [
+            "crop_water_demand_evidence"
+          ],
+          "water_access": "unknown",
+          "has_quantified_demand": false,
+          "demand_evidence": {
+            "fao_crop_water_need_min_mm": null,
+            "fao_crop_water_need_max_mm": null,
+            "local_phase_water_total_mm": null,
+            "is_crop_guidance": true,
+            "unit": "mm"
+          },
+          "irrigation_guidance": "No exact mung-specific FAO seasonal water range inserted; use local/BARI guidance.",
+          "irrigation_demand_calculated": false,
+          "environment_used_for_status": false
+        },
+        "rotation": null
+      },
+      "reasons": [
+        "The window is not Rajshahi-exact (planting_window_type=MODELLED_OPTIMUM_BANGLADESH_NOT_RAJSHI_EXACT, date_precision=DAY_BUT_LOCATION_TRANSFERABILITY_MEDIUM); it cannot support a calendar pass for this district even when the date falls inside the encoded dates.",
+        "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+        "The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+        "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "crop_water_demand_evidence",
+        "current_season_climate_exposure"
+      ],
+      "source_ids": [
+        "source_planting_window",
+        "source_local_calendar"
+      ]
+    },
+    {
+      "crop_id": "mustard_binasarisha9",
+      "name_en": "Mustard",
+      "name_bn": "সরিষা",
+      "reference_variety": "Binasarisha-9",
+      "status": "conditional",
+      "shown": true,
+      "initial_wait_days": 0,
+      "checks": {
+        "calendar": {
+          "status": "caution",
+          "code": "PREFERRED_WINDOW_APPROXIMATE",
+          "reason": "The proposed date is inside the documented preferred window (2026-10-25 to 2026-11-15), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+          "source_ids": [
+            "source_planting_window",
+            "source_local_calendar"
+          ],
+          "details": {
+            "planting_date": "2026-11-06",
+            "plant_now": true,
+            "preferred_start": "2026-10-25",
+            "preferred_end": "2026-11-15",
+            "supported_late_end": "2026-12-21",
+            "next_window_start": null,
+            "waiting_days": null,
+            "waiting_limit_days": 180,
+            "waiting_limit_status": "not_applicable",
+            "window_start_year": 2026,
+            "date_precision": "WEEK_APPROX",
+            "hard_deadline_validated": false,
+            "window_basis": "BINA: last week Oct to mid-Nov is suitable; satisfactory yield possible through third week Dec because variety is late-sowing capable. Encoded dates are calendar approximations of those phrases.",
+            "window_type": "RECOMMENDED_WEEK_APPROX_WITH_LATE_SOWING_SUPPORT",
+            "window_guard_readiness": "HIGH",
+            "algorithm_use_note": "Treat 10-25 and 11-15 as approximations for textual week/mid-month guidance. 11-16..12-21 can be modeled as late/compressed, not equally optimal."
+          }
+        },
+        "soil": {
+          "status": "unknown",
+          "code": "SOIL_PH_EVIDENCE_MISSING",
+          "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+          "source_ids": [],
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity"
+          ],
+          "checks": {
+            "ph": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_ph"
+              ],
+              "details": {
+                "local": null
+              }
+            },
+            "texture": {
+              "status": "unknown",
+              "code": "SOIL_TEXTURE_EVIDENCE_MISSING",
+              "reason": "No local district texture evidence was supplied; texture fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_texture"
+              ],
+              "details": {
+                "ecocrop_guidance": "medium, organic"
+              }
+            },
+            "drainage": {
+              "status": "unknown",
+              "code": "SOIL_DRAINAGE_EVIDENCE_MISSING",
+              "reason": "No local district drainage evidence was supplied; drainage fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_drainage"
+              ],
+              "details": {
+                "ecocrop_guidance": "well (dry spells)"
+              }
+            },
+            "salinity": {
+              "status": "unknown",
+              "code": "SOIL_SALINITY_EVIDENCE_MISSING",
+              "reason": "No local district salinity evidence was supplied; salinity fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_salinity"
+              ],
+              "details": {
+                "local": null,
+                "unit": null
+              }
+            }
+          },
+          "moisture_context": {
+            "used_for_status": false,
+            "threshold_validated": false,
+            "surface": null,
+            "rootzone": null,
+            "source_ids": []
+          }
+        },
+        "water": {
+          "status": "unknown",
+          "code": "WATER_DEMAND_EVIDENCE_MISSING",
+          "reason": "The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+          "source_ids": [],
+          "missing_evidence": [
+            "crop_water_demand_evidence"
+          ],
+          "water_access": "unknown",
+          "has_quantified_demand": false,
+          "demand_evidence": {
+            "fao_crop_water_need_min_mm": null,
+            "fao_crop_water_need_max_mm": null,
+            "local_phase_water_total_mm": null,
+            "is_crop_guidance": true,
+            "unit": "mm"
+          },
+          "irrigation_guidance": "Use BINA/BAMIS local guidance; do not substitute FAO bean/other-oilseed water values as mustard-specific values.",
+          "irrigation_demand_calculated": false,
+          "environment_used_for_status": false
+        },
+        "rotation": null,
+        "climate": {
+          "status": "unknown",
+          "code": "CLIMATE_EXPOSURE_DEFERRED",
+          "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+          "source_ids": [],
+          "missing_evidence": [
+            "current_season_climate_exposure"
+          ]
+        }
+      },
+      "reasons": [
+        "calendar: The proposed date is inside the documented preferred window (2026-10-25 to 2026-11-15), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+        "soil: Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+        "water: The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+        "No preparation-time evidence was supplied for this crop; harvest is known but field readiness is unknown, never zero.",
+        "The variety duration range does not record whether it starts at sowing or transplanting; timing is conditional until that reference stage is verified."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "crop_water_demand_evidence",
+        "preparation_time",
+        "current_season_climate_exposure"
+      ],
+      "source_ids": [
+        "source_planting_window",
+        "source_local_calendar",
+        "variety_duration_min_days",
+        "variety_duration_max_days"
+      ]
+    },
+    {
+      "crop_id": "potato_bari_alu41",
+      "name_en": "Potato",
+      "name_bn": "আলু",
+      "reference_variety": "BARI Alu-41",
+      "status": "conditional",
+      "shown": true,
+      "initial_wait_days": 0,
+      "checks": {
+        "calendar": {
+          "status": "caution",
+          "code": "PREFERRED_WINDOW_APPROXIMATE",
+          "reason": "The proposed date is inside the documented preferred window (2026-11-01 to 2026-11-07), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+          "source_ids": [
+            "source_planting_window",
+            "source_local_calendar"
+          ],
+          "details": {
+            "planting_date": "2026-11-06",
+            "plant_now": true,
+            "preferred_start": "2026-11-01",
+            "preferred_end": "2026-11-07",
+            "supported_late_end": null,
+            "next_window_start": null,
+            "waiting_days": null,
+            "waiting_limit_days": 180,
+            "waiting_limit_status": "not_applicable",
+            "window_start_year": 2026,
+            "date_precision": "WEEK_APPROX",
+            "hard_deadline_validated": false,
+            "window_basis": "Peer-reviewed multi-location Bangladesh study: optimal planting in northern area during first week of November; encoded as 11-01..11-07.",
+            "window_type": "NORTHERN_BANGLADESH_OPTIMUM_WEEK_APPROX",
+            "window_guard_readiness": "HIGH_MEDIUM",
+            "algorithm_use_note": "Use first-week-November as optimum, not as a hard final planting deadline. A broader late window needs Rajshahi-specific validation before MISSED logic."
+          }
+        },
+        "soil": {
+          "status": "unknown",
+          "code": "SOIL_PH_EVIDENCE_MISSING",
+          "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+          "source_ids": [],
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity"
+          ],
+          "checks": {
+            "ph": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_ph"
+              ],
+              "details": {
+                "local": null
+              }
+            },
+            "texture": {
+              "status": "unknown",
+              "code": "SOIL_TEXTURE_EVIDENCE_MISSING",
+              "reason": "No local district texture evidence was supplied; texture fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_texture"
+              ],
+              "details": {
+                "ecocrop_guidance": "medium, organic"
+              }
+            },
+            "drainage": {
+              "status": "unknown",
+              "code": "SOIL_DRAINAGE_EVIDENCE_MISSING",
+              "reason": "No local district drainage evidence was supplied; drainage fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_drainage"
+              ],
+              "details": {
+                "ecocrop_guidance": "well (dry spells)"
+              }
+            },
+            "salinity": {
+              "status": "unknown",
+              "code": "SOIL_SALINITY_EVIDENCE_MISSING",
+              "reason": "No local district salinity evidence was supplied; salinity fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_salinity"
+              ],
+              "details": {
+                "local": null,
+                "unit": null
+              }
+            }
+          },
+          "moisture_context": {
+            "used_for_status": false,
+            "threshold_validated": false,
+            "surface": null,
+            "rootzone": null,
+            "source_ids": []
+          }
+        },
+        "water": {
+          "status": "caution",
+          "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+          "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+          "source_ids": [
+            "https://www.fao.org/4/S2022E/s2022e07.htm"
+          ],
+          "missing_evidence": [],
+          "water_access": "unknown",
+          "has_quantified_demand": true,
+          "demand_evidence": {
+            "fao_crop_water_need_min_mm": 500.0,
+            "fao_crop_water_need_max_mm": 700.0,
+            "local_phase_water_total_mm": null,
+            "is_crop_guidance": true,
+            "unit": "mm"
+          },
+          "irrigation_guidance": "High water sensitivity; avoid both water stress and waterlogging. Use local irrigation scheduling rather than converting NASA rainfall directly to irrigation need.",
+          "irrigation_demand_calculated": false,
+          "environment_used_for_status": false
+        },
+        "rotation": null,
+        "climate": {
+          "status": "unknown",
+          "code": "CLIMATE_EXPOSURE_DEFERRED",
+          "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+          "source_ids": [],
+          "missing_evidence": [
+            "current_season_climate_exposure"
+          ]
+        }
+      },
+      "reasons": [
+        "calendar: The proposed date is inside the documented preferred window (2026-11-01 to 2026-11-07), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+        "soil: Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+        "water: Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+        "No preparation-time evidence was supplied for this crop; harvest is known but field readiness is unknown, never zero.",
+        "The variety duration range does not record whether it starts at sowing or transplanting; timing is conditional until that reference stage is verified."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "preparation_time",
+        "current_season_climate_exposure"
+      ],
+      "source_ids": [
+        "source_planting_window",
+        "source_local_calendar",
+        "https://www.fao.org/4/S2022E/s2022e07.htm",
+        "variety_duration_min_days",
+        "variety_duration_max_days"
+      ]
+    },
+    {
+      "crop_id": "wheat_bari_gom33",
+      "name_en": "Wheat",
+      "name_bn": "গম",
+      "reference_variety": "BARI Gom-33",
+      "status": "conditional",
+      "shown": true,
+      "initial_wait_days": 9,
+      "checks": {
+        "calendar": {
+          "status": "caution",
+          "code": "FUTURE_WINDOW_WITHIN_LIMIT",
+          "reason": "The next documented preferred window starts 2026-11-15 (9 days after the proposed date), within the configured maximum waiting limit of 180 days. This is a future option, not a plant-now option.",
+          "source_ids": [
+            "source_planting_window",
+            "source_local_calendar"
+          ],
+          "details": {
+            "planting_date": "2026-11-06",
+            "plant_now": false,
+            "preferred_start": "2026-11-15",
+            "preferred_end": "2026-11-30",
+            "supported_late_end": "2026-12-20",
+            "next_window_start": "2026-11-15",
+            "waiting_days": 9,
+            "waiting_limit_days": 180,
+            "waiting_limit_status": "within_limit",
+            "window_start_year": 2026,
+            "date_precision": "DAY",
+            "hard_deadline_validated": false,
+            "window_basis": "BWMRI: ideal sowing 15-30 Nov. BAMIS: can be extended to 15-20 Dec.",
+            "window_type": "RECOMMENDED_EXACT_WITH_SUPPORTED_EXTENSION",
+            "window_guard_readiness": "VERY_HIGH",
+            "algorithm_use_note": "SAFE through 11-30 when other constraints pass; 12-01..12-20 can be modeled as COMPRESSED/LATE; >12-20 is outside the documented supported window, not a universal biological impossibility."
+          }
+        },
+        "soil": {
+          "status": "unknown",
+          "code": "SOIL_PH_EVIDENCE_MISSING",
+          "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+          "source_ids": [],
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity"
+          ],
+          "checks": {
+            "ph": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_ph"
+              ],
+              "details": {
+                "local": null
+              }
+            },
+            "texture": {
+              "status": "unknown",
+              "code": "SOIL_TEXTURE_EVIDENCE_MISSING",
+              "reason": "No local district texture evidence was supplied; texture fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_texture"
+              ],
+              "details": {
+                "ecocrop_guidance": "medium, organic"
+              }
+            },
+            "drainage": {
+              "status": "unknown",
+              "code": "SOIL_DRAINAGE_EVIDENCE_MISSING",
+              "reason": "No local district drainage evidence was supplied; drainage fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_drainage"
+              ],
+              "details": {
+                "ecocrop_guidance": "well (dry spells)"
+              }
+            },
+            "salinity": {
+              "status": "unknown",
+              "code": "SOIL_SALINITY_EVIDENCE_MISSING",
+              "reason": "No local district salinity evidence was supplied; salinity fit is unknown rather than an automatic pass.",
+              "source_ids": [],
+              "missing_evidence": [
+                "district_soil_salinity"
+              ],
+              "details": {
+                "local": null,
+                "unit": null
+              }
+            }
+          },
+          "moisture_context": {
+            "used_for_status": false,
+            "threshold_validated": false,
+            "surface": null,
+            "rootzone": null,
+            "source_ids": []
+          }
+        },
+        "water": {
+          "status": "caution",
+          "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+          "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+          "source_ids": [
+            "https://www.fao.org/4/S2022E/s2022e07.htm",
+            "https://www.bamis.gov.bd/en/calendar/1/9/2/"
+          ],
+          "missing_evidence": [],
+          "water_access": "unknown",
+          "has_quantified_demand": true,
+          "demand_evidence": {
+            "fao_crop_water_need_min_mm": 450.0,
+            "fao_crop_water_need_max_mm": 650.0,
+            "local_phase_water_total_mm": 428.0,
+            "is_crop_guidance": true,
+            "unit": "mm"
+          },
+          "irrigation_guidance": "BAMIS: generally 2-3 irrigations; first 17-21 DAS, second 50-55 DAS, third about 75-80 DAS.",
+          "irrigation_demand_calculated": false,
+          "environment_used_for_status": false
+        },
+        "rotation": null,
+        "climate": {
+          "status": "unknown",
+          "code": "CLIMATE_EXPOSURE_DEFERRED",
+          "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+          "source_ids": [],
+          "missing_evidence": [
+            "current_season_climate_exposure"
+          ]
+        }
+      },
+      "reasons": [
+        "calendar: The next documented preferred window starts 2026-11-15 (9 days after the proposed date), within the configured maximum waiting limit of 180 days. This is a future option, not a plant-now option.",
+        "soil: Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+        "water: Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+        "No preparation-time evidence was supplied for this crop; harvest is known but field readiness is unknown, never zero.",
+        "The variety duration range does not record whether it starts at sowing or transplanting; timing is conditional until that reference stage is verified."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "preparation_time",
+        "current_season_climate_exposure"
+      ],
+      "source_ids": [
+        "source_planting_window",
+        "source_local_calendar",
+        "https://www.fao.org/4/S2022E/s2022e07.htm",
+        "https://www.bamis.gov.bd/en/calendar/1/9/2/",
+        "variety_duration_min_days",
+        "variety_duration_max_days"
+      ]
+    }
+  ],
+  "branches": [],
+  "ranking": {
+    "preference": "fastest_completion",
+    "metric": "completion_days.max",
+    "direction": "ascending",
+    "groups": {
+      "candidate": {
+        "count": 0,
+        "ranked": [],
+        "unranked": []
+      },
+      "conditional": {
+        "count": 0,
+        "ranked": [],
+        "unranked": []
+      }
+    },
+    "excluded": [],
+    "method": "Rank candidate and conditional groups separately by completion_days.max ascending; ties by branch_id ascending; no weighted score.",
+    "notes": [
+      "Candidate group is empty; no candidate branches were ranked.",
+      "Conditional group is empty; no conditional branches were ranked.",
+      "No branch has a comparable metric; no winner is forced."
+    ],
+    "no_winner": true
+  },
+  "warnings": [
+    {
+      "code": "CLIMATE_EXPOSURE_DEFERRED",
+      "message": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option."
+    },
+    {
+      "code": "ECONOMICS_UNAVAILABLE",
+      "message": "Economic estimates are unavailable because no sourced price, cost, yield, or cash-flow evidence was supplied."
+    },
+    {
+      "code": "SMAP_CONTEXT_UNAVAILABLE",
+      "message": "SMAP context was not supplied; no moisture context is displayed."
+    },
+    {
+      "code": "NO_CANDIDATE_BRANCHES",
+      "message": "No candidate branches - 295 conditional branches available; select a first crop to view them."
+    }
+  ],
+  "branch_summary": {
+    "candidate_count": 0,
+    "conditional_count": 295,
+    "excluded_count": 56,
+    "no_candidate_branches": true,
+    "message": "No candidate branches - 295 conditional branches available; select a first crop to view them."
+  },
+  "environment_context": {
+    "product": "SPL4SMGP.008",
+    "provider": "NASA SMAP via AppEEARS",
+    "resolution": "9 km EASE-Grid 2.0",
+    "temporal_resolution": "3-hourly",
+    "observations": [],
+    "observation_start": null,
+    "observation_end": null,
+    "retrieved_at": null,
+    "label": "Context only - no effect on status or ranking",
+    "warnings": [
+      {
+        "code": "SMAP_CONTEXT_UNAVAILABLE",
+        "message": "SMAP context was not supplied; no moisture context is displayed."
+      }
+    ],
+    "status": "unavailable"
+  },
+  "missing_evidence": [
+    "calendar_evidence",
+    "crop_water_demand_evidence",
+    "current_season_climate_exposure",
+    "district_soil_drainage",
+    "district_soil_ph",
+    "district_soil_salinity",
+    "district_soil_texture",
+    "max_waiting_days_policy",
+    "preparation_time",
+    "smap_context"
+  ]
+}

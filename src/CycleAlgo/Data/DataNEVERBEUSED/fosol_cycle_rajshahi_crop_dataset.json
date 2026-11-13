@@ -1,0 +1,449 @@
+{
+  "metadata": {
+    "dataset_version": "2026-10-20_research_build_v1",
+    "crop_count": 8,
+    "location_focus": "Rajshahi pilot, Bangladesh"
+  },
+  "crops": {
+    "aman_br11": {
+      "identity": {
+        "crop_id": "aman_br11",
+        "crop_name_en": "T. Aman rice",
+        "crop_name_bn": "আমন ধান",
+        "season_profile": "T. Aman",
+        "crop_role": "cereal",
+        "reference_variety": "BR11",
+        "scientific_name": "Oryza sativa",
+        "family": "Poaceae"
+      },
+      "planting_window": {
+        "preferred_start_mmdd": "07-10",
+        "preferred_end_mmdd": "07-24",
+        "supported_late_end_mmdd": null,
+        "crosses_year": false
+      },
+      "duration": {
+        "variety": {
+          "min_days": 145,
+          "max_days": 145
+        }
+      },
+      "environment": {
+        "temperature": {
+          "optimal_min_c": 20.0,
+          "optimal_max_c": 30.0,
+          "tolerance_min_c": 10.0,
+          "tolerance_max_c": 36.0
+        },
+        "soil": {
+          "ph_optimal_min": 5.5,
+          "ph_optimal_max": 7.0,
+          "ph_tolerance_min": 4.5,
+          "ph_tolerance_max": 9.0
+        }
+      },
+      "water": {
+        "fao_crop_water_need_min_mm": 450.0,
+        "fao_crop_water_need_max_mm": 700.0,
+        "drought_sensitivity": "high"
+      },
+      "rotation": {
+        "soil_effect": {
+          "fixes_nitrogen": false
+        }
+      },
+      "economics": {
+        "yield_reference_low_t_ha": 5.0,
+        "yield_reference_high_t_ha": 5.5
+      },
+      "decision_support": {
+        "overall_data_confidence": "HIGH"
+      }
+    },
+    "boro_brri_dhan28": {
+      "identity": {
+        "crop_id": "boro_brri_dhan28",
+        "crop_name_en": "Boro rice",
+        "crop_name_bn": "বোরো ধান",
+        "season_profile": "Boro",
+        "crop_role": "cereal",
+        "reference_variety": "BRRI dhan28",
+        "scientific_name": "Oryza sativa",
+        "family": "Poaceae"
+      },
+      "planting_window": {
+        "preferred_start_mmdd": "12-25",
+        "preferred_end_mmdd": "01-10",
+        "supported_late_end_mmdd": "02-28",
+        "crosses_year": true
+      },
+      "duration": {
+        "variety": {
+          "min_days": 140,
+          "max_days": 140
+        }
+      },
+      "environment": {
+        "temperature": {
+          "optimal_min_c": 20.0,
+          "optimal_max_c": 30.0,
+          "tolerance_min_c": 10.0,
+          "tolerance_max_c": 36.0
+        },
+        "soil": {
+          "ph_optimal_min": 5.5,
+          "ph_optimal_max": 7.0,
+          "ph_tolerance_min": 4.5,
+          "ph_tolerance_max": 9.0
+        }
+      },
+      "water": {
+        "fao_crop_water_need_min_mm": 450.0,
+        "fao_crop_water_need_max_mm": 700.0,
+        "drought_sensitivity": "high"
+      },
+      "rotation": {
+        "soil_effect": {
+          "fixes_nitrogen": false
+        }
+      },
+      "economics": {
+        "yield_reference_low_t_ha": 6.0,
+        "yield_reference_high_t_ha": 6.0
+      },
+      "decision_support": {
+        "overall_data_confidence": "HIGH_MEDIUM"
+      }
+    },
+    "wheat_bari_gom33": {
+      "identity": {
+        "crop_id": "wheat_bari_gom33",
+        "crop_name_en": "Wheat",
+        "crop_name_bn": "গম",
+        "season_profile": "Rabi",
+        "crop_role": "cereal",
+        "reference_variety": "BARI Gom-33",
+        "scientific_name": "Triticum aestivum",
+        "family": "Poaceae"
+      },
+      "planting_window": {
+        "preferred_start_mmdd": "11-15",
+        "preferred_end_mmdd": "11-30",
+        "supported_late_end_mmdd": "12-20",
+        "crosses_year": false
+      },
+      "duration": {
+        "variety": {
+          "min_days": 108,
+          "max_days": 112
+        }
+      },
+      "environment": {
+        "temperature": {
+          "optimal_min_c": 15.0,
+          "optimal_max_c": 23.0,
+          "tolerance_min_c": 5.0,
+          "tolerance_max_c": 27.0
+        },
+        "soil": {
+          "ph_optimal_min": 6.0,
+          "ph_optimal_max": 7.0,
+          "ph_tolerance_min": 5.5,
+          "ph_tolerance_max": 8.5
+        }
+      },
+      "water": {
+        "fao_crop_water_need_min_mm": 450.0,
+        "fao_crop_water_need_max_mm": 650.0,
+        "drought_sensitivity": "low-medium"
+      },
+      "rotation": {
+        "soil_effect": {
+          "fixes_nitrogen": false
+        }
+      },
+      "economics": {
+        "yield_reference_low_t_ha": 4.8,
+        "yield_reference_high_t_ha": 5.5
+      },
+      "decision_support": {
+        "overall_data_confidence": "VERY_HIGH"
+      }
+    },
+    "mustard_binasarisha9": {
+      "identity": {
+        "crop_id": "mustard_binasarisha9",
+        "crop_name_en": "Mustard",
+        "crop_name_bn": "সরিষা",
+        "season_profile": "Rabi",
+        "crop_role": "oilseed",
+        "reference_variety": "Binasarisha-9",
+        "scientific_name": "Brassica juncea",
+        "family": "Brassicaceae"
+      },
+      "planting_window": {
+        "preferred_start_mmdd": "10-25",
+        "preferred_end_mmdd": "11-15",
+        "supported_late_end_mmdd": "12-21",
+        "crosses_year": false
+      },
+      "duration": {
+        "variety": {
+          "min_days": 80,
+          "max_days": 84
+        }
+      },
+      "environment": {
+        "temperature": {
+          "optimal_min_c": 15.0,
+          "optimal_max_c": 28.0,
+          "tolerance_min_c": 7.0,
+          "tolerance_max_c": 40.0
+        },
+        "soil": {
+          "ph_optimal_min": 5.5,
+          "ph_optimal_max": 6.5,
+          "ph_tolerance_min": 5.0,
+          "ph_tolerance_max": 8.0
+        }
+      },
+      "water": {
+        "fao_crop_water_need_min_mm": null,
+        "fao_crop_water_need_max_mm": null,
+        "drought_sensitivity": null
+      },
+      "rotation": {
+        "soil_effect": {
+          "fixes_nitrogen": false
+        }
+      },
+      "economics": {
+        "yield_reference_low_t_ha": 1.6,
+        "yield_reference_high_t_ha": 2.0
+      },
+      "decision_support": {
+        "overall_data_confidence": "HIGH"
+      }
+    },
+    "lentil_binamasur9": {
+      "identity": {
+        "crop_id": "lentil_binamasur9",
+        "crop_name_en": "Lentil",
+        "crop_name_bn": "মসুর",
+        "season_profile": "Rabi",
+        "crop_role": "pulse",
+        "reference_variety": "Binamasur-9",
+        "scientific_name": "Lens culinaris",
+        "family": "Fabaceae"
+      },
+      "planting_window": {
+        "preferred_start_mmdd": "10-25",
+        "preferred_end_mmdd": "11-14",
+        "supported_late_end_mmdd": null,
+        "crosses_year": false
+      },
+      "duration": {
+        "variety": {
+          "min_days": 100,
+          "max_days": 105
+        }
+      },
+      "environment": {
+        "temperature": {
+          "optimal_min_c": 15.0,
+          "optimal_max_c": 29.0,
+          "tolerance_min_c": 5.0,
+          "tolerance_max_c": 32.0
+        },
+        "soil": {
+          "ph_optimal_min": 5.5,
+          "ph_optimal_max": 7.5,
+          "ph_tolerance_min": 4.5,
+          "ph_tolerance_max": 8.2
+        }
+      },
+      "water": {
+        "fao_crop_water_need_min_mm": null,
+        "fao_crop_water_need_max_mm": null,
+        "drought_sensitivity": null
+      },
+      "rotation": {
+        "soil_effect": {
+          "fixes_nitrogen": true
+        }
+      },
+      "economics": {
+        "yield_reference_low_t_ha": 2.25,
+        "yield_reference_high_t_ha": 2.4
+      },
+      "decision_support": {
+        "overall_data_confidence": "HIGH"
+      }
+    },
+    "mung_bari_mung6_kharif1": {
+      "identity": {
+        "crop_id": "mung_bari_mung6_kharif1",
+        "crop_name_en": "Mung bean",
+        "crop_name_bn": "মুগ",
+        "season_profile": "Kharif-I",
+        "crop_role": "pulse",
+        "reference_variety": "BARI Mung-6",
+        "scientific_name": "Vigna radiata",
+        "family": "Fabaceae"
+      },
+      "planting_window": {
+        "preferred_start_mmdd": "03-15",
+        "preferred_end_mmdd": "03-25",
+        "supported_late_end_mmdd": null,
+        "crosses_year": false
+      },
+      "duration": {
+        "variety": {
+          "min_days": 55,
+          "max_days": 58
+        }
+      },
+      "environment": {
+        "temperature": {
+          "optimal_min_c": 21.0,
+          "optimal_max_c": 36.0,
+          "tolerance_min_c": 8.0,
+          "tolerance_max_c": 40.0
+        },
+        "soil": {
+          "ph_optimal_min": 5.5,
+          "ph_optimal_max": 6.2,
+          "ph_tolerance_min": 4.3,
+          "ph_tolerance_max": 8.3
+        }
+      },
+      "water": {
+        "fao_crop_water_need_min_mm": null,
+        "fao_crop_water_need_max_mm": null,
+        "drought_sensitivity": null
+      },
+      "rotation": {
+        "soil_effect": {
+          "fixes_nitrogen": true
+        }
+      },
+      "economics": {
+        "yield_reference_low_t_ha": 1.5,
+        "yield_reference_high_t_ha": 1.6
+      },
+      "decision_support": {
+        "overall_data_confidence": "MEDIUM_HIGH"
+      }
+    },
+    "maize_rabi_bari_hybrid13": {
+      "identity": {
+        "crop_id": "maize_rabi_bari_hybrid13",
+        "crop_name_en": "Maize",
+        "crop_name_bn": "ভুট্টা",
+        "season_profile": "Rabi",
+        "crop_role": "cereal",
+        "reference_variety": "BARI Hybrid Maize-13",
+        "scientific_name": "Zea mays",
+        "family": "Poaceae"
+      },
+      "planting_window": {
+        "preferred_start_mmdd": "10-15",
+        "preferred_end_mmdd": "11-15",
+        "supported_late_end_mmdd": null,
+        "crosses_year": false
+      },
+      "duration": {
+        "variety": {
+          "min_days": 140,
+          "max_days": 145
+        }
+      },
+      "environment": {
+        "temperature": {
+          "optimal_min_c": 18.0,
+          "optimal_max_c": 33.0,
+          "tolerance_min_c": 10.0,
+          "tolerance_max_c": 47.0
+        },
+        "soil": {
+          "ph_optimal_min": 5.0,
+          "ph_optimal_max": 7.0,
+          "ph_tolerance_min": 4.5,
+          "ph_tolerance_max": 8.5
+        }
+      },
+      "water": {
+        "fao_crop_water_need_min_mm": 500.0,
+        "fao_crop_water_need_max_mm": 800.0,
+        "drought_sensitivity": "medium-high"
+      },
+      "rotation": {
+        "soil_effect": {
+          "fixes_nitrogen": false
+        }
+      },
+      "economics": {
+        "yield_reference_low_t_ha": 8.1,
+        "yield_reference_high_t_ha": 11.1
+      },
+      "decision_support": {
+        "overall_data_confidence": "VERY_HIGH"
+      }
+    },
+    "potato_bari_alu41": {
+      "identity": {
+        "crop_id": "potato_bari_alu41",
+        "crop_name_en": "Potato",
+        "crop_name_bn": "আলু",
+        "season_profile": "Rabi",
+        "crop_role": "tuber",
+        "reference_variety": "BARI Alu-41",
+        "scientific_name": "Solanum tuberosum",
+        "family": "Solanaceae"
+      },
+      "planting_window": {
+        "preferred_start_mmdd": "11-01",
+        "preferred_end_mmdd": "11-07",
+        "supported_late_end_mmdd": null,
+        "crosses_year": false
+      },
+      "duration": {
+        "variety": {
+          "min_days": 90,
+          "max_days": 95
+        }
+      },
+      "environment": {
+        "temperature": {
+          "optimal_min_c": 15.0,
+          "optimal_max_c": 25.0,
+          "tolerance_min_c": 7.0,
+          "tolerance_max_c": 30.0
+        },
+        "soil": {
+          "ph_optimal_min": 5.0,
+          "ph_optimal_max": 6.2,
+          "ph_tolerance_min": 4.2,
+          "ph_tolerance_max": 8.5
+        }
+      },
+      "water": {
+        "fao_crop_water_need_min_mm": 500.0,
+        "fao_crop_water_need_max_mm": 700.0,
+        "drought_sensitivity": "high"
+      },
+      "rotation": {
+        "soil_effect": {
+          "fixes_nitrogen": false
+        }
+      },
+      "economics": {
+        "yield_reference_low_t_ha": 38.0,
+        "yield_reference_high_t_ha": 54.0
+      },
+      "decision_support": {
+        "overall_data_confidence": "HIGH_MEDIUM"
+      }
+    }
+  }
+}

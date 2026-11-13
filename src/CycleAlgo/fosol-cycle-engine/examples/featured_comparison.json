@@ -1,0 +1,4736 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-11-12T17:33:28.033295+00:00",
+  "data_mode": "offline_api_cache",
+  "offline_fixture": false,
+  "request": {
+    "district_id": "rajshahi",
+    "start_date": "2026-11-06",
+    "water_access": "unknown",
+    "max_initial_wait_days": 180,
+    "max_waiting_days": null,
+    "analysis_start_year": 1991,
+    "analysis_end_year": 2025,
+    "first_crop_ids": [
+      "mustard_binasarisha9",
+      "wheat_bari_gom33"
+    ]
+  },
+  "environment": {
+    "source_id": "nasa_power_daily",
+    "provider": "NASA POWER",
+    "product": "NASA POWER Daily Point",
+    "version": "v2.10.3",
+    "observation_start": "1991-01-01",
+    "observation_end": "2025-12-31",
+    "retrieved_at": "2026-11-12T12:13:00+00:00",
+    "temporal_resolution": "daily",
+    "spatial_resolution": "0.5 x 0.625 degree lat/lon region (MERRA-2)",
+    "is_forecast": false,
+    "cache": {
+      "hit": true,
+      "stale": false,
+      "status": "fresh"
+    },
+    "data_mode": "offline_api_cache",
+    "live_fetch": false,
+    "offline_fixture": false,
+    "note": "Generated with allow_network=False from the local NASA POWER API cache. The 2000-2025 local POWER CSV used by scripts/demo_check.py is a separate offline fixture.",
+    "warnings": []
+  },
+  "temperature_source": {
+    "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv",
+    "url": "https://github.com/OpenCLIM/ecocrop/blob/main/EcoCrop_DB.csv",
+    "status": "data mirror, not independent agronomic validation",
+    "verified_species_entries": {
+      "mustard_binasarisha9": {
+        "eco_port_code": "548",
+        "scientific_name": "Brassica juncea"
+      },
+      "boro_brri_dhan28": {
+        "eco_port_code": "1574",
+        "scientific_name": "Oryza sativa"
+      },
+      "mung_bari_mung6_kharif1": {
+        "eco_port_code": "2150",
+        "scientific_name": "Vigna radiata"
+      },
+      "wheat_bari_gom33": {
+        "eco_port_code": "2114",
+        "scientific_name": "Triticum aestivum"
+      },
+      "aman_br11": {
+        "eco_port_code": "1574",
+        "scientific_name": "Oryza sativa"
+      }
+    },
+    "project_convention": "Median daily T2M over the realized growing period is compared with the published species optimum range; distance is 0 inside the range. This is a project-defined seasonal match, not a damage threshold.",
+    "not_confirmed": [
+      "Species-level EcoCrop ranges are not variety-specific Rajshahi validation.",
+      "A 0 °C distance does not establish absence of heat stress or overall suitability.",
+      "The mirror alone is not independent agronomic validation."
+    ]
+  },
+  "coverage_unit_check": {
+    "temperature_and_rain_independent": true,
+    "common_periods_computed_independently": true,
+    "nonidentical_availability_allowed_with_nonempty_intersection": true,
+    "unit_failure_scope": "A missing/incompatible unit disables only the affected temperature or rain view.",
+    "note": "Each view reports its own complete-season list, status, and unit status; missing data is not zero-filled."
+  },
+  "view_availability": {
+    "closest_temperature_match": {
+      "available": true,
+      "status": "ok",
+      "reason": null,
+      "common_seasons_count": 34
+    },
+    "least_dry_spell_exposure": {
+      "available": true,
+      "status": "ok",
+      "reason": null,
+      "common_seasons_count": 34
+    },
+    "least_heavy_rain_exposure": {
+      "available": true,
+      "status": "ok",
+      "reason": null,
+      "common_seasons_count": 34
+    }
+  },
+  "common_seasons_by_view": {
+    "closest_temperature_match": {
+      "years": [
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "count": 34,
+      "status": "ok",
+      "reason": null
+    },
+    "least_dry_spell_exposure": {
+      "years": [
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "count": 34,
+      "status": "ok",
+      "reason": null
+    },
+    "least_heavy_rain_exposure": {
+      "years": [
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "count": 34,
+      "status": "ok",
+      "reason": null
+    }
+  },
+  "comparison_controls": [
+    {
+      "id": "fastest_completion",
+      "label": "Fastest completion",
+      "enabled": true,
+      "reason": null
+    },
+    {
+      "id": "more_crop_diversity",
+      "label": "More crop diversity",
+      "enabled": true,
+      "reason": null
+    },
+    {
+      "id": "closest_temperature_match",
+      "label": "Closest temperature match",
+      "enabled": true,
+      "reason": null
+    },
+    {
+      "id": "least_dry_spell_exposure",
+      "label": "Least dry-spell exposure",
+      "enabled": true,
+      "reason": null
+    },
+    {
+      "id": "least_heavy_rain_exposure",
+      "label": "Least heavy-rain exposure",
+      "enabled": true,
+      "reason": null
+    },
+    {
+      "id": "lowest_total_cost",
+      "label": "Lowest total cost",
+      "enabled": false,
+      "reason": "Disabled: no sourced production-cost, price, cash-flow, or validated-yield evidence."
+    },
+    {
+      "id": "highest_net_return",
+      "label": "Highest net return",
+      "enabled": false,
+      "reason": "Disabled: economics are unavailable; reference yields are context only."
+    },
+    {
+      "id": "lowest_upfront_cash",
+      "label": "Lowest upfront cash",
+      "enabled": false,
+      "reason": "Disabled: no sourced cash-flow schedule or production costs."
+    },
+    {
+      "id": "least_irrigation_dependence",
+      "label": "Least irrigation dependence",
+      "enabled": false,
+      "reason": "Disabled: irrigation guidance is context only; no comparable irrigation-dependence evidence exists."
+    }
+  ],
+  "examples": [
+    {
+      "key": "baseline",
+      "label": "Mustard → Boro → T. Aman",
+      "sequence": [
+        "Mustard",
+        "Boro rice",
+        "T. Aman rice"
+      ],
+      "crop_ids": [
+        "mustard_binasarisha9",
+        "boro_brri_dhan28",
+        "aman_br11"
+      ],
+      "branch_id": "b_171e11bb1084",
+      "status": "conditional",
+      "documentation_status": "Locally documented existing Rajshahi sequence",
+      "role": "baseline",
+      "initial_wait_days": 0,
+      "completion": {
+        "status": "ok",
+        "completion_days": {
+          "min": 382,
+          "max": 405
+        },
+        "earliest_completion_date": "2027-12-02",
+        "latest_completion_date": "2027-12-16",
+        "ranking_value_days": 405,
+        "basis": "third_harvest_minus_first_planting",
+        "range_basis": "realized_corners",
+        "range_overlap_note": "Completion is a range; ranking uses the latest completion value, and overlapping branch ranges are not a definitive timing winner.",
+        "min_realization": {
+          "p1": "2026-11-15",
+          "h1": "2027-02-03",
+          "p2": "2027-02-03",
+          "h2": "2027-06-23",
+          "p3": "2027-07-10",
+          "h3": "2027-12-02",
+          "completion_days": 382
+        },
+        "max_realization": {
+          "p1": "2026-11-06",
+          "h1": "2027-01-25",
+          "p2": "2027-01-25",
+          "h2": "2027-06-14",
+          "p3": "2027-07-24",
+          "h3": "2027-12-16",
+          "completion_days": 405
+        },
+        "missing_evidence": [],
+        "enumeration_used": false
+      },
+      "crops": [
+        {
+          "position": 1,
+          "crop_id": "mustard_binasarisha9",
+          "name_en": "Mustard",
+          "name_bn": "সরিষা",
+          "family": "Brassicaceae",
+          "is_legume": false,
+          "reference_variety": "Binasarisha-9",
+          "establishment_method": "direct sowing",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2026-11-06",
+            "latest": "2026-11-15"
+          },
+          "harvest_range": {
+            "earliest": "2027-01-25",
+            "latest": "2027-02-07"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 80,
+            "max_days": 84,
+            "reference_verified": false,
+            "precision": "EXACT_VARIETY_RANGE",
+            "decision_source": "BINASARISHA9_VARIETY"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "caution",
+              "code": "PREFERRED_WINDOW_APPROXIMATE",
+              "reason": "The proposed date is inside the documented preferred window (2026-10-25 to 2026-11-15), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "unknown",
+              "code": "WATER_DEMAND_EVIDENCE_MISSING",
+              "reason": "The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+              "source_ids": []
+            },
+            "rotation": null,
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "crop_water_demand_evidence",
+            "preparation_time"
+          ]
+        },
+        {
+          "position": 2,
+          "crop_id": "boro_brri_dhan28",
+          "name_en": "Boro rice",
+          "name_bn": "বোরো ধান",
+          "family": "Poaceae",
+          "is_legume": false,
+          "reference_variety": "BRRI dhan28",
+          "establishment_method": "transplanting",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2027-01-25",
+            "latest": "2027-02-28"
+          },
+          "harvest_range": {
+            "earliest": "2027-06-14",
+            "latest": "2027-07-18"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 140,
+            "max_days": 140,
+            "reference_verified": false,
+            "precision": "APPROX_FROM_NW_FIELD_STUDY",
+            "decision_source": "VARIETY_APPROX_140_DAYS"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "caution",
+              "code": "LATE_WINDOW",
+              "reason": "The proposed date is after the preferred window but inside the documented supported-late window (to 2027-02-28). The preferred end is not a proven biological deadline; late planting carries documented risk.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "caution",
+              "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+              "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+              "source_ids": [
+                "https://www.fao.org/4/S2022E/s2022e07.htm",
+                "https://www.bamis.gov.bd/en/calendar/1/75/2/"
+              ]
+            },
+            "rotation": {
+              "status": "pass",
+              "code": "FAMILY_DIVERSIFIED",
+              "reason": "The family changes from Brassicaceae to Poaceae. Family diversification alone does not establish disease control, soil-carbon improvement, or nitrogen balance.",
+              "source_ids": [
+                "rotation_family_rule"
+              ]
+            },
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "preparation_time"
+          ]
+        },
+        {
+          "position": 3,
+          "crop_id": "aman_br11",
+          "name_en": "T. Aman rice",
+          "name_bn": "আমন ধান",
+          "family": "Poaceae",
+          "is_legume": false,
+          "reference_variety": "BR11",
+          "establishment_method": "transplanting",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2027-07-10",
+            "latest": "2027-07-24"
+          },
+          "harvest_range": {
+            "earliest": "2027-12-02",
+            "latest": "2027-12-16"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 145,
+            "max_days": 145,
+            "reference_verified": false,
+            "precision": "EXACT_REFERENCE_VALUE",
+            "decision_source": "BR11_VARIETY"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "pass",
+              "code": "PREFERRED_WINDOW",
+              "reason": "The proposed date is inside the documented preferred window (2027-07-10 to 2027-07-24). The window end is a sourced calendar boundary, not a proven biological deadline.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "caution",
+              "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+              "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+              "source_ids": [
+                "https://www.fao.org/4/S2022E/s2022e07.htm",
+                "https://www.bamis.gov.bd/en/calendar/1/74/2/"
+              ]
+            },
+            "rotation": {
+              "status": "caution",
+              "code": "SAME_FAMILY_REPEAT",
+              "reason": "Both the previous crop and this crop are in Poaceae. Same-family repetition is a diversity caution only; it is not rejected because no structured, sourced restriction exists.",
+              "source_ids": [
+                "rotation_family_rule"
+              ]
+            },
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "preparation_time"
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "from_position": 1,
+          "to_position": 2,
+          "from_crop_id": "mustard_binasarisha9",
+          "to_crop_id": "boro_brri_dhan28",
+          "next_planting_range": {
+            "earliest": "2027-01-25",
+            "latest": "2027-02-28"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "waiting_range": null,
+          "total_interval_range_days": null,
+          "harvest_to_next_window_days": {
+            "min": 0,
+            "max": 34
+          },
+          "window_only_gap": true,
+          "waiting_limit_status": "not_configured",
+          "latest_invalid": false
+        },
+        {
+          "from_position": 2,
+          "to_position": 3,
+          "from_crop_id": "boro_brri_dhan28",
+          "to_crop_id": "aman_br11",
+          "next_planting_range": {
+            "earliest": "2027-07-10",
+            "latest": "2027-07-24"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "waiting_range": null,
+          "total_interval_range_days": null,
+          "harvest_to_next_window_days": {
+            "min": 0,
+            "max": 40
+          },
+          "window_only_gap": true,
+          "waiting_limit_status": "not_configured",
+          "latest_invalid": false
+        }
+      ],
+      "diversity": {
+        "status": "ok",
+        "distinct_family_count": 2,
+        "families": [
+          "Brassicaceae",
+          "Poaceae"
+        ],
+        "family_repeat_count": 1,
+        "legume_present": false,
+        "legume_crop_ids": [],
+        "note": "Family count is a product convention, not a measured soil-health ranking."
+      },
+      "weather_views": {
+        "closest_temperature_match": {
+          "status": "ok",
+          "reason": null,
+          "metric": "temperature_distance_c",
+          "unit": "C",
+          "value": 0.0,
+          "schedule_values": {
+            "min_realization": 0.0,
+            "max_realization": 0.0
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": true,
+          "tie_count": 3,
+          "direction": "lower is closer to the general EcoCrop optimum range",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 17.915,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 55.0,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 5,
+                    "valid_days": 2754,
+                    "frequency": 0.0018155410312273058
+                  },
+                  "rainfall": {
+                    "median_total_mm": 10.89,
+                    "iqr_total_mm": 18.25,
+                    "min_total_mm": 0.31,
+                    "max_total_mm": 143.89000000000001
+                  }
+                },
+                {
+                  "crop_id": "boro_brri_dhan28",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 29.805,
+                    "within_optimum_fraction": 0.6176470588235294,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 27.5,
+                    "min_longest_run_days": 12,
+                    "max_longest_run_days": 77,
+                    "median_growing_days": 141.0
+                  },
+                  "heavy_rain": {
+                    "days": 109,
+                    "valid_days": 4803,
+                    "frequency": 0.022694149489902143
+                  },
+                  "rainfall": {
+                    "median_total_mm": 408.14,
+                    "iqr_total_mm": 215.64749999999998,
+                    "min_total_mm": 92.92999999999999,
+                    "max_total_mm": 856.26
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.435000000000002,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 58.5,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 2754,
+                    "frequency": 0.002178649237472767
+                  },
+                  "rainfall": {
+                    "median_total_mm": 11.02,
+                    "iqr_total_mm": 24.195,
+                    "min_total_mm": 0.59,
+                    "max_total_mm": 143.13
+                  }
+                },
+                {
+                  "crop_id": "boro_brri_dhan28",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 29.275,
+                    "within_optimum_fraction": 0.7058823529411765,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.0,
+                    "min_longest_run_days": 12,
+                    "max_longest_run_days": 77,
+                    "median_growing_days": 141.0
+                  },
+                  "heavy_rain": {
+                    "days": 82,
+                    "valid_days": 4803,
+                    "frequency": 0.01707266291900895
+                  },
+                  "rainfall": {
+                    "median_total_mm": 315.95,
+                    "iqr_total_mm": 175.84000000000003,
+                    "min_total_mm": 71.72,
+                    "max_total_mm": 728.37
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "least_dry_spell_exposure": {
+          "status": "ok",
+          "reason": null,
+          "metric": "dry_spell_days",
+          "unit": "days",
+          "value": 42.833333333333336,
+          "schedule_values": {
+            "min_realization": 37.333333333333336,
+            "max_realization": 42.833333333333336
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": false,
+          "tie_count": 1,
+          "direction": "lower is less dry-spell exposure in this view",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 17.915,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 55.0,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 5,
+                    "valid_days": 2754,
+                    "frequency": 0.0018155410312273058
+                  },
+                  "rainfall": {
+                    "median_total_mm": 10.89,
+                    "iqr_total_mm": 18.25,
+                    "min_total_mm": 0.31,
+                    "max_total_mm": 143.89000000000001
+                  }
+                },
+                {
+                  "crop_id": "boro_brri_dhan28",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 29.805,
+                    "within_optimum_fraction": 0.6176470588235294,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 27.5,
+                    "min_longest_run_days": 12,
+                    "max_longest_run_days": 77,
+                    "median_growing_days": 141.0
+                  },
+                  "heavy_rain": {
+                    "days": 109,
+                    "valid_days": 4803,
+                    "frequency": 0.022694149489902143
+                  },
+                  "rainfall": {
+                    "median_total_mm": 408.14,
+                    "iqr_total_mm": 215.64749999999998,
+                    "min_total_mm": 92.92999999999999,
+                    "max_total_mm": 856.26
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.435000000000002,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 58.5,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 2754,
+                    "frequency": 0.002178649237472767
+                  },
+                  "rainfall": {
+                    "median_total_mm": 11.02,
+                    "iqr_total_mm": 24.195,
+                    "min_total_mm": 0.59,
+                    "max_total_mm": 143.13
+                  }
+                },
+                {
+                  "crop_id": "boro_brri_dhan28",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 29.275,
+                    "within_optimum_fraction": 0.7058823529411765,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.0,
+                    "min_longest_run_days": 12,
+                    "max_longest_run_days": 77,
+                    "median_growing_days": 141.0
+                  },
+                  "heavy_rain": {
+                    "days": 82,
+                    "valid_days": 4803,
+                    "frequency": 0.01707266291900895
+                  },
+                  "rainfall": {
+                    "median_total_mm": 315.95,
+                    "iqr_total_mm": 175.84000000000003,
+                    "min_total_mm": 71.72,
+                    "max_total_mm": 728.37
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "least_heavy_rain_exposure": {
+          "status": "ok",
+          "reason": null,
+          "metric": "heavy_rain_frequency",
+          "unit": "heavy days per valid growing day",
+          "value": 0.026837637909406836,
+          "schedule_values": {
+            "min_realization": 0.026837637909406836,
+            "max_realization": 0.022264538916517276
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": false,
+          "tie_count": 1,
+          "direction": "lower is less heavy-rain exposure in this view",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 17.915,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 55.0,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 5,
+                    "valid_days": 2754,
+                    "frequency": 0.0018155410312273058
+                  },
+                  "rainfall": {
+                    "median_total_mm": 10.89,
+                    "iqr_total_mm": 18.25,
+                    "min_total_mm": 0.31,
+                    "max_total_mm": 143.89000000000001
+                  }
+                },
+                {
+                  "crop_id": "boro_brri_dhan28",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 29.805,
+                    "within_optimum_fraction": 0.6176470588235294,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 27.5,
+                    "min_longest_run_days": 12,
+                    "max_longest_run_days": 77,
+                    "median_growing_days": 141.0
+                  },
+                  "heavy_rain": {
+                    "days": 109,
+                    "valid_days": 4803,
+                    "frequency": 0.022694149489902143
+                  },
+                  "rainfall": {
+                    "median_total_mm": 408.14,
+                    "iqr_total_mm": 215.64749999999998,
+                    "min_total_mm": 92.92999999999999,
+                    "max_total_mm": 856.26
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.435000000000002,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 58.5,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 2754,
+                    "frequency": 0.002178649237472767
+                  },
+                  "rainfall": {
+                    "median_total_mm": 11.02,
+                    "iqr_total_mm": 24.195,
+                    "min_total_mm": 0.59,
+                    "max_total_mm": 143.13
+                  }
+                },
+                {
+                  "crop_id": "boro_brri_dhan28",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 29.275,
+                    "within_optimum_fraction": 0.7058823529411765,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.0,
+                    "min_longest_run_days": 12,
+                    "max_longest_run_days": 77,
+                    "median_growing_days": 141.0
+                  },
+                  "heavy_rain": {
+                    "days": 82,
+                    "valid_days": 4803,
+                    "frequency": 0.01707266291900895
+                  },
+                  "rainfall": {
+                    "median_total_mm": 315.95,
+                    "iqr_total_mm": 175.84000000000003,
+                    "min_total_mm": 71.72,
+                    "max_total_mm": 728.37
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "prerequisites": {
+        "soil": "unknown; no local district pH, texture, drainage, or salinity measurement was supplied.",
+        "preparation": "unknown; preparation ranges are null, so field-ready waiting is not calculated.",
+        "drainage": "unknown; no field drainage or waterlogging evidence was supplied.",
+        "irrigation": {
+          "status": "context_only",
+          "ranking_status": "unranked",
+          "per_crop": [
+            {
+              "crop_id": "mustard_binasarisha9",
+              "irrigation_guidance": "Use BINA/BAMIS local guidance; do not substitute FAO bean/other-oilseed water values as mustard-specific values.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            },
+            {
+              "crop_id": "boro_brri_dhan28",
+              "irrigation_guidance": "High irrigation dependence; NW study notes March-April groundwater limitations can delay irrigation and reduce yield.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            },
+            {
+              "crop_id": "aman_br11",
+              "irrigation_guidance": "Rainfed T. Aman may still need supplemental irrigation when rainfall is delayed/insufficient; BR11 study found later transplanting increased reproductive-stage irrigation demand.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            }
+          ],
+          "total": null,
+          "reason": "Irrigation guidance and FAO/phase values are qualitative context only; they are not comparable across crops or scenarios, so no total or dependence score is calculated.",
+          "missing_evidence": [
+            "comparable_irrigation_evidence"
+          ]
+        },
+        "labor": {
+          "status": "unavailable",
+          "value": null,
+          "unit": null,
+          "missing_evidence": [
+            "labor_evidence"
+          ],
+          "reason": "No sourced labor evidence; labor requirements and peak periods are unavailable."
+        },
+        "equipment": {
+          "status": "unavailable",
+          "value": null,
+          "unit": null,
+          "missing_evidence": [
+            "equipment_evidence"
+          ],
+          "reason": "No sourced equipment evidence; equipment and special-management prerequisites are unavailable."
+        },
+        "cash_cost": {
+          "status": "unavailable",
+          "value_bdt_per_ha": null,
+          "unit": "BDT/ha",
+          "missing_evidence": [
+            "production_cost_evidence"
+          ],
+          "reason": "No sourced production-cost evidence; reference yields are not used to estimate cash cost."
+        },
+        "market": {
+          "status": "unavailable",
+          "reason": "No farm-gate price value; market price mode is dynamic external.",
+          "price_evidence": {
+            "status": "unavailable",
+            "market_price_mode": "DYNAMIC_EXTERNAL",
+            "source_barc_zoning": null,
+            "price_value": null,
+            "unit": "BDT/t",
+            "per_crop": [
+              {
+                "crop_id": "mustard_binasarisha9",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              },
+              {
+                "crop_id": "boro_brri_dhan28",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              },
+              {
+                "crop_id": "aman_br11",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              }
+            ],
+            "missing_evidence": [
+              "farm_gate_price_evidence"
+            ],
+            "reason": "No sourced farm-gate price value; market price mode is dynamic external."
+          }
+        },
+        "economics": {
+          "status": "unavailable",
+          "reason": "Economic estimate unavailable.",
+          "missing_evidence": [
+            "production_cost_evidence",
+            "farm_gate_price_evidence",
+            "validated_typical_yield_or_attainable_basis",
+            "cash_flow_schedule"
+          ],
+          "yield_reference_context": [
+            {
+              "crop_id": "mustard_binasarisha9",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "BINA: average 1.60 t/ha; maximum 2.0 t/ha.",
+              "status": "static_reference_not_used"
+            },
+            {
+              "crop_id": "boro_brri_dhan28",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "PLOS NW study cites attainable yield about 6.0 t/ha for BRRI dhan28.",
+              "status": "static_reference_not_used"
+            },
+            {
+              "crop_id": "aman_br11",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "5.0 t/ha threshold used in Rajshahi study; BR11 national average 5.5 t/ha.",
+              "status": "static_reference_not_used"
+            }
+          ]
+        }
+      },
+      "unit_validation": {
+        "T2M": {
+          "status": "ok",
+          "units": "C",
+          "reason": null
+        },
+        "PRECTOTCORR": {
+          "status": "ok",
+          "units": "mm/day",
+          "reason": null
+        }
+      },
+      "temperature_provenance": {
+        "mustard_binasarisha9": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "548",
+          "scientific_name": "Brassica juncea",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        },
+        "boro_brri_dhan28": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "1574",
+          "scientific_name": "Oryza sativa",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        },
+        "aman_br11": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "1574",
+          "scientific_name": "Oryza sativa",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        }
+      },
+      "cautions": [
+        "The proposed date is inside the documented preferred window (2026-10-25 to 2026-11-15), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+        "The proposed date is after the preferred window but inside the documented supported-late window (to 2027-02-28). The preferred end is not a proven biological deadline; late planting carries documented risk.",
+        "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+        "This crop is transplanted. Seedling/nursery age is recorded but not added to variety duration because the duration reference stage is not confirmed by the crop data.",
+        "Both the previous crop and this crop are in Poaceae. Same-family repetition is a diversity caution only; it is not rejected because no structured, sourced restriction exists."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "crop_water_demand_evidence",
+        "preparation_time",
+        "max_waiting_days_policy",
+        "current_season_climate_exposure"
+      ],
+      "what_changes_from_baseline": {
+        "summary": "Reference sequence; no change from itself.",
+        "removed_crop_ids": [],
+        "added_crop_ids": [],
+        "family_count_delta": 0,
+        "legume_change": "unchanged",
+        "initial_wait_delta_days": 0,
+        "completion_max_delta_days": 0
+      },
+      "why_explore": "Reference the locally documented pattern, not a universal practice. The BARC trial summary reports this pattern had the highest water use among the compared patterns, which is a reason to compare alternatives.",
+      "must_confirm": [
+        "Whether this regional pattern is actually used on the field and with which varieties.",
+        "Field soil pH, texture, drainage, and salinity; local preparation time; irrigation source and schedule.",
+        "The engine's reference varieties (Binasarisha-9, BRRI dhan28, BR11) are not the survey's varieties."
+      ],
+      "sources": [
+        {
+          "label": "Rashid et al. (2018), Cropping Systems and Land Use Pattern in Rajshahi Region",
+          "url": "https://www.banglajol.info/index.php/BRJ/article/view/38209",
+          "supports": "A 2014-15 survey of Rajshahi region reports Mustard-Boro-T. Aman as the 4th dominant cropping pattern (Bangladesh Rice Journal 21(2):237-254).",
+          "limitations": "Region-level survey, not a field prescription or variety trial. The engine's reference varieties are not necessarily the surveyed varieties."
+        },
+        {
+          "label": "BARC ARMIS research summary 38215",
+          "url": "https://apps.barc.gov.bd/armis/home/research/detail/38215",
+          "supports": "The 2014-16 water-management trial summary includes Mustard-Boro-T. Aman and reports it had the highest water use among the compared patterns.",
+          "limitations": "Multi-location trial, not a Rajshahi-only test of this sequence; it is not yield, income, or irrigation-demand validation for this field."
+        }
+      ],
+      "what_nasa_shows": {
+        "temperature": "0.0 °C median distance; 0 means the seasonal median is inside the general EcoCrop optimum range. Ties are shown as exact ties; 0 is not proof of no heat stress. The three featured values are an exact tie.",
+        "dry_spell": "42.83 days (higher-exposure schedule; one separate view).",
+        "heavy_rain": "0.02684 heavy days per valid growing day (higher-exposure schedule; one separate view).",
+        "rainfall": "Per-crop period medians and IQRs are in weather_views. They are not summed across unequal crop periods and do not imply irrigation demand."
+      },
+      "does_not_establish": "Weather exposure is not overall agricultural suitability. These results do not establish yield, income, crop damage, field flooding, irrigation demand, or a repeatable rotation; third-to-first compatibility is not checked."
+    },
+    {
+      "key": "mung",
+      "label": "Mustard → Mung → T. Aman",
+      "sequence": [
+        "Mustard",
+        "Mung bean",
+        "T. Aman rice"
+      ],
+      "crop_ids": [
+        "mustard_binasarisha9",
+        "mung_bari_mung6_kharif1",
+        "aman_br11"
+      ],
+      "branch_id": "b_4df61ece4ab5",
+      "status": "conditional",
+      "documentation_status": "Documented pattern outside Rajshahi; exploratory here",
+      "role": "alternative",
+      "initial_wait_days": 0,
+      "completion": {
+        "status": "ok",
+        "completion_days": {
+          "min": 382,
+          "max": 405
+        },
+        "earliest_completion_date": "2027-12-02",
+        "latest_completion_date": "2027-12-16",
+        "ranking_value_days": 405,
+        "basis": "third_harvest_minus_first_planting",
+        "range_basis": "realized_corners",
+        "range_overlap_note": "Completion is a range; ranking uses the latest completion value, and overlapping branch ranges are not a definitive timing winner.",
+        "min_realization": {
+          "p1": "2026-11-15",
+          "h1": "2027-02-03",
+          "p2": "2027-03-15",
+          "h2": "2027-05-09",
+          "p3": "2027-07-10",
+          "h3": "2027-12-02",
+          "completion_days": 382
+        },
+        "max_realization": {
+          "p1": "2026-11-06",
+          "h1": "2027-01-25",
+          "p2": "2027-03-15",
+          "h2": "2027-05-09",
+          "p3": "2027-07-24",
+          "h3": "2027-12-16",
+          "completion_days": 405
+        },
+        "missing_evidence": [],
+        "enumeration_used": false
+      },
+      "crops": [
+        {
+          "position": 1,
+          "crop_id": "mustard_binasarisha9",
+          "name_en": "Mustard",
+          "name_bn": "সরিষা",
+          "family": "Brassicaceae",
+          "is_legume": false,
+          "reference_variety": "Binasarisha-9",
+          "establishment_method": "direct sowing",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2026-11-06",
+            "latest": "2026-11-15"
+          },
+          "harvest_range": {
+            "earliest": "2027-01-25",
+            "latest": "2027-02-07"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 80,
+            "max_days": 84,
+            "reference_verified": false,
+            "precision": "EXACT_VARIETY_RANGE",
+            "decision_source": "BINASARISHA9_VARIETY"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "caution",
+              "code": "PREFERRED_WINDOW_APPROXIMATE",
+              "reason": "The proposed date is inside the documented preferred window (2026-10-25 to 2026-11-15), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "unknown",
+              "code": "WATER_DEMAND_EVIDENCE_MISSING",
+              "reason": "The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+              "source_ids": []
+            },
+            "rotation": null,
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "crop_water_demand_evidence",
+            "preparation_time"
+          ]
+        },
+        {
+          "position": 2,
+          "crop_id": "mung_bari_mung6_kharif1",
+          "name_en": "Mung bean",
+          "name_bn": "মুগ",
+          "family": "Fabaceae",
+          "is_legume": true,
+          "reference_variety": "BARI Mung-6",
+          "establishment_method": "direct sowing",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2027-03-15",
+            "latest": "2027-03-25"
+          },
+          "harvest_range": {
+            "earliest": "2027-05-09",
+            "latest": "2027-05-22"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 55,
+            "max_days": 58,
+            "reference_verified": false,
+            "precision": "PEER_REVIEWED_VARIETY_RANGE",
+            "decision_source": "BARI_MUNG6_VARIETY_WITH_LOCAL_CALENDAR_CAVEAT"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "unknown",
+              "code": "WINDOW_GEOGRAPHY_UNKNOWN",
+              "reason": "The window is not Rajshahi-exact (planting_window_type=MODELLED_OPTIMUM_BANGLADESH_NOT_RAJSHI_EXACT, date_precision=DAY_BUT_LOCATION_TRANSFERABILITY_MEDIUM); it cannot support a calendar pass for this district even when the date falls inside the encoded dates.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "unknown",
+              "code": "WATER_DEMAND_EVIDENCE_MISSING",
+              "reason": "The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+              "source_ids": []
+            },
+            "rotation": {
+              "status": "pass",
+              "code": "FAMILY_DIVERSIFIED",
+              "reason": "The family changes from Brassicaceae to Fabaceae. Family diversification alone does not establish disease control, soil-carbon improvement, or nitrogen balance.",
+              "source_ids": [
+                "rotation_family_rule"
+              ]
+            },
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "crop_water_demand_evidence",
+            "preparation_time"
+          ]
+        },
+        {
+          "position": 3,
+          "crop_id": "aman_br11",
+          "name_en": "T. Aman rice",
+          "name_bn": "আমন ধান",
+          "family": "Poaceae",
+          "is_legume": false,
+          "reference_variety": "BR11",
+          "establishment_method": "transplanting",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2027-07-10",
+            "latest": "2027-07-24"
+          },
+          "harvest_range": {
+            "earliest": "2027-12-02",
+            "latest": "2027-12-16"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 145,
+            "max_days": 145,
+            "reference_verified": false,
+            "precision": "EXACT_REFERENCE_VALUE",
+            "decision_source": "BR11_VARIETY"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "pass",
+              "code": "PREFERRED_WINDOW",
+              "reason": "The proposed date is inside the documented preferred window (2027-07-10 to 2027-07-24). The window end is a sourced calendar boundary, not a proven biological deadline.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "caution",
+              "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+              "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+              "source_ids": [
+                "https://www.fao.org/4/S2022E/s2022e07.htm",
+                "https://www.bamis.gov.bd/en/calendar/1/74/2/"
+              ]
+            },
+            "rotation": {
+              "status": "pass",
+              "code": "FAMILY_DIVERSIFIED",
+              "reason": "The family changes from Fabaceae to Poaceae. Family diversification alone does not establish disease control, soil-carbon improvement, or nitrogen balance.",
+              "source_ids": [
+                "rotation_family_rule"
+              ]
+            },
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "preparation_time"
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "from_position": 1,
+          "to_position": 2,
+          "from_crop_id": "mustard_binasarisha9",
+          "to_crop_id": "mung_bari_mung6_kharif1",
+          "next_planting_range": {
+            "earliest": "2027-03-15",
+            "latest": "2027-03-25"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "waiting_range": null,
+          "total_interval_range_days": null,
+          "harvest_to_next_window_days": {
+            "min": 36,
+            "max": 59
+          },
+          "window_only_gap": true,
+          "waiting_limit_status": "not_configured",
+          "latest_invalid": false
+        },
+        {
+          "from_position": 2,
+          "to_position": 3,
+          "from_crop_id": "mung_bari_mung6_kharif1",
+          "to_crop_id": "aman_br11",
+          "next_planting_range": {
+            "earliest": "2027-07-10",
+            "latest": "2027-07-24"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "waiting_range": null,
+          "total_interval_range_days": null,
+          "harvest_to_next_window_days": {
+            "min": 49,
+            "max": 76
+          },
+          "window_only_gap": true,
+          "waiting_limit_status": "not_configured",
+          "latest_invalid": false
+        }
+      ],
+      "diversity": {
+        "status": "ok",
+        "distinct_family_count": 3,
+        "families": [
+          "Brassicaceae",
+          "Fabaceae",
+          "Poaceae"
+        ],
+        "family_repeat_count": 0,
+        "legume_present": true,
+        "legume_crop_ids": [
+          "mung_bari_mung6_kharif1"
+        ],
+        "note": "Family count is a product convention, not a measured soil-health ranking."
+      },
+      "weather_views": {
+        "closest_temperature_match": {
+          "status": "ok",
+          "reason": null,
+          "metric": "temperature_distance_c",
+          "unit": "C",
+          "value": 0.0,
+          "schedule_values": {
+            "min_realization": 0.0,
+            "max_realization": 0.0
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": true,
+          "tie_count": 3,
+          "direction": "lower is closer to the general EcoCrop optimum range",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 17.915,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 55.0,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 5,
+                    "valid_days": 2754,
+                    "frequency": 0.0018155410312273058
+                  },
+                  "rainfall": {
+                    "median_total_mm": 10.89,
+                    "iqr_total_mm": 18.25,
+                    "min_total_mm": 0.31,
+                    "max_total_mm": 143.89000000000001
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.435000000000002,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 58.5,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 2754,
+                    "frequency": 0.002178649237472767
+                  },
+                  "rainfall": {
+                    "median_total_mm": 11.02,
+                    "iqr_total_mm": 24.195,
+                    "min_total_mm": 0.59,
+                    "max_total_mm": 143.13
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "least_dry_spell_exposure": {
+          "status": "ok",
+          "reason": null,
+          "metric": "dry_spell_days",
+          "unit": "days",
+          "value": 38.5,
+          "schedule_values": {
+            "min_realization": 33.5,
+            "max_realization": 38.5
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": false,
+          "tie_count": 1,
+          "direction": "lower is less dry-spell exposure in this view",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 17.915,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 55.0,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 5,
+                    "valid_days": 2754,
+                    "frequency": 0.0018155410312273058
+                  },
+                  "rainfall": {
+                    "median_total_mm": 10.89,
+                    "iqr_total_mm": 18.25,
+                    "min_total_mm": 0.31,
+                    "max_total_mm": 143.89000000000001
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.435000000000002,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 58.5,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 2754,
+                    "frequency": 0.002178649237472767
+                  },
+                  "rainfall": {
+                    "median_total_mm": 11.02,
+                    "iqr_total_mm": 24.195,
+                    "min_total_mm": 0.59,
+                    "max_total_mm": 143.13
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "least_heavy_rain_exposure": {
+          "status": "ok",
+          "reason": null,
+          "metric": "heavy_rain_frequency",
+          "unit": "heavy days per valid growing day",
+          "value": 0.0236496721130529,
+          "schedule_values": {
+            "min_realization": 0.0236496721130529,
+            "max_realization": 0.020950401977127737
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": false,
+          "tie_count": 1,
+          "direction": "lower is less heavy-rain exposure in this view",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 17.915,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 55.0,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 5,
+                    "valid_days": 2754,
+                    "frequency": 0.0018155410312273058
+                  },
+                  "rainfall": {
+                    "median_total_mm": 10.89,
+                    "iqr_total_mm": 18.25,
+                    "min_total_mm": 0.31,
+                    "max_total_mm": 143.89000000000001
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "mustard_binasarisha9",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.435000000000002,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 28.0
+                    },
+                    "tolerance_range": {
+                      "min": 7.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 58.5,
+                    "min_longest_run_days": 19,
+                    "max_longest_run_days": 81,
+                    "median_growing_days": 81.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 2754,
+                    "frequency": 0.002178649237472767
+                  },
+                  "rainfall": {
+                    "median_total_mm": 11.02,
+                    "iqr_total_mm": 24.195,
+                    "min_total_mm": 0.59,
+                    "max_total_mm": 143.13
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "prerequisites": {
+        "soil": "unknown; no local district pH, texture, drainage, or salinity measurement was supplied.",
+        "preparation": "unknown; preparation ranges are null, so field-ready waiting is not calculated.",
+        "drainage": "unknown; no field drainage or waterlogging evidence was supplied.",
+        "irrigation": {
+          "status": "context_only",
+          "ranking_status": "unranked",
+          "per_crop": [
+            {
+              "crop_id": "mustard_binasarisha9",
+              "irrigation_guidance": "Use BINA/BAMIS local guidance; do not substitute FAO bean/other-oilseed water values as mustard-specific values.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            },
+            {
+              "crop_id": "mung_bari_mung6_kharif1",
+              "irrigation_guidance": "No exact mung-specific FAO seasonal water range inserted; use local/BARI guidance.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            },
+            {
+              "crop_id": "aman_br11",
+              "irrigation_guidance": "Rainfed T. Aman may still need supplemental irrigation when rainfall is delayed/insufficient; BR11 study found later transplanting increased reproductive-stage irrigation demand.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            }
+          ],
+          "total": null,
+          "reason": "Irrigation guidance and FAO/phase values are qualitative context only; they are not comparable across crops or scenarios, so no total or dependence score is calculated.",
+          "missing_evidence": [
+            "comparable_irrigation_evidence"
+          ]
+        },
+        "labor": {
+          "status": "unavailable",
+          "value": null,
+          "unit": null,
+          "missing_evidence": [
+            "labor_evidence"
+          ],
+          "reason": "No sourced labor evidence; labor requirements and peak periods are unavailable."
+        },
+        "equipment": {
+          "status": "unavailable",
+          "value": null,
+          "unit": null,
+          "missing_evidence": [
+            "equipment_evidence"
+          ],
+          "reason": "No sourced equipment evidence; equipment and special-management prerequisites are unavailable."
+        },
+        "cash_cost": {
+          "status": "unavailable",
+          "value_bdt_per_ha": null,
+          "unit": "BDT/ha",
+          "missing_evidence": [
+            "production_cost_evidence"
+          ],
+          "reason": "No sourced production-cost evidence; reference yields are not used to estimate cash cost."
+        },
+        "market": {
+          "status": "unavailable",
+          "reason": "No farm-gate price value; market price mode is dynamic external.",
+          "price_evidence": {
+            "status": "unavailable",
+            "market_price_mode": "DYNAMIC_EXTERNAL",
+            "source_barc_zoning": null,
+            "price_value": null,
+            "unit": "BDT/t",
+            "per_crop": [
+              {
+                "crop_id": "mustard_binasarisha9",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              },
+              {
+                "crop_id": "mung_bari_mung6_kharif1",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              },
+              {
+                "crop_id": "aman_br11",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              }
+            ],
+            "missing_evidence": [
+              "farm_gate_price_evidence"
+            ],
+            "reason": "No sourced farm-gate price value; market price mode is dynamic external."
+          }
+        },
+        "economics": {
+          "status": "unavailable",
+          "reason": "Economic estimate unavailable.",
+          "missing_evidence": [
+            "production_cost_evidence",
+            "farm_gate_price_evidence",
+            "validated_typical_yield_or_attainable_basis",
+            "cash_flow_schedule"
+          ],
+          "yield_reference_context": [
+            {
+              "crop_id": "mustard_binasarisha9",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "BINA: average 1.60 t/ha; maximum 2.0 t/ha.",
+              "status": "static_reference_not_used"
+            },
+            {
+              "crop_id": "mung_bari_mung6_kharif1",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "Peer-reviewed variety table citing BARI (2017): BARI Mung-6 1.5-1.6 t/ha.",
+              "status": "static_reference_not_used"
+            },
+            {
+              "crop_id": "aman_br11",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "5.0 t/ha threshold used in Rajshahi study; BR11 national average 5.5 t/ha.",
+              "status": "static_reference_not_used"
+            }
+          ]
+        }
+      },
+      "unit_validation": {
+        "T2M": {
+          "status": "ok",
+          "units": "C",
+          "reason": null
+        },
+        "PRECTOTCORR": {
+          "status": "ok",
+          "units": "mm/day",
+          "reason": null
+        }
+      },
+      "temperature_provenance": {
+        "mustard_binasarisha9": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "548",
+          "scientific_name": "Brassica juncea",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        },
+        "mung_bari_mung6_kharif1": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "2150",
+          "scientific_name": "Vigna radiata",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        },
+        "aman_br11": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "1574",
+          "scientific_name": "Oryza sativa",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        }
+      },
+      "cautions": [
+        "The proposed date is inside the documented preferred window (2026-10-25 to 2026-11-15), but the boundary is approximate (WEEK_APPROX), not exact. The window end is not a proven biological deadline.",
+        "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+        "This crop is transplanted. Seedling/nursery age is recorded but not added to variety duration because the duration reference stage is not confirmed by the crop data."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "crop_water_demand_evidence",
+        "preparation_time",
+        "calendar_evidence",
+        "max_waiting_days_policy",
+        "current_season_climate_exposure"
+      ],
+      "what_changes_from_baseline": {
+        "summary": "Replaces Boro with mung; adds Fabaceae and a legume; completion range is unchanged in this run.",
+        "removed_crop_ids": [
+          "boro_brri_dhan28"
+        ],
+        "added_crop_ids": [
+          "mung_bari_mung6_kharif1"
+        ],
+        "family_count_delta": 1,
+        "legume_change": "absent_to_present",
+        "initial_wait_delta_days": 0,
+        "completion_max_delta_days": 0
+      },
+      "why_explore": "BARC's saline-prone-area trial reports the lowest total water use for Mustard-Mung-T. Aman and lists the Khulna version with BARI Sarisha 14, BARI Mung 6, and BINAdhan 7. It adds a legume and removes Boro, but it is not a Rajshahi-specific rotation.",
+      "must_confirm": [
+        "Whether the Khulna mung calendar transfers to this Rajshahi field; the crop data flags the exact mung window as medium-transferability.",
+        "Field soil pH, texture, drainage, and salinity; local preparation time; irrigation source and schedule.",
+        "Mung variety, market access, and whether the short window is practical after mustard.",
+        "The BARC water result is from a saline-prone-area trial, not this field or Rajshahi."
+      ],
+      "sources": [
+        {
+          "label": "BARC ARMIS research summary 38215",
+          "url": "https://apps.barc.gov.bd/armis/home/research/detail/38215",
+          "supports": "Reports lowest total water use for Mustard-Mung-T. Aman and lists the Khulna pattern: BARI Sarisha 14, BARI Mung 6, BINAdhan 7.",
+          "limitations": "The low-water result is from a saline-prone-area trial, not a Rajshahi trial; the listed varieties differ from the engine's references."
+        },
+        {
+          "label": "BAMIS Rajshahi mung calendar",
+          "url": "https://www.bamis.gov.bd/en/calendar/1/86/2/",
+          "supports": "Local calendar source used by the crop dataset for mung.",
+          "limitations": "The crop dataset says the exact mung window has medium transferability; it is not Rajshahi-exact evidence."
+        },
+        {
+          "label": "PLOS Climate mung study",
+          "url": "https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000180",
+          "supports": "Planting-window reference cited by the crop dataset.",
+          "limitations": "Study geography and variety must be checked against this field; it is not a local validation."
+        }
+      ],
+      "what_nasa_shows": {
+        "temperature": "0.0 °C median distance; 0 means the seasonal median is inside the general EcoCrop optimum range. Ties are shown as exact ties; 0 is not proof of no heat stress. The three featured values are an exact tie.",
+        "dry_spell": "38.5 days (higher-exposure schedule; one separate view).",
+        "heavy_rain": "0.02365 heavy days per valid growing day (higher-exposure schedule; one separate view).",
+        "rainfall": "Per-crop period medians and IQRs are in weather_views. They are not summed across unequal crop periods and do not imply irrigation demand."
+      },
+      "does_not_establish": "Weather exposure is not overall agricultural suitability. These results do not establish yield, income, crop damage, field flooding, irrigation demand, or a repeatable rotation; third-to-first compatibility is not checked."
+    },
+    {
+      "key": "wheat",
+      "label": "Wheat → Mung → T. Aman",
+      "sequence": [
+        "Wheat",
+        "Mung bean",
+        "T. Aman rice"
+      ],
+      "crop_ids": [
+        "wheat_bari_gom33",
+        "mung_bari_mung6_kharif1",
+        "aman_br11"
+      ],
+      "branch_id": "b_eb7b6f38b3c0",
+      "status": "conditional",
+      "documentation_status": "Documented Kushtia sequence explored under Rajshahi weather; local applicability unverified",
+      "role": "alternative",
+      "initial_wait_days": 9,
+      "completion": {
+        "status": "ok",
+        "completion_days": {
+          "min": 367,
+          "max": 396
+        },
+        "earliest_completion_date": "2027-12-02",
+        "latest_completion_date": "2027-12-16",
+        "ranking_value_days": 396,
+        "basis": "third_harvest_minus_first_planting",
+        "range_basis": "realized_corners",
+        "range_overlap_note": "Completion is a range; ranking uses the latest completion value, and overlapping branch ranges are not a definitive timing winner.",
+        "min_realization": {
+          "p1": "2026-11-30",
+          "h1": "2027-03-18",
+          "p2": "2027-03-18",
+          "h2": "2027-05-12",
+          "p3": "2027-07-10",
+          "h3": "2027-12-02",
+          "completion_days": 367
+        },
+        "max_realization": {
+          "p1": "2026-11-15",
+          "h1": "2027-03-03",
+          "p2": "2027-03-15",
+          "h2": "2027-05-09",
+          "p3": "2027-07-24",
+          "h3": "2027-12-16",
+          "completion_days": 396
+        },
+        "missing_evidence": [],
+        "enumeration_used": false
+      },
+      "crops": [
+        {
+          "position": 1,
+          "crop_id": "wheat_bari_gom33",
+          "name_en": "Wheat",
+          "name_bn": "গম",
+          "family": "Poaceae",
+          "is_legume": false,
+          "reference_variety": "BARI Gom-33",
+          "establishment_method": "direct sowing",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2026-11-15",
+            "latest": "2026-11-30"
+          },
+          "harvest_range": {
+            "earliest": "2027-03-03",
+            "latest": "2027-03-22"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 108,
+            "max_days": 112,
+            "reference_verified": false,
+            "precision": "EXACT_VARIETY_RANGE",
+            "decision_source": "BARI_GOM33_VARIETY"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "caution",
+              "code": "FUTURE_WINDOW_WITHIN_LIMIT",
+              "reason": "The next documented preferred window starts 2026-11-15 (9 days after the proposed date), within the configured maximum waiting limit of 180 days. This is a future option, not a plant-now option.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "caution",
+              "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+              "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+              "source_ids": [
+                "https://www.fao.org/4/S2022E/s2022e07.htm",
+                "https://www.bamis.gov.bd/en/calendar/1/9/2/"
+              ]
+            },
+            "rotation": null,
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "preparation_time"
+          ]
+        },
+        {
+          "position": 2,
+          "crop_id": "mung_bari_mung6_kharif1",
+          "name_en": "Mung bean",
+          "name_bn": "মুগ",
+          "family": "Fabaceae",
+          "is_legume": true,
+          "reference_variety": "BARI Mung-6",
+          "establishment_method": "direct sowing",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2027-03-15",
+            "latest": "2027-03-25"
+          },
+          "harvest_range": {
+            "earliest": "2027-05-09",
+            "latest": "2027-05-22"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 55,
+            "max_days": 58,
+            "reference_verified": false,
+            "precision": "PEER_REVIEWED_VARIETY_RANGE",
+            "decision_source": "BARI_MUNG6_VARIETY_WITH_LOCAL_CALENDAR_CAVEAT"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "unknown",
+              "code": "WINDOW_GEOGRAPHY_UNKNOWN",
+              "reason": "The window is not Rajshahi-exact (planting_window_type=MODELLED_OPTIMUM_BANGLADESH_NOT_RAJSHI_EXACT, date_precision=DAY_BUT_LOCATION_TRANSFERABILITY_MEDIUM); it cannot support a calendar pass for this district even when the date falls inside the encoded dates.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "unknown",
+              "code": "WATER_DEMAND_EVIDENCE_MISSING",
+              "reason": "The crop profile has no quantified water-demand evidence (an FAO range or a local phase water total), so water fit stays unknown even when irrigation is reported available.",
+              "source_ids": []
+            },
+            "rotation": {
+              "status": "pass",
+              "code": "FAMILY_DIVERSIFIED",
+              "reason": "The family changes from Poaceae to Fabaceae. Family diversification alone does not establish disease control, soil-carbon improvement, or nitrogen balance.",
+              "source_ids": [
+                "rotation_family_rule"
+              ]
+            },
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "crop_water_demand_evidence",
+            "preparation_time"
+          ]
+        },
+        {
+          "position": 3,
+          "crop_id": "aman_br11",
+          "name_en": "T. Aman rice",
+          "name_bn": "আমন ধান",
+          "family": "Poaceae",
+          "is_legume": false,
+          "reference_variety": "BR11",
+          "establishment_method": "transplanting",
+          "status": "conditional",
+          "planting_range": {
+            "earliest": "2027-07-10",
+            "latest": "2027-07-24"
+          },
+          "harvest_range": {
+            "earliest": "2027-12-02",
+            "latest": "2027-12-16"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "duration": {
+            "min_days": 145,
+            "max_days": 145,
+            "reference_verified": false,
+            "precision": "EXACT_REFERENCE_VALUE",
+            "decision_source": "BR11_VARIETY"
+          },
+          "timing_status": "unknown",
+          "checks": {
+            "calendar": {
+              "status": "pass",
+              "code": "PREFERRED_WINDOW",
+              "reason": "The proposed date is inside the documented preferred window (2027-07-10 to 2027-07-24). The window end is a sourced calendar boundary, not a proven biological deadline.",
+              "source_ids": [
+                "source_planting_window",
+                "source_local_calendar"
+              ]
+            },
+            "soil": {
+              "status": "unknown",
+              "code": "SOIL_PH_EVIDENCE_MISSING",
+              "reason": "Soil fit is unknown. No local district pH evidence was supplied; pH fit is unknown rather than an automatic pass.",
+              "source_ids": []
+            },
+            "water": {
+              "status": "caution",
+              "code": "IRRIGATION_CONFIRMATION_REQUIRED",
+              "reason": "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+              "source_ids": [
+                "https://www.fao.org/4/S2022E/s2022e07.htm",
+                "https://www.bamis.gov.bd/en/calendar/1/74/2/"
+              ]
+            },
+            "rotation": {
+              "status": "caution",
+              "code": "FAMILY_REPEAT_IN_PATH",
+              "reason": "The current crop family Poaceae also appears at position(s) 1 earlier in the three-crop path. Repeated families are a diversity caution only; they are not rejected because no structured, sourced restriction exists.",
+              "source_ids": [
+                "rotation_family_rule"
+              ]
+            },
+            "climate": {
+              "status": "unknown",
+              "code": "CLIMATE_EXPOSURE_DEFERRED",
+              "reason": "Current-season climate exposure (§6.2) is deferred; no climate evidence is applied to this option.",
+              "source_ids": []
+            }
+          },
+          "missing_evidence": [
+            "district_soil_ph",
+            "district_soil_texture",
+            "district_soil_drainage",
+            "district_soil_salinity",
+            "preparation_time"
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "from_position": 1,
+          "to_position": 2,
+          "from_crop_id": "wheat_bari_gom33",
+          "to_crop_id": "mung_bari_mung6_kharif1",
+          "next_planting_range": {
+            "earliest": "2027-03-15",
+            "latest": "2027-03-25"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "waiting_range": null,
+          "total_interval_range_days": null,
+          "harvest_to_next_window_days": {
+            "min": 0,
+            "max": 22
+          },
+          "window_only_gap": true,
+          "waiting_limit_status": "not_configured",
+          "latest_invalid": false
+        },
+        {
+          "from_position": 2,
+          "to_position": 3,
+          "from_crop_id": "mung_bari_mung6_kharif1",
+          "to_crop_id": "aman_br11",
+          "next_planting_range": {
+            "earliest": "2027-07-10",
+            "latest": "2027-07-24"
+          },
+          "preparation_range": null,
+          "preparation_known": false,
+          "waiting_range": null,
+          "total_interval_range_days": null,
+          "harvest_to_next_window_days": {
+            "min": 49,
+            "max": 76
+          },
+          "window_only_gap": true,
+          "waiting_limit_status": "not_configured",
+          "latest_invalid": false
+        }
+      ],
+      "diversity": {
+        "status": "ok",
+        "distinct_family_count": 2,
+        "families": [
+          "Poaceae",
+          "Fabaceae"
+        ],
+        "family_repeat_count": 1,
+        "legume_present": true,
+        "legume_crop_ids": [
+          "mung_bari_mung6_kharif1"
+        ],
+        "note": "Family count is a product convention, not a measured soil-health ranking."
+      },
+      "weather_views": {
+        "closest_temperature_match": {
+          "status": "ok",
+          "reason": null,
+          "metric": "temperature_distance_c",
+          "unit": "C",
+          "value": 0.0,
+          "schedule_values": {
+            "min_realization": 0.0,
+            "max_realization": 0.0
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": true,
+          "tie_count": 3,
+          "direction": "lower is closer to the general EcoCrop optimum range",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "wheat_bari_gom33",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 19.0,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 23.0
+                    },
+                    "tolerance_range": {
+                      "min": 5.0,
+                      "max": 27.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 52.0,
+                    "min_longest_run_days": 24,
+                    "max_longest_run_days": 109,
+                    "median_growing_days": 109.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 3715,
+                    "frequency": 0.0016150740242261105
+                  },
+                  "rainfall": {
+                    "median_total_mm": 25.185000000000002,
+                    "iqr_total_mm": 36.21,
+                    "min_total_mm": 0.38,
+                    "max_total_mm": 164.46
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.8575,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 14.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 40,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 26,
+                    "valid_days": 1904,
+                    "frequency": 0.01365546218487395
+                  },
+                  "rainfall": {
+                    "median_total_mm": 110.44,
+                    "iqr_total_mm": 68.56749999999998,
+                    "min_total_mm": 10.0,
+                    "max_total_mm": 375.51
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "wheat_bari_gom33",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.7125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 23.0
+                    },
+                    "tolerance_range": {
+                      "min": 5.0,
+                      "max": 27.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 64.0,
+                    "min_longest_run_days": 24,
+                    "max_longest_run_days": 109,
+                    "median_growing_days": 109.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 3715,
+                    "frequency": 0.0016150740242261105
+                  },
+                  "rainfall": {
+                    "median_total_mm": 21.54,
+                    "iqr_total_mm": 30.37,
+                    "min_total_mm": 1.66,
+                    "max_total_mm": 159.32
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "least_dry_spell_exposure": {
+          "status": "ok",
+          "reason": null,
+          "metric": "dry_spell_days",
+          "unit": "days",
+          "value": 40.333333333333336,
+          "schedule_values": {
+            "min_realization": 31.833333333333332,
+            "max_realization": 40.333333333333336
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": false,
+          "tie_count": 1,
+          "direction": "lower is less dry-spell exposure in this view",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "wheat_bari_gom33",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 19.0,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 23.0
+                    },
+                    "tolerance_range": {
+                      "min": 5.0,
+                      "max": 27.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 52.0,
+                    "min_longest_run_days": 24,
+                    "max_longest_run_days": 109,
+                    "median_growing_days": 109.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 3715,
+                    "frequency": 0.0016150740242261105
+                  },
+                  "rainfall": {
+                    "median_total_mm": 25.185000000000002,
+                    "iqr_total_mm": 36.21,
+                    "min_total_mm": 0.38,
+                    "max_total_mm": 164.46
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.8575,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 14.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 40,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 26,
+                    "valid_days": 1904,
+                    "frequency": 0.01365546218487395
+                  },
+                  "rainfall": {
+                    "median_total_mm": 110.44,
+                    "iqr_total_mm": 68.56749999999998,
+                    "min_total_mm": 10.0,
+                    "max_total_mm": 375.51
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "wheat_bari_gom33",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.7125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 23.0
+                    },
+                    "tolerance_range": {
+                      "min": 5.0,
+                      "max": 27.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 64.0,
+                    "min_longest_run_days": 24,
+                    "max_longest_run_days": 109,
+                    "median_growing_days": 109.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 3715,
+                    "frequency": 0.0016150740242261105
+                  },
+                  "rainfall": {
+                    "median_total_mm": 21.54,
+                    "iqr_total_mm": 30.37,
+                    "min_total_mm": 1.66,
+                    "max_total_mm": 159.32
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "least_heavy_rain_exposure": {
+          "status": "ok",
+          "reason": null,
+          "metric": "heavy_rain_frequency",
+          "unit": "heavy days per valid growing day",
+          "value": 0.02375791980539704,
+          "schedule_values": {
+            "min_realization": 0.02375791980539704,
+            "max_realization": 0.020762543572712185
+          },
+          "ordering_basis": "higher exposure of the two completion-optimized schedules; not a worst-case bound over all possible schedules",
+          "common_seasons": [
+            1991,
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "common_seasons_count": 34,
+          "is_tie": false,
+          "tie_count": 1,
+          "direction": "lower is less heavy-rain exposure in this view",
+          "view_status": {
+            "status": "ok",
+            "reason": null
+          },
+          "source": "evaluate_climate on cross-example common seasons",
+          "per_schedule": {
+            "min_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "wheat_bari_gom33",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 19.0,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 23.0
+                    },
+                    "tolerance_range": {
+                      "min": 5.0,
+                      "max": 27.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 52.0,
+                    "min_longest_run_days": 24,
+                    "max_longest_run_days": 109,
+                    "median_growing_days": 109.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 3715,
+                    "frequency": 0.0016150740242261105
+                  },
+                  "rainfall": {
+                    "median_total_mm": 25.185000000000002,
+                    "iqr_total_mm": 36.21,
+                    "min_total_mm": 0.38,
+                    "max_total_mm": 164.46
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.8575,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 14.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 40,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 26,
+                    "valid_days": 1904,
+                    "frequency": 0.01365546218487395
+                  },
+                  "rainfall": {
+                    "median_total_mm": 110.44,
+                    "iqr_total_mm": 68.56749999999998,
+                    "min_total_mm": 10.0,
+                    "max_total_mm": 375.51
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.75,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 29.5,
+                    "min_longest_run_days": 9,
+                    "max_longest_run_days": 55,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 278,
+                    "valid_days": 4964,
+                    "frequency": 0.05600322320709106
+                  },
+                  "rainfall": {
+                    "median_total_mm": 687.9300000000001,
+                    "iqr_total_mm": 295.5450000000001,
+                    "min_total_mm": 177.15,
+                    "max_total_mm": 1207.75
+                  }
+                }
+              ]
+            },
+            "max_realization": {
+              "status": "ok",
+              "seasons": 34,
+              "temperature_seasons": 34,
+              "rain_seasons": 34,
+              "per_crop": [
+                {
+                  "crop_id": "wheat_bari_gom33",
+                  "position": 1,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 18.7125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 15.0,
+                      "max": 23.0
+                    },
+                    "tolerance_range": {
+                      "min": 5.0,
+                      "max": 27.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 64.0,
+                    "min_longest_run_days": 24,
+                    "max_longest_run_days": 109,
+                    "median_growing_days": 109.0
+                  },
+                  "heavy_rain": {
+                    "days": 6,
+                    "valid_days": 3715,
+                    "frequency": 0.0016150740242261105
+                  },
+                  "rainfall": {
+                    "median_total_mm": 21.54,
+                    "iqr_total_mm": 30.37,
+                    "min_total_mm": 1.66,
+                    "max_total_mm": 159.32
+                  }
+                },
+                {
+                  "crop_id": "mung_bari_mung6_kharif1",
+                  "position": 2,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 30.58,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 21.0,
+                      "max": 36.0
+                    },
+                    "tolerance_range": {
+                      "min": 8.0,
+                      "max": 40.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 16.0,
+                    "min_longest_run_days": 6,
+                    "max_longest_run_days": 43,
+                    "median_growing_days": 56.0
+                  },
+                  "heavy_rain": {
+                    "days": 25,
+                    "valid_days": 1904,
+                    "frequency": 0.013130252100840336
+                  },
+                  "rainfall": {
+                    "median_total_mm": 102.895,
+                    "iqr_total_mm": 62.86750000000001,
+                    "min_total_mm": 8.31,
+                    "max_total_mm": 363.2
+                  }
+                },
+                {
+                  "crop_id": "aman_br11",
+                  "position": 3,
+                  "seasons": 34,
+                  "temperature_seasons": 34,
+                  "rain_seasons": 34,
+                  "temperature": {
+                    "median_distance_c": 0.0,
+                    "median_t2m_c": 27.2125,
+                    "within_optimum_fraction": 1.0,
+                    "within_tolerance_fraction": 1.0,
+                    "optimum_range": {
+                      "min": 20.0,
+                      "max": 30.0
+                    },
+                    "tolerance_range": {
+                      "min": 10.0,
+                      "max": 36.0
+                    }
+                  },
+                  "dry_spell": {
+                    "median_longest_run_days": 41.0,
+                    "min_longest_run_days": 20,
+                    "max_longest_run_days": 69,
+                    "median_growing_days": 146.0
+                  },
+                  "heavy_rain": {
+                    "days": 236,
+                    "valid_days": 4964,
+                    "frequency": 0.04754230459307011
+                  },
+                  "rainfall": {
+                    "median_total_mm": 611.1949999999999,
+                    "iqr_total_mm": 225.42999999999995,
+                    "min_total_mm": 145.45,
+                    "max_total_mm": 1072.18
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "prerequisites": {
+        "soil": "unknown; no local district pH, texture, drainage, or salinity measurement was supplied.",
+        "preparation": "unknown; preparation ranges are null, so field-ready waiting is not calculated.",
+        "drainage": "unknown; no field drainage or waterlogging evidence was supplied.",
+        "irrigation": {
+          "status": "context_only",
+          "ranking_status": "unranked",
+          "per_crop": [
+            {
+              "crop_id": "wheat_bari_gom33",
+              "irrigation_guidance": "BAMIS: generally 2-3 irrigations; first 17-21 DAS, second 50-55 DAS, third about 75-80 DAS.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            },
+            {
+              "crop_id": "mung_bari_mung6_kharif1",
+              "irrigation_guidance": "No exact mung-specific FAO seasonal water range inserted; use local/BARI guidance.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            },
+            {
+              "crop_id": "aman_br11",
+              "irrigation_guidance": "Rainfed T. Aman may still need supplemental irrigation when rainfall is delayed/insufficient; BR11 study found later transplanting increased reproductive-stage irrigation demand.",
+              "fao_crop_water_need_min_mm": null,
+              "fao_crop_water_need_max_mm": null,
+              "local_phase_water_total_mm": null,
+              "water_ranking_readiness": null
+            }
+          ],
+          "total": null,
+          "reason": "Irrigation guidance and FAO/phase values are qualitative context only; they are not comparable across crops or scenarios, so no total or dependence score is calculated.",
+          "missing_evidence": [
+            "comparable_irrigation_evidence"
+          ]
+        },
+        "labor": {
+          "status": "unavailable",
+          "value": null,
+          "unit": null,
+          "missing_evidence": [
+            "labor_evidence"
+          ],
+          "reason": "No sourced labor evidence; labor requirements and peak periods are unavailable."
+        },
+        "equipment": {
+          "status": "unavailable",
+          "value": null,
+          "unit": null,
+          "missing_evidence": [
+            "equipment_evidence"
+          ],
+          "reason": "No sourced equipment evidence; equipment and special-management prerequisites are unavailable."
+        },
+        "cash_cost": {
+          "status": "unavailable",
+          "value_bdt_per_ha": null,
+          "unit": "BDT/ha",
+          "missing_evidence": [
+            "production_cost_evidence"
+          ],
+          "reason": "No sourced production-cost evidence; reference yields are not used to estimate cash cost."
+        },
+        "market": {
+          "status": "unavailable",
+          "reason": "No farm-gate price value; market price mode is dynamic external.",
+          "price_evidence": {
+            "status": "unavailable",
+            "market_price_mode": "DYNAMIC_EXTERNAL",
+            "source_barc_zoning": null,
+            "price_value": null,
+            "unit": "BDT/t",
+            "per_crop": [
+              {
+                "crop_id": "wheat_bari_gom33",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              },
+              {
+                "crop_id": "mung_bari_mung6_kharif1",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              },
+              {
+                "crop_id": "aman_br11",
+                "market_price_mode": "DYNAMIC_EXTERNAL",
+                "source_barc_zoning": null
+              }
+            ],
+            "missing_evidence": [
+              "farm_gate_price_evidence"
+            ],
+            "reason": "No sourced farm-gate price value; market price mode is dynamic external."
+          }
+        },
+        "economics": {
+          "status": "unavailable",
+          "reason": "Economic estimate unavailable.",
+          "missing_evidence": [
+            "production_cost_evidence",
+            "farm_gate_price_evidence",
+            "validated_typical_yield_or_attainable_basis",
+            "cash_flow_schedule"
+          ],
+          "yield_reference_context": [
+            {
+              "crop_id": "wheat_bari_gom33",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "Official BWMRI BARI Gom-33 yield range.",
+              "status": "static_reference_not_used"
+            },
+            {
+              "crop_id": "mung_bari_mung6_kharif1",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "Peer-reviewed variety table citing BARI (2017): BARI Mung-6 1.5-1.6 t/ha.",
+              "status": "static_reference_not_used"
+            },
+            {
+              "crop_id": "aman_br11",
+              "yield_reference_low_t_ha": null,
+              "yield_reference_high_t_ha": null,
+              "yield_basis": "5.0 t/ha threshold used in Rajshahi study; BR11 national average 5.5 t/ha.",
+              "status": "static_reference_not_used"
+            }
+          ]
+        }
+      },
+      "unit_validation": {
+        "T2M": {
+          "status": "ok",
+          "units": "C",
+          "reason": null
+        },
+        "PRECTOTCORR": {
+          "status": "ok",
+          "units": "mm/day",
+          "reason": null
+        }
+      },
+      "temperature_provenance": {
+        "wheat_bari_gom33": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "2114",
+          "scientific_name": "Triticum aestivum",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        },
+        "mung_bari_mung6_kharif1": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "2150",
+          "scientific_name": "Vigna radiata",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        },
+        "aman_br11": {
+          "source": "FAO EcoCrop database, OpenCLIM mirror EcoCrop_DB.csv (https://github.com/OpenCLIM/ecocrop)",
+          "eco_port_code": "1574",
+          "scientific_name": "Oryza sativa",
+          "applicability": "published general species/crop-level EcoCrop range; not a variety- or stage-specific damage threshold",
+          "seasonal_matching": "project-defined median of daily T2M over the realized growing period, compared with the published optimum range"
+        }
+      },
+      "cautions": [
+        "The next documented preferred window starts 2026-11-15 (9 days after the proposed date), within the configured maximum waiting limit of 180 days. This is a future option, not a plant-now option.",
+        "Irrigation confirmation required. The crop profile carries quantified water-demand guidance, but water access was not confirmed, so this prerequisite remains unresolved.",
+        "The current crop family Poaceae also appears at position(s) 1 earlier in the three-crop path. Repeated families are a diversity caution only; they are not rejected because no structured, sourced restriction exists.",
+        "This crop is transplanted. Seedling/nursery age is recorded but not added to variety duration because the duration reference stage is not confirmed by the crop data."
+      ],
+      "missing_evidence": [
+        "district_soil_ph",
+        "district_soil_texture",
+        "district_soil_drainage",
+        "district_soil_salinity",
+        "preparation_time",
+        "crop_water_demand_evidence",
+        "calendar_evidence",
+        "max_waiting_days_policy",
+        "current_season_climate_exposure"
+      ],
+      "what_changes_from_baseline": {
+        "summary": "Replaces mustard and Boro with wheat and mung; starts 9 days later; adds a legume; keeps two crop families.",
+        "removed_crop_ids": [
+          "mustard_binasarisha9",
+          "boro_brri_dhan28"
+        ],
+        "added_crop_ids": [
+          "wheat_bari_gom33",
+          "mung_bari_mung6_kharif1"
+        ],
+        "family_count_delta": 0,
+        "legume_change": "absent_to_present",
+        "initial_wait_delta_days": 9,
+        "completion_max_delta_days": -9
+      },
+      "why_explore": "A documented Kushtia sequence explored under Rajshahi weather and the engine's reference crop profiles; local applicability is unverified. It adds a legume and a locally supported wheat row. Related Rajshahi evidence documents Wheat-Mung-T. Aus, but that is not a validation of this sequence.",
+      "must_confirm": [
+        "Whether the documented Kushtia sequence and its local applicability transfer to this Rajshahi field.",
+        "Field soil pH, texture, drainage, and salinity; local preparation time; irrigation source and schedule.",
+        "Wheat and mung varieties, planting windows, and market access.",
+        "Related Rajshahi evidence uses T. Aus; it is not a validation of this Wheat-Mung-Aman sequence.",
+        "This is not a researched Rajshahi rotation merely because the engine can generate it."
+      ],
+      "sources": [
+        {
+          "label": "BARC ARMIS research summary 38215",
+          "url": "https://apps.barc.gov.bd/armis/home/research/detail/38215",
+          "supports": "Directly documents Wheat-Mung-T. Aman in Kushtia and separately lists Wheat-Mung-T. Aus for Rajshahi as related evidence.",
+          "limitations": "The Kushtia pattern is not a Rajshahi validation. Rajshahi's documented wheat-mung pattern uses T. Aus; that is related evidence, not a validation of the featured sequence."
+        },
+        {
+          "label": "BAMIS Rajshahi wheat calendar",
+          "url": "https://www.bamis.gov.bd/en/calendar/1/9/2/",
+          "supports": "Local calendar source used by the crop dataset for wheat.",
+          "limitations": "Calendar guidance, not a field prescription or variety trial."
+        },
+        {
+          "label": "BWMRI wheat variety source",
+          "url": "https://bwmri.gov.bd/pages/static-pages/6922e0b6933eb65569e28480",
+          "supports": "Reference source cited for the engine's BARI Gom-33 profile.",
+          "limitations": "Variety guidance; not a validation of this three-crop sequence."
+        }
+      ],
+      "what_nasa_shows": {
+        "temperature": "0.0 °C median distance; 0 means the seasonal median is inside the general EcoCrop optimum range. Ties are shown as exact ties; 0 is not proof of no heat stress. The three featured values are an exact tie.",
+        "dry_spell": "40.33 days (higher-exposure schedule; one separate view).",
+        "heavy_rain": "0.02376 heavy days per valid growing day (higher-exposure schedule; one separate view).",
+        "rainfall": "Per-crop period medians and IQRs are in weather_views. They are not summed across unequal crop periods and do not imply irrigation demand."
+      },
+      "does_not_establish": "Weather exposure is not overall agricultural suitability. These results do not establish yield, income, crop damage, field flooding, irrigation demand, or a repeatable rotation; third-to-first compatibility is not checked."
+    }
+  ],
+  "exploratory_scope": {
+    "description": "The three featured examples are selected from engine-generated conditional paths; they are not a full ranking. The wider paths remain exploratory.",
+    "first_crop_counts": {
+      "mustard_binasarisha9": {
+        "candidate_count": 0,
+        "conditional_count": 54,
+        "excluded_count": 10
+      },
+      "wheat_bari_gom33": {
+        "candidate_count": 0,
+        "conditional_count": 48,
+        "excluded_count": 9
+      }
+    },
+    "featured_count": 3
+  },
+  "no_overall_winner": true,
+  "repeatable_rotation_checked": false,
+  "assumptions": [
+    "The same start date (2026-11-06) and water-access assumption (unknown) are used for every example.",
+    "The two completion-optimized schedules are examples; ordering uses the higher exposure of the two, not a worst-case bound.",
+    "Weather coverage is independent for temperature and rainfall. No missing value is zero-filled or joined across a gap.",
+    "Each view uses its own cross-example common-season intersection. A view with no intersection is returned unavailable without disabling the other view.",
+    "Candidate and conditional groups stay separate. All featured examples are conditional; none is a recommendation.",
+    "No overall weighted score, winner badge, economics, irrigation-dependence score, or repeatable-rotation claim is produced."
+  ],
+  "limitations": [
+    "Historical POWER exposure is not a forecast, crop-damage rule, yield model, field measurement, or irrigation-demand calculation.",
+    "Temperature uses species/crop-level EcoCrop guidance and a project-defined seasonal-median convention; it is not variety- or stage-specific validation.",
+    "The baseline is a locally documented regional pattern, not a universal practice. The alternatives are documented outside Rajshahi and are not locally validated recommendations.",
+    "Family count and legume presence are context only; they do not promise fertilizer savings, pest control, or soil improvement.",
+    "Economics, labor, equipment, comparable irrigation dependence, field preparation, and local soil evidence remain unavailable or unknown.",
+    "Third-to-first crop compatibility is not checked; a three-crop sequence is not presented as a repeatable rotation."
+  ],
+  "glossary": {
+    "conditional": "A path that remains inspectable while field evidence is missing; it is not a recommendation.",
+    "common_season": "A historical season with complete daily data for every crop in both completion-optimized schedules.",
+    "T2M": "NASA POWER daily temperature at 2 m, required in Celsius.",
+    "PRECTOTCORR": "NASA POWER corrected daily precipitation, required in mm/day.",
+    "dry_day": "A day with PRECTOTCORR below 1 mm/day.",
+    "heavy_day": "A day with PRECTOTCORR at or above 20 mm/day (R20mm adaptation).",
+    "completion_schedule": "A min-realization or max-realization example optimized for completion; not a weather-optimized or worst-case schedule.",
+    "equal_crop_weighting": "Each crop contributes equally to the branch weather value; a disclosed convention, not duration neutrality.",
+    "tie": "Examples with the same displayed value; ties are kept, not forced apart."
+  }
+}

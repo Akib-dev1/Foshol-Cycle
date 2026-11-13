@@ -1,0 +1,92 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-11-12T12:00:00+00:00",
+  "request": {
+    "district_id": "dhaka",
+    "start_date": "2026-11-06",
+    "first_crop_id": null,
+    "water_access": "unknown",
+    "preference": "fastest_completion",
+    "max_initial_wait_days": 180,
+    "max_waiting_days": null
+  },
+  "status": "unsupported_district",
+  "district": {
+    "district_id": "dhaka",
+    "display_name": "dhaka",
+    "supported": false,
+    "geographic_scope": "not evaluated"
+  },
+  "assumptions": [],
+  "data_sources": [
+    {
+      "source_id": "crop_profiles_rajshahi_v1",
+      "provider": "Local crop dataset",
+      "product": "Fosol-Cycle Rajshahi crop dataset",
+      "version": "1",
+      "coverage": "Rajshahi crop profiles",
+      "retrieved_at": null
+    }
+  ],
+  "crop_options": [],
+  "branches": [],
+  "ranking": {
+    "preference": "fastest_completion",
+    "metric": "completion_days.max",
+    "direction": "ascending",
+    "groups": {
+      "candidate": {
+        "count": 0,
+        "ranked": [],
+        "unranked": []
+      },
+      "conditional": {
+        "count": 0,
+        "ranked": [],
+        "unranked": []
+      }
+    },
+    "excluded": [],
+    "method": "Rank candidate and conditional groups separately by completion_days.max ascending; ties by branch_id ascending; no weighted score.",
+    "notes": [
+      "Candidate group is empty; no candidate branches were ranked.",
+      "Conditional group is empty; no conditional branches were ranked.",
+      "No branch has a comparable metric; no winner is forced."
+    ],
+    "no_winner": true
+  },
+  "warnings": [
+    {
+      "code": "UNSUPPORTED_DISTRICT",
+      "message": "District dhaka is not supported; no crop results are fabricated."
+    }
+  ],
+  "branch_summary": {
+    "candidate_count": 0,
+    "conditional_count": 0,
+    "excluded_count": 0,
+    "no_candidate_branches": true,
+    "message": "No candidate or conditional branches available."
+  },
+  "environment_context": {
+    "product": "SPL4SMGP.008",
+    "provider": "NASA SMAP via AppEEARS",
+    "resolution": "9 km EASE-Grid 2.0",
+    "temporal_resolution": "3-hourly",
+    "observations": [],
+    "observation_start": null,
+    "observation_end": null,
+    "retrieved_at": null,
+    "label": "Context only - no effect on status or ranking",
+    "warnings": [
+      {
+        "code": "SMAP_CONTEXT_UNAVAILABLE",
+        "message": "SMAP context was not supplied; no moisture context is displayed."
+      }
+    ],
+    "status": "unavailable"
+  },
+  "missing_evidence": [
+    "district_support"
+  ]
+}

@@ -1,0 +1,2570 @@
+{
+  "metadata": {
+    "source": "NASA POWER 2000-2026 Climatology",
+    "location": "Rajshahi"
+  },
+  "daily": {
+    "01-01": {
+      "temp_mean": 16.4,
+      "temp_min": 13.91,
+      "temp_max": 20.49,
+      "gwettop_mean": 0.57,
+      "precip_mean": 0.06
+    },
+    "01-02": {
+      "temp_mean": 16.48,
+      "temp_min": 13.48,
+      "temp_max": 22.61,
+      "gwettop_mean": 0.57,
+      "precip_mean": 0.17
+    },
+    "01-03": {
+      "temp_mean": 16.17,
+      "temp_min": 13.54,
+      "temp_max": 22.07,
+      "gwettop_mean": 0.57,
+      "precip_mean": 0.64
+    },
+    "01-04": {
+      "temp_mean": 15.83,
+      "temp_min": 12.33,
+      "temp_max": 19.91,
+      "gwettop_mean": 0.57,
+      "precip_mean": 0.51
+    },
+    "01-05": {
+      "temp_mean": 15.74,
+      "temp_min": 12.44,
+      "temp_max": 19.42,
+      "gwettop_mean": 0.56,
+      "precip_mean": 0.07
+    },
+    "01-06": {
+      "temp_mean": 15.98,
+      "temp_min": 11.91,
+      "temp_max": 20.06,
+      "gwettop_mean": 0.56,
+      "precip_mean": 0.06
+    },
+    "01-07": {
+      "temp_mean": 16.28,
+      "temp_min": 12.36,
+      "temp_max": 21.62,
+      "gwettop_mean": 0.56,
+      "precip_mean": 0.05
+    },
+    "01-08": {
+      "temp_mean": 16.07,
+      "temp_min": 10.27,
+      "temp_max": 20.59,
+      "gwettop_mean": 0.55,
+      "precip_mean": 0.05
+    },
+    "01-09": {
+      "temp_mean": 15.99,
+      "temp_min": 9.67,
+      "temp_max": 20.6,
+      "gwettop_mean": 0.55,
+      "precip_mean": 0.23
+    },
+    "01-10": {
+      "temp_mean": 15.87,
+      "temp_min": 11.17,
+      "temp_max": 20.32,
+      "gwettop_mean": 0.55,
+      "precip_mean": 0.08
+    },
+    "01-11": {
+      "temp_mean": 15.84,
+      "temp_min": 11.94,
+      "temp_max": 20.53,
+      "gwettop_mean": 0.55,
+      "precip_mean": 0.18
+    },
+    "01-12": {
+      "temp_mean": 15.76,
+      "temp_min": 12.59,
+      "temp_max": 18.75,
+      "gwettop_mean": 0.54,
+      "precip_mean": 0.23
+    },
+    "01-13": {
+      "temp_mean": 15.89,
+      "temp_min": 13.28,
+      "temp_max": 19.11,
+      "gwettop_mean": 0.54,
+      "precip_mean": 0.16
+    },
+    "01-14": {
+      "temp_mean": 16.07,
+      "temp_min": 12.31,
+      "temp_max": 19.3,
+      "gwettop_mean": 0.54,
+      "precip_mean": 0.28
+    },
+    "01-15": {
+      "temp_mean": 16.13,
+      "temp_min": 12.76,
+      "temp_max": 19.02,
+      "gwettop_mean": 0.53,
+      "precip_mean": 0.01
+    },
+    "01-16": {
+      "temp_mean": 16.51,
+      "temp_min": 14.02,
+      "temp_max": 19.27,
+      "gwettop_mean": 0.53,
+      "precip_mean": 0.12
+    },
+    "01-17": {
+      "temp_mean": 16.86,
+      "temp_min": 14.22,
+      "temp_max": 21.19,
+      "gwettop_mean": 0.53,
+      "precip_mean": 0.02
+    },
+    "01-18": {
+      "temp_mean": 17.18,
+      "temp_min": 13.94,
+      "temp_max": 21.31,
+      "gwettop_mean": 0.53,
+      "precip_mean": 0.3
+    },
+    "01-19": {
+      "temp_mean": 17.32,
+      "temp_min": 14.26,
+      "temp_max": 21.74,
+      "gwettop_mean": 0.53,
+      "precip_mean": 0.28
+    },
+    "01-20": {
+      "temp_mean": 16.99,
+      "temp_min": 14.03,
+      "temp_max": 21.63,
+      "gwettop_mean": 0.53,
+      "precip_mean": 1.26
+    },
+    "01-21": {
+      "temp_mean": 16.79,
+      "temp_min": 12.82,
+      "temp_max": 21.69,
+      "gwettop_mean": 0.53,
+      "precip_mean": 2.63
+    },
+    "01-22": {
+      "temp_mean": 16.72,
+      "temp_min": 13.05,
+      "temp_max": 20.92,
+      "gwettop_mean": 0.52,
+      "precip_mean": 0.05
+    },
+    "01-23": {
+      "temp_mean": 17.12,
+      "temp_min": 14.14,
+      "temp_max": 20.85,
+      "gwettop_mean": 0.52,
+      "precip_mean": 0.48
+    },
+    "01-24": {
+      "temp_mean": 17.07,
+      "temp_min": 14.07,
+      "temp_max": 21.03,
+      "gwettop_mean": 0.52,
+      "precip_mean": 0.54
+    },
+    "01-25": {
+      "temp_mean": 17.23,
+      "temp_min": 13.12,
+      "temp_max": 21.46,
+      "gwettop_mean": 0.51,
+      "precip_mean": 0.17
+    },
+    "01-26": {
+      "temp_mean": 17.2,
+      "temp_min": 13.59,
+      "temp_max": 22.31,
+      "gwettop_mean": 0.51,
+      "precip_mean": 0.22
+    },
+    "01-27": {
+      "temp_mean": 17.3,
+      "temp_min": 13.96,
+      "temp_max": 21.97,
+      "gwettop_mean": 0.51,
+      "precip_mean": 0.01
+    },
+    "01-28": {
+      "temp_mean": 17.19,
+      "temp_min": 13.77,
+      "temp_max": 21.0,
+      "gwettop_mean": 0.51,
+      "precip_mean": 0.31
+    },
+    "01-29": {
+      "temp_mean": 17.32,
+      "temp_min": 13.43,
+      "temp_max": 20.4,
+      "gwettop_mean": 0.5,
+      "precip_mean": 0.25
+    },
+    "01-30": {
+      "temp_mean": 17.7,
+      "temp_min": 14.03,
+      "temp_max": 22.08,
+      "gwettop_mean": 0.5,
+      "precip_mean": 0.71
+    },
+    "01-31": {
+      "temp_mean": 17.95,
+      "temp_min": 14.09,
+      "temp_max": 22.31,
+      "gwettop_mean": 0.5,
+      "precip_mean": 0.01
+    },
+    "02-01": {
+      "temp_mean": 18.02,
+      "temp_min": 14.77,
+      "temp_max": 21.7,
+      "gwettop_mean": 0.5,
+      "precip_mean": 0.13
+    },
+    "02-02": {
+      "temp_mean": 18.08,
+      "temp_min": 13.45,
+      "temp_max": 22.21,
+      "gwettop_mean": 0.49,
+      "precip_mean": 0.24
+    },
+    "02-03": {
+      "temp_mean": 18.11,
+      "temp_min": 13.86,
+      "temp_max": 22.04,
+      "gwettop_mean": 0.49,
+      "precip_mean": 0.02
+    },
+    "02-04": {
+      "temp_mean": 18.59,
+      "temp_min": 15.75,
+      "temp_max": 23.35,
+      "gwettop_mean": 0.49,
+      "precip_mean": 1.24
+    },
+    "02-05": {
+      "temp_mean": 19.21,
+      "temp_min": 15.35,
+      "temp_max": 22.4,
+      "gwettop_mean": 0.49,
+      "precip_mean": 0.57
+    },
+    "02-06": {
+      "temp_mean": 19.46,
+      "temp_min": 14.27,
+      "temp_max": 22.35,
+      "gwettop_mean": 0.48,
+      "precip_mean": 0.48
+    },
+    "02-07": {
+      "temp_mean": 19.58,
+      "temp_min": 15.88,
+      "temp_max": 23.85,
+      "gwettop_mean": 0.48,
+      "precip_mean": 0.77
+    },
+    "02-08": {
+      "temp_mean": 19.74,
+      "temp_min": 15.82,
+      "temp_max": 23.15,
+      "gwettop_mean": 0.48,
+      "precip_mean": 0.43
+    },
+    "02-09": {
+      "temp_mean": 19.6,
+      "temp_min": 15.35,
+      "temp_max": 21.95,
+      "gwettop_mean": 0.48,
+      "precip_mean": 0.37
+    },
+    "02-10": {
+      "temp_mean": 19.68,
+      "temp_min": 15.49,
+      "temp_max": 23.11,
+      "gwettop_mean": 0.47,
+      "precip_mean": 0.26
+    },
+    "02-11": {
+      "temp_mean": 19.98,
+      "temp_min": 15.53,
+      "temp_max": 23.3,
+      "gwettop_mean": 0.47,
+      "precip_mean": 0.11
+    },
+    "02-12": {
+      "temp_mean": 20.05,
+      "temp_min": 15.19,
+      "temp_max": 23.39,
+      "gwettop_mean": 0.47,
+      "precip_mean": 0.65
+    },
+    "02-13": {
+      "temp_mean": 20.3,
+      "temp_min": 14.99,
+      "temp_max": 23.24,
+      "gwettop_mean": 0.46,
+      "precip_mean": 0.13
+    },
+    "02-14": {
+      "temp_mean": 20.57,
+      "temp_min": 15.26,
+      "temp_max": 23.65,
+      "gwettop_mean": 0.46,
+      "precip_mean": 0.42
+    },
+    "02-15": {
+      "temp_mean": 20.71,
+      "temp_min": 15.24,
+      "temp_max": 24.7,
+      "gwettop_mean": 0.46,
+      "precip_mean": 0.68
+    },
+    "02-16": {
+      "temp_mean": 21.08,
+      "temp_min": 17.12,
+      "temp_max": 25.2,
+      "gwettop_mean": 0.45,
+      "precip_mean": 0.37
+    },
+    "02-17": {
+      "temp_mean": 21.41,
+      "temp_min": 17.76,
+      "temp_max": 25.78,
+      "gwettop_mean": 0.46,
+      "precip_mean": 0.77
+    },
+    "02-18": {
+      "temp_mean": 21.66,
+      "temp_min": 17.14,
+      "temp_max": 25.82,
+      "gwettop_mean": 0.45,
+      "precip_mean": 0.18
+    },
+    "02-19": {
+      "temp_mean": 21.86,
+      "temp_min": 17.76,
+      "temp_max": 26.47,
+      "gwettop_mean": 0.45,
+      "precip_mean": 0.83
+    },
+    "02-20": {
+      "temp_mean": 22.17,
+      "temp_min": 18.32,
+      "temp_max": 26.78,
+      "gwettop_mean": 0.44,
+      "precip_mean": 0.13
+    },
+    "02-21": {
+      "temp_mean": 22.4,
+      "temp_min": 18.9,
+      "temp_max": 27.61,
+      "gwettop_mean": 0.44,
+      "precip_mean": 0.15
+    },
+    "02-22": {
+      "temp_mean": 22.64,
+      "temp_min": 19.28,
+      "temp_max": 26.14,
+      "gwettop_mean": 0.43,
+      "precip_mean": 0.1
+    },
+    "02-23": {
+      "temp_mean": 22.92,
+      "temp_min": 21.05,
+      "temp_max": 26.26,
+      "gwettop_mean": 0.43,
+      "precip_mean": 0.63
+    },
+    "02-24": {
+      "temp_mean": 23.06,
+      "temp_min": 19.92,
+      "temp_max": 25.66,
+      "gwettop_mean": 0.42,
+      "precip_mean": 0.38
+    },
+    "02-25": {
+      "temp_mean": 23.26,
+      "temp_min": 18.72,
+      "temp_max": 26.26,
+      "gwettop_mean": 0.42,
+      "precip_mean": 0.63
+    },
+    "02-26": {
+      "temp_mean": 23.0,
+      "temp_min": 18.1,
+      "temp_max": 26.44,
+      "gwettop_mean": 0.43,
+      "precip_mean": 1.33
+    },
+    "02-27": {
+      "temp_mean": 23.22,
+      "temp_min": 19.23,
+      "temp_max": 26.07,
+      "gwettop_mean": 0.42,
+      "precip_mean": 0.36
+    },
+    "02-28": {
+      "temp_mean": 23.62,
+      "temp_min": 19.62,
+      "temp_max": 26.7,
+      "gwettop_mean": 0.42,
+      "precip_mean": 0.56
+    },
+    "02-29": {
+      "temp_mean": 23.14,
+      "temp_min": 19.76,
+      "temp_max": 27.1,
+      "gwettop_mean": 0.42,
+      "precip_mean": 0.1
+    },
+    "03-01": {
+      "temp_mean": 23.88,
+      "temp_min": 19.47,
+      "temp_max": 27.87,
+      "gwettop_mean": 0.41,
+      "precip_mean": 0.35
+    },
+    "03-02": {
+      "temp_mean": 24.18,
+      "temp_min": 20.87,
+      "temp_max": 27.57,
+      "gwettop_mean": 0.4,
+      "precip_mean": 0.25
+    },
+    "03-03": {
+      "temp_mean": 24.29,
+      "temp_min": 21.67,
+      "temp_max": 27.2,
+      "gwettop_mean": 0.39,
+      "precip_mean": 0.21
+    },
+    "03-04": {
+      "temp_mean": 24.48,
+      "temp_min": 21.55,
+      "temp_max": 27.47,
+      "gwettop_mean": 0.39,
+      "precip_mean": 0.95
+    },
+    "03-05": {
+      "temp_mean": 24.51,
+      "temp_min": 20.38,
+      "temp_max": 28.82,
+      "gwettop_mean": 0.39,
+      "precip_mean": 0.47
+    },
+    "03-06": {
+      "temp_mean": 24.58,
+      "temp_min": 20.48,
+      "temp_max": 29.25,
+      "gwettop_mean": 0.38,
+      "precip_mean": 0.47
+    },
+    "03-07": {
+      "temp_mean": 24.33,
+      "temp_min": 20.57,
+      "temp_max": 28.16,
+      "gwettop_mean": 0.38,
+      "precip_mean": 0.64
+    },
+    "03-08": {
+      "temp_mean": 24.66,
+      "temp_min": 20.86,
+      "temp_max": 27.72,
+      "gwettop_mean": 0.37,
+      "precip_mean": 0.46
+    },
+    "03-09": {
+      "temp_mean": 25.07,
+      "temp_min": 21.45,
+      "temp_max": 28.61,
+      "gwettop_mean": 0.36,
+      "precip_mean": 0.08
+    },
+    "03-10": {
+      "temp_mean": 25.75,
+      "temp_min": 21.84,
+      "temp_max": 28.77,
+      "gwettop_mean": 0.36,
+      "precip_mean": 0.16
+    },
+    "03-11": {
+      "temp_mean": 25.88,
+      "temp_min": 22.58,
+      "temp_max": 29.12,
+      "gwettop_mean": 0.37,
+      "precip_mean": 1.12
+    },
+    "03-12": {
+      "temp_mean": 26.01,
+      "temp_min": 22.05,
+      "temp_max": 29.13,
+      "gwettop_mean": 0.37,
+      "precip_mean": 1.08
+    },
+    "03-13": {
+      "temp_mean": 26.11,
+      "temp_min": 22.05,
+      "temp_max": 28.64,
+      "gwettop_mean": 0.36,
+      "precip_mean": 0.64
+    },
+    "03-14": {
+      "temp_mean": 26.53,
+      "temp_min": 23.22,
+      "temp_max": 29.11,
+      "gwettop_mean": 0.36,
+      "precip_mean": 0.48
+    },
+    "03-15": {
+      "temp_mean": 26.56,
+      "temp_min": 20.76,
+      "temp_max": 28.99,
+      "gwettop_mean": 0.35,
+      "precip_mean": 0.35
+    },
+    "03-16": {
+      "temp_mean": 26.63,
+      "temp_min": 22.75,
+      "temp_max": 29.25,
+      "gwettop_mean": 0.35,
+      "precip_mean": 0.57
+    },
+    "03-17": {
+      "temp_mean": 26.89,
+      "temp_min": 23.33,
+      "temp_max": 29.52,
+      "gwettop_mean": 0.35,
+      "precip_mean": 0.65
+    },
+    "03-18": {
+      "temp_mean": 27.08,
+      "temp_min": 24.19,
+      "temp_max": 29.75,
+      "gwettop_mean": 0.34,
+      "precip_mean": 0.46
+    },
+    "03-19": {
+      "temp_mean": 27.28,
+      "temp_min": 23.83,
+      "temp_max": 30.28,
+      "gwettop_mean": 0.34,
+      "precip_mean": 1.07
+    },
+    "03-20": {
+      "temp_mean": 27.17,
+      "temp_min": 21.58,
+      "temp_max": 30.54,
+      "gwettop_mean": 0.36,
+      "precip_mean": 2.59
+    },
+    "03-21": {
+      "temp_mean": 27.36,
+      "temp_min": 21.32,
+      "temp_max": 30.57,
+      "gwettop_mean": 0.35,
+      "precip_mean": 1.46
+    },
+    "03-22": {
+      "temp_mean": 27.81,
+      "temp_min": 22.23,
+      "temp_max": 30.65,
+      "gwettop_mean": 0.34,
+      "precip_mean": 1.14
+    },
+    "03-23": {
+      "temp_mean": 27.95,
+      "temp_min": 23.89,
+      "temp_max": 31.0,
+      "gwettop_mean": 0.33,
+      "precip_mean": 0.67
+    },
+    "03-24": {
+      "temp_mean": 28.06,
+      "temp_min": 23.97,
+      "temp_max": 31.56,
+      "gwettop_mean": 0.33,
+      "precip_mean": 1.12
+    },
+    "03-25": {
+      "temp_mean": 28.44,
+      "temp_min": 24.9,
+      "temp_max": 31.46,
+      "gwettop_mean": 0.33,
+      "precip_mean": 0.5
+    },
+    "03-26": {
+      "temp_mean": 28.85,
+      "temp_min": 25.82,
+      "temp_max": 31.39,
+      "gwettop_mean": 0.32,
+      "precip_mean": 0.83
+    },
+    "03-27": {
+      "temp_mean": 29.14,
+      "temp_min": 26.69,
+      "temp_max": 32.06,
+      "gwettop_mean": 0.32,
+      "precip_mean": 0.69
+    },
+    "03-28": {
+      "temp_mean": 29.15,
+      "temp_min": 25.04,
+      "temp_max": 31.99,
+      "gwettop_mean": 0.32,
+      "precip_mean": 0.91
+    },
+    "03-29": {
+      "temp_mean": 29.46,
+      "temp_min": 26.29,
+      "temp_max": 31.68,
+      "gwettop_mean": 0.32,
+      "precip_mean": 1.26
+    },
+    "03-30": {
+      "temp_mean": 29.57,
+      "temp_min": 27.05,
+      "temp_max": 32.08,
+      "gwettop_mean": 0.33,
+      "precip_mean": 1.71
+    },
+    "03-31": {
+      "temp_mean": 29.23,
+      "temp_min": 25.43,
+      "temp_max": 31.4,
+      "gwettop_mean": 0.37,
+      "precip_mean": 4.33
+    },
+    "04-01": {
+      "temp_mean": 29.31,
+      "temp_min": 24.15,
+      "temp_max": 32.59,
+      "gwettop_mean": 0.37,
+      "precip_mean": 2.33
+    },
+    "04-02": {
+      "temp_mean": 29.62,
+      "temp_min": 25.77,
+      "temp_max": 32.94,
+      "gwettop_mean": 0.35,
+      "precip_mean": 1.5
+    },
+    "04-03": {
+      "temp_mean": 29.95,
+      "temp_min": 26.75,
+      "temp_max": 32.97,
+      "gwettop_mean": 0.35,
+      "precip_mean": 2.08
+    },
+    "04-04": {
+      "temp_mean": 30.16,
+      "temp_min": 26.8,
+      "temp_max": 33.3,
+      "gwettop_mean": 0.35,
+      "precip_mean": 1.29
+    },
+    "04-05": {
+      "temp_mean": 29.91,
+      "temp_min": 26.56,
+      "temp_max": 33.37,
+      "gwettop_mean": 0.36,
+      "precip_mean": 1.89
+    },
+    "04-06": {
+      "temp_mean": 29.64,
+      "temp_min": 25.68,
+      "temp_max": 32.89,
+      "gwettop_mean": 0.37,
+      "precip_mean": 3.25
+    },
+    "04-07": {
+      "temp_mean": 30.06,
+      "temp_min": 25.6,
+      "temp_max": 33.28,
+      "gwettop_mean": 0.38,
+      "precip_mean": 1.64
+    },
+    "04-08": {
+      "temp_mean": 30.3,
+      "temp_min": 26.22,
+      "temp_max": 33.3,
+      "gwettop_mean": 0.36,
+      "precip_mean": 1.65
+    },
+    "04-09": {
+      "temp_mean": 30.33,
+      "temp_min": 25.56,
+      "temp_max": 33.26,
+      "gwettop_mean": 0.36,
+      "precip_mean": 1.72
+    },
+    "04-10": {
+      "temp_mean": 30.54,
+      "temp_min": 25.92,
+      "temp_max": 33.16,
+      "gwettop_mean": 0.35,
+      "precip_mean": 1.0
+    },
+    "04-11": {
+      "temp_mean": 30.92,
+      "temp_min": 27.24,
+      "temp_max": 33.93,
+      "gwettop_mean": 0.35,
+      "precip_mean": 2.26
+    },
+    "04-12": {
+      "temp_mean": 30.79,
+      "temp_min": 27.98,
+      "temp_max": 33.93,
+      "gwettop_mean": 0.35,
+      "precip_mean": 1.23
+    },
+    "04-13": {
+      "temp_mean": 30.95,
+      "temp_min": 26.45,
+      "temp_max": 34.62,
+      "gwettop_mean": 0.35,
+      "precip_mean": 1.58
+    },
+    "04-14": {
+      "temp_mean": 31.23,
+      "temp_min": 28.21,
+      "temp_max": 33.53,
+      "gwettop_mean": 0.36,
+      "precip_mean": 1.87
+    },
+    "04-15": {
+      "temp_mean": 31.24,
+      "temp_min": 28.04,
+      "temp_max": 33.66,
+      "gwettop_mean": 0.37,
+      "precip_mean": 3.42
+    },
+    "04-16": {
+      "temp_mean": 31.36,
+      "temp_min": 27.76,
+      "temp_max": 34.54,
+      "gwettop_mean": 0.37,
+      "precip_mean": 2.2
+    },
+    "04-17": {
+      "temp_mean": 31.48,
+      "temp_min": 27.93,
+      "temp_max": 34.49,
+      "gwettop_mean": 0.37,
+      "precip_mean": 2.15
+    },
+    "04-18": {
+      "temp_mean": 31.35,
+      "temp_min": 26.57,
+      "temp_max": 34.75,
+      "gwettop_mean": 0.38,
+      "precip_mean": 2.77
+    },
+    "04-19": {
+      "temp_mean": 31.51,
+      "temp_min": 26.93,
+      "temp_max": 34.66,
+      "gwettop_mean": 0.38,
+      "precip_mean": 2.62
+    },
+    "04-20": {
+      "temp_mean": 31.51,
+      "temp_min": 26.12,
+      "temp_max": 35.1,
+      "gwettop_mean": 0.39,
+      "precip_mean": 3.6
+    },
+    "04-21": {
+      "temp_mean": 31.66,
+      "temp_min": 23.76,
+      "temp_max": 35.35,
+      "gwettop_mean": 0.38,
+      "precip_mean": 2.99
+    },
+    "04-22": {
+      "temp_mean": 31.71,
+      "temp_min": 25.33,
+      "temp_max": 35.37,
+      "gwettop_mean": 0.39,
+      "precip_mean": 3.69
+    },
+    "04-23": {
+      "temp_mean": 31.69,
+      "temp_min": 27.43,
+      "temp_max": 35.04,
+      "gwettop_mean": 0.38,
+      "precip_mean": 2.93
+    },
+    "04-24": {
+      "temp_mean": 31.71,
+      "temp_min": 27.73,
+      "temp_max": 35.19,
+      "gwettop_mean": 0.37,
+      "precip_mean": 2.4
+    },
+    "04-25": {
+      "temp_mean": 31.66,
+      "temp_min": 25.61,
+      "temp_max": 35.39,
+      "gwettop_mean": 0.38,
+      "precip_mean": 3.12
+    },
+    "04-26": {
+      "temp_mean": 31.56,
+      "temp_min": 24.93,
+      "temp_max": 35.28,
+      "gwettop_mean": 0.39,
+      "precip_mean": 3.85
+    },
+    "04-27": {
+      "temp_mean": 31.74,
+      "temp_min": 26.61,
+      "temp_max": 35.14,
+      "gwettop_mean": 0.38,
+      "precip_mean": 2.91
+    },
+    "04-28": {
+      "temp_mean": 31.73,
+      "temp_min": 26.66,
+      "temp_max": 36.02,
+      "gwettop_mean": 0.38,
+      "precip_mean": 2.41
+    },
+    "04-29": {
+      "temp_mean": 31.56,
+      "temp_min": 26.29,
+      "temp_max": 36.03,
+      "gwettop_mean": 0.39,
+      "precip_mean": 3.86
+    },
+    "04-30": {
+      "temp_mean": 31.58,
+      "temp_min": 26.5,
+      "temp_max": 36.51,
+      "gwettop_mean": 0.41,
+      "precip_mean": 5.47
+    },
+    "05-01": {
+      "temp_mean": 31.27,
+      "temp_min": 26.5,
+      "temp_max": 35.74,
+      "gwettop_mean": 0.42,
+      "precip_mean": 4.99
+    },
+    "05-02": {
+      "temp_mean": 31.06,
+      "temp_min": 26.92,
+      "temp_max": 35.19,
+      "gwettop_mean": 0.43,
+      "precip_mean": 4.42
+    },
+    "05-03": {
+      "temp_mean": 30.68,
+      "temp_min": 26.43,
+      "temp_max": 34.37,
+      "gwettop_mean": 0.43,
+      "precip_mean": 3.83
+    },
+    "05-04": {
+      "temp_mean": 30.37,
+      "temp_min": 26.09,
+      "temp_max": 33.96,
+      "gwettop_mean": 0.45,
+      "precip_mean": 5.42
+    },
+    "05-05": {
+      "temp_mean": 30.62,
+      "temp_min": 26.66,
+      "temp_max": 35.39,
+      "gwettop_mean": 0.44,
+      "precip_mean": 3.61
+    },
+    "05-06": {
+      "temp_mean": 30.58,
+      "temp_min": 27.49,
+      "temp_max": 34.19,
+      "gwettop_mean": 0.46,
+      "precip_mean": 7.05
+    },
+    "05-07": {
+      "temp_mean": 30.76,
+      "temp_min": 27.86,
+      "temp_max": 33.73,
+      "gwettop_mean": 0.46,
+      "precip_mean": 4.09
+    },
+    "05-08": {
+      "temp_mean": 30.97,
+      "temp_min": 26.91,
+      "temp_max": 33.87,
+      "gwettop_mean": 0.47,
+      "precip_mean": 4.85
+    },
+    "05-09": {
+      "temp_mean": 31.41,
+      "temp_min": 27.79,
+      "temp_max": 36.29,
+      "gwettop_mean": 0.46,
+      "precip_mean": 3.58
+    },
+    "05-10": {
+      "temp_mean": 31.56,
+      "temp_min": 27.18,
+      "temp_max": 36.21,
+      "gwettop_mean": 0.46,
+      "precip_mean": 4.44
+    },
+    "05-11": {
+      "temp_mean": 31.6,
+      "temp_min": 27.3,
+      "temp_max": 35.36,
+      "gwettop_mean": 0.47,
+      "precip_mean": 5.36
+    },
+    "05-12": {
+      "temp_mean": 31.44,
+      "temp_min": 27.75,
+      "temp_max": 35.01,
+      "gwettop_mean": 0.48,
+      "precip_mean": 4.63
+    },
+    "05-13": {
+      "temp_mean": 31.65,
+      "temp_min": 27.75,
+      "temp_max": 35.81,
+      "gwettop_mean": 0.46,
+      "precip_mean": 3.74
+    },
+    "05-14": {
+      "temp_mean": 31.99,
+      "temp_min": 27.6,
+      "temp_max": 36.38,
+      "gwettop_mean": 0.46,
+      "precip_mean": 4.0
+    },
+    "05-15": {
+      "temp_mean": 31.84,
+      "temp_min": 27.28,
+      "temp_max": 35.91,
+      "gwettop_mean": 0.46,
+      "precip_mean": 4.73
+    },
+    "05-16": {
+      "temp_mean": 31.85,
+      "temp_min": 26.67,
+      "temp_max": 36.01,
+      "gwettop_mean": 0.47,
+      "precip_mean": 5.49
+    },
+    "05-17": {
+      "temp_mean": 32.18,
+      "temp_min": 27.01,
+      "temp_max": 36.68,
+      "gwettop_mean": 0.47,
+      "precip_mean": 4.94
+    },
+    "05-18": {
+      "temp_mean": 32.22,
+      "temp_min": 28.15,
+      "temp_max": 36.42,
+      "gwettop_mean": 0.48,
+      "precip_mean": 6.06
+    },
+    "05-19": {
+      "temp_mean": 31.99,
+      "temp_min": 28.58,
+      "temp_max": 36.84,
+      "gwettop_mean": 0.48,
+      "precip_mean": 5.26
+    },
+    "05-20": {
+      "temp_mean": 31.47,
+      "temp_min": 26.08,
+      "temp_max": 36.32,
+      "gwettop_mean": 0.5,
+      "precip_mean": 7.72
+    },
+    "05-21": {
+      "temp_mean": 31.5,
+      "temp_min": 27.42,
+      "temp_max": 36.56,
+      "gwettop_mean": 0.51,
+      "precip_mean": 7.9
+    },
+    "05-22": {
+      "temp_mean": 31.7,
+      "temp_min": 26.85,
+      "temp_max": 36.53,
+      "gwettop_mean": 0.51,
+      "precip_mean": 7.22
+    },
+    "05-23": {
+      "temp_mean": 31.49,
+      "temp_min": 27.9,
+      "temp_max": 35.35,
+      "gwettop_mean": 0.51,
+      "precip_mean": 5.74
+    },
+    "05-24": {
+      "temp_mean": 31.43,
+      "temp_min": 27.98,
+      "temp_max": 35.52,
+      "gwettop_mean": 0.52,
+      "precip_mean": 6.24
+    },
+    "05-25": {
+      "temp_mean": 30.97,
+      "temp_min": 27.85,
+      "temp_max": 35.26,
+      "gwettop_mean": 0.55,
+      "precip_mean": 9.57
+    },
+    "05-26": {
+      "temp_mean": 30.71,
+      "temp_min": 27.62,
+      "temp_max": 35.51,
+      "gwettop_mean": 0.55,
+      "precip_mean": 8.93
+    },
+    "05-27": {
+      "temp_mean": 30.46,
+      "temp_min": 28.11,
+      "temp_max": 34.81,
+      "gwettop_mean": 0.56,
+      "precip_mean": 10.6
+    },
+    "05-28": {
+      "temp_mean": 30.71,
+      "temp_min": 27.56,
+      "temp_max": 34.68,
+      "gwettop_mean": 0.55,
+      "precip_mean": 6.53
+    },
+    "05-29": {
+      "temp_mean": 30.87,
+      "temp_min": 28.22,
+      "temp_max": 34.05,
+      "gwettop_mean": 0.55,
+      "precip_mean": 7.46
+    },
+    "05-30": {
+      "temp_mean": 31.1,
+      "temp_min": 27.76,
+      "temp_max": 35.01,
+      "gwettop_mean": 0.56,
+      "precip_mean": 6.19
+    },
+    "05-31": {
+      "temp_mean": 30.95,
+      "temp_min": 27.84,
+      "temp_max": 35.72,
+      "gwettop_mean": 0.57,
+      "precip_mean": 7.32
+    },
+    "06-01": {
+      "temp_mean": 31.13,
+      "temp_min": 28.37,
+      "temp_max": 36.68,
+      "gwettop_mean": 0.56,
+      "precip_mean": 5.92
+    },
+    "06-02": {
+      "temp_mean": 31.1,
+      "temp_min": 27.88,
+      "temp_max": 36.77,
+      "gwettop_mean": 0.57,
+      "precip_mean": 7.24
+    },
+    "06-03": {
+      "temp_mean": 31.01,
+      "temp_min": 28.07,
+      "temp_max": 36.55,
+      "gwettop_mean": 0.56,
+      "precip_mean": 5.36
+    },
+    "06-04": {
+      "temp_mean": 31.05,
+      "temp_min": 27.15,
+      "temp_max": 35.93,
+      "gwettop_mean": 0.57,
+      "precip_mean": 7.04
+    },
+    "06-05": {
+      "temp_mean": 30.68,
+      "temp_min": 27.83,
+      "temp_max": 34.47,
+      "gwettop_mean": 0.59,
+      "precip_mean": 7.66
+    },
+    "06-06": {
+      "temp_mean": 30.68,
+      "temp_min": 28.36,
+      "temp_max": 33.82,
+      "gwettop_mean": 0.58,
+      "precip_mean": 5.82
+    },
+    "06-07": {
+      "temp_mean": 30.76,
+      "temp_min": 28.33,
+      "temp_max": 33.33,
+      "gwettop_mean": 0.58,
+      "precip_mean": 5.6
+    },
+    "06-08": {
+      "temp_mean": 30.82,
+      "temp_min": 28.23,
+      "temp_max": 33.96,
+      "gwettop_mean": 0.58,
+      "precip_mean": 4.9
+    },
+    "06-09": {
+      "temp_mean": 30.75,
+      "temp_min": 27.77,
+      "temp_max": 34.33,
+      "gwettop_mean": 0.59,
+      "precip_mean": 7.65
+    },
+    "06-10": {
+      "temp_mean": 30.57,
+      "temp_min": 27.81,
+      "temp_max": 34.54,
+      "gwettop_mean": 0.6,
+      "precip_mean": 7.19
+    },
+    "06-11": {
+      "temp_mean": 30.64,
+      "temp_min": 28.0,
+      "temp_max": 34.83,
+      "gwettop_mean": 0.59,
+      "precip_mean": 4.88
+    },
+    "06-12": {
+      "temp_mean": 30.51,
+      "temp_min": 27.85,
+      "temp_max": 33.88,
+      "gwettop_mean": 0.6,
+      "precip_mean": 5.82
+    },
+    "06-13": {
+      "temp_mean": 30.6,
+      "temp_min": 28.25,
+      "temp_max": 34.16,
+      "gwettop_mean": 0.6,
+      "precip_mean": 5.49
+    },
+    "06-14": {
+      "temp_mean": 30.5,
+      "temp_min": 28.03,
+      "temp_max": 34.8,
+      "gwettop_mean": 0.6,
+      "precip_mean": 5.93
+    },
+    "06-15": {
+      "temp_mean": 30.51,
+      "temp_min": 28.05,
+      "temp_max": 35.4,
+      "gwettop_mean": 0.61,
+      "precip_mean": 7.16
+    },
+    "06-16": {
+      "temp_mean": 30.5,
+      "temp_min": 28.15,
+      "temp_max": 36.16,
+      "gwettop_mean": 0.62,
+      "precip_mean": 9.15
+    },
+    "06-17": {
+      "temp_mean": 30.26,
+      "temp_min": 28.15,
+      "temp_max": 35.49,
+      "gwettop_mean": 0.64,
+      "precip_mean": 10.02
+    },
+    "06-18": {
+      "temp_mean": 30.01,
+      "temp_min": 27.25,
+      "temp_max": 34.95,
+      "gwettop_mean": 0.65,
+      "precip_mean": 10.03
+    },
+    "06-19": {
+      "temp_mean": 29.8,
+      "temp_min": 27.27,
+      "temp_max": 33.67,
+      "gwettop_mean": 0.66,
+      "precip_mean": 11.03
+    },
+    "06-20": {
+      "temp_mean": 29.67,
+      "temp_min": 27.6,
+      "temp_max": 33.24,
+      "gwettop_mean": 0.66,
+      "precip_mean": 9.47
+    },
+    "06-21": {
+      "temp_mean": 29.5,
+      "temp_min": 27.83,
+      "temp_max": 33.31,
+      "gwettop_mean": 0.67,
+      "precip_mean": 10.49
+    },
+    "06-22": {
+      "temp_mean": 29.5,
+      "temp_min": 27.7,
+      "temp_max": 32.5,
+      "gwettop_mean": 0.67,
+      "precip_mean": 7.52
+    },
+    "06-23": {
+      "temp_mean": 29.68,
+      "temp_min": 28.08,
+      "temp_max": 33.0,
+      "gwettop_mean": 0.67,
+      "precip_mean": 7.43
+    },
+    "06-24": {
+      "temp_mean": 29.65,
+      "temp_min": 28.23,
+      "temp_max": 32.4,
+      "gwettop_mean": 0.67,
+      "precip_mean": 5.27
+    },
+    "06-25": {
+      "temp_mean": 29.77,
+      "temp_min": 28.58,
+      "temp_max": 31.99,
+      "gwettop_mean": 0.67,
+      "precip_mean": 6.17
+    },
+    "06-26": {
+      "temp_mean": 29.71,
+      "temp_min": 28.16,
+      "temp_max": 32.31,
+      "gwettop_mean": 0.67,
+      "precip_mean": 8.0
+    },
+    "06-27": {
+      "temp_mean": 29.69,
+      "temp_min": 28.15,
+      "temp_max": 33.77,
+      "gwettop_mean": 0.68,
+      "precip_mean": 8.81
+    },
+    "06-28": {
+      "temp_mean": 29.52,
+      "temp_min": 28.12,
+      "temp_max": 34.1,
+      "gwettop_mean": 0.69,
+      "precip_mean": 8.03
+    },
+    "06-29": {
+      "temp_mean": 29.33,
+      "temp_min": 27.86,
+      "temp_max": 32.98,
+      "gwettop_mean": 0.7,
+      "precip_mean": 8.73
+    },
+    "06-30": {
+      "temp_mean": 29.35,
+      "temp_min": 27.95,
+      "temp_max": 33.15,
+      "gwettop_mean": 0.71,
+      "precip_mean": 9.49
+    },
+    "07-01": {
+      "temp_mean": 29.3,
+      "temp_min": 27.61,
+      "temp_max": 30.94,
+      "gwettop_mean": 0.72,
+      "precip_mean": 12.4
+    },
+    "07-02": {
+      "temp_mean": 29.26,
+      "temp_min": 28.07,
+      "temp_max": 30.65,
+      "gwettop_mean": 0.73,
+      "precip_mean": 12.12
+    },
+    "07-03": {
+      "temp_mean": 29.23,
+      "temp_min": 28.19,
+      "temp_max": 30.92,
+      "gwettop_mean": 0.74,
+      "precip_mean": 12.04
+    },
+    "07-04": {
+      "temp_mean": 29.1,
+      "temp_min": 28.3,
+      "temp_max": 30.35,
+      "gwettop_mean": 0.75,
+      "precip_mean": 11.29
+    },
+    "07-05": {
+      "temp_mean": 29.15,
+      "temp_min": 28.08,
+      "temp_max": 30.22,
+      "gwettop_mean": 0.74,
+      "precip_mean": 10.59
+    },
+    "07-06": {
+      "temp_mean": 29.27,
+      "temp_min": 28.61,
+      "temp_max": 29.93,
+      "gwettop_mean": 0.74,
+      "precip_mean": 8.49
+    },
+    "07-07": {
+      "temp_mean": 29.27,
+      "temp_min": 27.98,
+      "temp_max": 30.39,
+      "gwettop_mean": 0.74,
+      "precip_mean": 7.89
+    },
+    "07-08": {
+      "temp_mean": 29.34,
+      "temp_min": 28.06,
+      "temp_max": 30.91,
+      "gwettop_mean": 0.74,
+      "precip_mean": 7.65
+    },
+    "07-09": {
+      "temp_mean": 29.3,
+      "temp_min": 27.61,
+      "temp_max": 30.67,
+      "gwettop_mean": 0.75,
+      "precip_mean": 11.62
+    },
+    "07-10": {
+      "temp_mean": 29.23,
+      "temp_min": 27.13,
+      "temp_max": 30.27,
+      "gwettop_mean": 0.75,
+      "precip_mean": 10.0
+    },
+    "07-11": {
+      "temp_mean": 29.06,
+      "temp_min": 27.34,
+      "temp_max": 30.32,
+      "gwettop_mean": 0.75,
+      "precip_mean": 9.41
+    },
+    "07-12": {
+      "temp_mean": 29.1,
+      "temp_min": 27.62,
+      "temp_max": 30.46,
+      "gwettop_mean": 0.76,
+      "precip_mean": 10.69
+    },
+    "07-13": {
+      "temp_mean": 29.35,
+      "temp_min": 28.07,
+      "temp_max": 30.94,
+      "gwettop_mean": 0.77,
+      "precip_mean": 10.87
+    },
+    "07-14": {
+      "temp_mean": 29.08,
+      "temp_min": 27.45,
+      "temp_max": 30.12,
+      "gwettop_mean": 0.77,
+      "precip_mean": 9.3
+    },
+    "07-15": {
+      "temp_mean": 29.1,
+      "temp_min": 27.24,
+      "temp_max": 30.92,
+      "gwettop_mean": 0.76,
+      "precip_mean": 6.97
+    },
+    "07-16": {
+      "temp_mean": 29.04,
+      "temp_min": 27.77,
+      "temp_max": 30.61,
+      "gwettop_mean": 0.76,
+      "precip_mean": 6.77
+    },
+    "07-17": {
+      "temp_mean": 29.17,
+      "temp_min": 27.93,
+      "temp_max": 31.14,
+      "gwettop_mean": 0.76,
+      "precip_mean": 6.52
+    },
+    "07-18": {
+      "temp_mean": 29.2,
+      "temp_min": 27.69,
+      "temp_max": 31.1,
+      "gwettop_mean": 0.76,
+      "precip_mean": 6.55
+    },
+    "07-19": {
+      "temp_mean": 29.15,
+      "temp_min": 27.33,
+      "temp_max": 31.17,
+      "gwettop_mean": 0.76,
+      "precip_mean": 8.68
+    },
+    "07-20": {
+      "temp_mean": 28.94,
+      "temp_min": 27.22,
+      "temp_max": 30.95,
+      "gwettop_mean": 0.77,
+      "precip_mean": 11.58
+    },
+    "07-21": {
+      "temp_mean": 28.94,
+      "temp_min": 27.2,
+      "temp_max": 30.16,
+      "gwettop_mean": 0.77,
+      "precip_mean": 9.04
+    },
+    "07-22": {
+      "temp_mean": 28.67,
+      "temp_min": 27.04,
+      "temp_max": 30.0,
+      "gwettop_mean": 0.77,
+      "precip_mean": 8.97
+    },
+    "07-23": {
+      "temp_mean": 28.79,
+      "temp_min": 27.52,
+      "temp_max": 30.9,
+      "gwettop_mean": 0.77,
+      "precip_mean": 6.73
+    },
+    "07-24": {
+      "temp_mean": 28.82,
+      "temp_min": 26.99,
+      "temp_max": 30.58,
+      "gwettop_mean": 0.77,
+      "precip_mean": 8.74
+    },
+    "07-25": {
+      "temp_mean": 28.9,
+      "temp_min": 26.95,
+      "temp_max": 31.23,
+      "gwettop_mean": 0.78,
+      "precip_mean": 8.92
+    },
+    "07-26": {
+      "temp_mean": 28.95,
+      "temp_min": 26.73,
+      "temp_max": 31.1,
+      "gwettop_mean": 0.77,
+      "precip_mean": 7.15
+    },
+    "07-27": {
+      "temp_mean": 28.81,
+      "temp_min": 27.04,
+      "temp_max": 30.33,
+      "gwettop_mean": 0.78,
+      "precip_mean": 8.91
+    },
+    "07-28": {
+      "temp_mean": 28.88,
+      "temp_min": 27.59,
+      "temp_max": 30.36,
+      "gwettop_mean": 0.78,
+      "precip_mean": 7.86
+    },
+    "07-29": {
+      "temp_mean": 28.79,
+      "temp_min": 27.61,
+      "temp_max": 30.41,
+      "gwettop_mean": 0.78,
+      "precip_mean": 8.42
+    },
+    "07-30": {
+      "temp_mean": 28.84,
+      "temp_min": 28.05,
+      "temp_max": 30.68,
+      "gwettop_mean": 0.78,
+      "precip_mean": 7.85
+    },
+    "07-31": {
+      "temp_mean": 28.87,
+      "temp_min": 27.45,
+      "temp_max": 31.7,
+      "gwettop_mean": 0.78,
+      "precip_mean": 8.56
+    },
+    "08-01": {
+      "temp_mean": 28.9,
+      "temp_min": 26.98,
+      "temp_max": 31.63,
+      "gwettop_mean": 0.79,
+      "precip_mean": 10.34
+    },
+    "08-02": {
+      "temp_mean": 28.82,
+      "temp_min": 27.61,
+      "temp_max": 31.59,
+      "gwettop_mean": 0.8,
+      "precip_mean": 10.57
+    },
+    "08-03": {
+      "temp_mean": 28.83,
+      "temp_min": 27.55,
+      "temp_max": 30.8,
+      "gwettop_mean": 0.79,
+      "precip_mean": 7.62
+    },
+    "08-04": {
+      "temp_mean": 28.9,
+      "temp_min": 27.36,
+      "temp_max": 30.09,
+      "gwettop_mean": 0.79,
+      "precip_mean": 7.62
+    },
+    "08-05": {
+      "temp_mean": 28.84,
+      "temp_min": 27.24,
+      "temp_max": 30.22,
+      "gwettop_mean": 0.79,
+      "precip_mean": 7.43
+    },
+    "08-06": {
+      "temp_mean": 28.83,
+      "temp_min": 27.93,
+      "temp_max": 30.24,
+      "gwettop_mean": 0.79,
+      "precip_mean": 7.25
+    },
+    "08-07": {
+      "temp_mean": 28.82,
+      "temp_min": 27.96,
+      "temp_max": 30.09,
+      "gwettop_mean": 0.79,
+      "precip_mean": 6.42
+    },
+    "08-08": {
+      "temp_mean": 28.83,
+      "temp_min": 27.4,
+      "temp_max": 30.21,
+      "gwettop_mean": 0.8,
+      "precip_mean": 8.99
+    },
+    "08-09": {
+      "temp_mean": 28.9,
+      "temp_min": 27.61,
+      "temp_max": 30.45,
+      "gwettop_mean": 0.8,
+      "precip_mean": 9.4
+    },
+    "08-10": {
+      "temp_mean": 28.95,
+      "temp_min": 27.61,
+      "temp_max": 31.07,
+      "gwettop_mean": 0.8,
+      "precip_mean": 9.6
+    },
+    "08-11": {
+      "temp_mean": 28.84,
+      "temp_min": 27.52,
+      "temp_max": 30.84,
+      "gwettop_mean": 0.8,
+      "precip_mean": 10.83
+    },
+    "08-12": {
+      "temp_mean": 28.75,
+      "temp_min": 26.88,
+      "temp_max": 30.39,
+      "gwettop_mean": 0.81,
+      "precip_mean": 10.08
+    },
+    "08-13": {
+      "temp_mean": 28.7,
+      "temp_min": 27.23,
+      "temp_max": 30.43,
+      "gwettop_mean": 0.81,
+      "precip_mean": 10.83
+    },
+    "08-14": {
+      "temp_mean": 28.58,
+      "temp_min": 27.27,
+      "temp_max": 29.59,
+      "gwettop_mean": 0.81,
+      "precip_mean": 8.6
+    },
+    "08-15": {
+      "temp_mean": 28.62,
+      "temp_min": 27.79,
+      "temp_max": 29.76,
+      "gwettop_mean": 0.81,
+      "precip_mean": 7.26
+    },
+    "08-16": {
+      "temp_mean": 28.69,
+      "temp_min": 27.41,
+      "temp_max": 29.91,
+      "gwettop_mean": 0.81,
+      "precip_mean": 8.77
+    },
+    "08-17": {
+      "temp_mean": 28.72,
+      "temp_min": 26.84,
+      "temp_max": 30.6,
+      "gwettop_mean": 0.81,
+      "precip_mean": 7.75
+    },
+    "08-18": {
+      "temp_mean": 28.62,
+      "temp_min": 27.24,
+      "temp_max": 31.65,
+      "gwettop_mean": 0.81,
+      "precip_mean": 8.88
+    },
+    "08-19": {
+      "temp_mean": 28.57,
+      "temp_min": 27.43,
+      "temp_max": 30.3,
+      "gwettop_mean": 0.82,
+      "precip_mean": 8.35
+    },
+    "08-20": {
+      "temp_mean": 28.48,
+      "temp_min": 27.16,
+      "temp_max": 29.41,
+      "gwettop_mean": 0.81,
+      "precip_mean": 5.6
+    },
+    "08-21": {
+      "temp_mean": 28.49,
+      "temp_min": 27.11,
+      "temp_max": 30.22,
+      "gwettop_mean": 0.8,
+      "precip_mean": 5.37
+    },
+    "08-22": {
+      "temp_mean": 28.49,
+      "temp_min": 27.29,
+      "temp_max": 29.79,
+      "gwettop_mean": 0.81,
+      "precip_mean": 9.18
+    },
+    "08-23": {
+      "temp_mean": 28.33,
+      "temp_min": 26.95,
+      "temp_max": 29.42,
+      "gwettop_mean": 0.82,
+      "precip_mean": 8.63
+    },
+    "08-24": {
+      "temp_mean": 28.39,
+      "temp_min": 27.16,
+      "temp_max": 29.42,
+      "gwettop_mean": 0.82,
+      "precip_mean": 7.02
+    },
+    "08-25": {
+      "temp_mean": 28.51,
+      "temp_min": 26.94,
+      "temp_max": 29.89,
+      "gwettop_mean": 0.81,
+      "precip_mean": 7.09
+    },
+    "08-26": {
+      "temp_mean": 28.44,
+      "temp_min": 26.94,
+      "temp_max": 30.42,
+      "gwettop_mean": 0.82,
+      "precip_mean": 7.74
+    },
+    "08-27": {
+      "temp_mean": 28.4,
+      "temp_min": 27.01,
+      "temp_max": 29.67,
+      "gwettop_mean": 0.82,
+      "precip_mean": 6.71
+    },
+    "08-28": {
+      "temp_mean": 28.3,
+      "temp_min": 26.94,
+      "temp_max": 29.57,
+      "gwettop_mean": 0.81,
+      "precip_mean": 5.1
+    },
+    "08-29": {
+      "temp_mean": 28.41,
+      "temp_min": 26.76,
+      "temp_max": 30.08,
+      "gwettop_mean": 0.81,
+      "precip_mean": 4.35
+    },
+    "08-30": {
+      "temp_mean": 28.58,
+      "temp_min": 27.26,
+      "temp_max": 29.9,
+      "gwettop_mean": 0.81,
+      "precip_mean": 6.05
+    },
+    "08-31": {
+      "temp_mean": 28.59,
+      "temp_min": 26.84,
+      "temp_max": 30.55,
+      "gwettop_mean": 0.81,
+      "precip_mean": 7.26
+    },
+    "09-01": {
+      "temp_mean": 28.39,
+      "temp_min": 27.12,
+      "temp_max": 30.43,
+      "gwettop_mean": 0.81,
+      "precip_mean": 7.5
+    },
+    "09-02": {
+      "temp_mean": 28.46,
+      "temp_min": 26.8,
+      "temp_max": 30.28,
+      "gwettop_mean": 0.82,
+      "precip_mean": 7.77
+    },
+    "09-03": {
+      "temp_mean": 28.4,
+      "temp_min": 27.6,
+      "temp_max": 30.29,
+      "gwettop_mean": 0.82,
+      "precip_mean": 7.03
+    },
+    "09-04": {
+      "temp_mean": 28.27,
+      "temp_min": 27.25,
+      "temp_max": 29.06,
+      "gwettop_mean": 0.81,
+      "precip_mean": 6.15
+    },
+    "09-05": {
+      "temp_mean": 28.36,
+      "temp_min": 27.36,
+      "temp_max": 29.83,
+      "gwettop_mean": 0.81,
+      "precip_mean": 5.23
+    },
+    "09-06": {
+      "temp_mean": 28.27,
+      "temp_min": 26.64,
+      "temp_max": 29.77,
+      "gwettop_mean": 0.82,
+      "precip_mean": 6.83
+    },
+    "09-07": {
+      "temp_mean": 28.24,
+      "temp_min": 27.06,
+      "temp_max": 29.5,
+      "gwettop_mean": 0.81,
+      "precip_mean": 6.35
+    },
+    "09-08": {
+      "temp_mean": 28.41,
+      "temp_min": 27.02,
+      "temp_max": 29.77,
+      "gwettop_mean": 0.82,
+      "precip_mean": 6.82
+    },
+    "09-09": {
+      "temp_mean": 28.21,
+      "temp_min": 26.48,
+      "temp_max": 29.45,
+      "gwettop_mean": 0.82,
+      "precip_mean": 5.5
+    },
+    "09-10": {
+      "temp_mean": 28.04,
+      "temp_min": 26.18,
+      "temp_max": 29.39,
+      "gwettop_mean": 0.81,
+      "precip_mean": 6.66
+    },
+    "09-11": {
+      "temp_mean": 27.89,
+      "temp_min": 26.22,
+      "temp_max": 29.55,
+      "gwettop_mean": 0.83,
+      "precip_mean": 9.79
+    },
+    "09-12": {
+      "temp_mean": 28.17,
+      "temp_min": 26.2,
+      "temp_max": 29.94,
+      "gwettop_mean": 0.83,
+      "precip_mean": 8.51
+    },
+    "09-13": {
+      "temp_mean": 28.08,
+      "temp_min": 25.86,
+      "temp_max": 29.42,
+      "gwettop_mean": 0.83,
+      "precip_mean": 8.71
+    },
+    "09-14": {
+      "temp_mean": 27.77,
+      "temp_min": 25.05,
+      "temp_max": 29.62,
+      "gwettop_mean": 0.83,
+      "precip_mean": 9.61
+    },
+    "09-15": {
+      "temp_mean": 27.77,
+      "temp_min": 25.34,
+      "temp_max": 29.75,
+      "gwettop_mean": 0.83,
+      "precip_mean": 8.47
+    },
+    "09-16": {
+      "temp_mean": 27.89,
+      "temp_min": 24.83,
+      "temp_max": 30.02,
+      "gwettop_mean": 0.83,
+      "precip_mean": 9.42
+    },
+    "09-17": {
+      "temp_mean": 28.01,
+      "temp_min": 25.82,
+      "temp_max": 30.07,
+      "gwettop_mean": 0.83,
+      "precip_mean": 6.76
+    },
+    "09-18": {
+      "temp_mean": 28.04,
+      "temp_min": 26.2,
+      "temp_max": 29.6,
+      "gwettop_mean": 0.83,
+      "precip_mean": 8.31
+    },
+    "09-19": {
+      "temp_mean": 28.03,
+      "temp_min": 26.03,
+      "temp_max": 29.47,
+      "gwettop_mean": 0.83,
+      "precip_mean": 8.28
+    },
+    "09-20": {
+      "temp_mean": 27.8,
+      "temp_min": 25.42,
+      "temp_max": 29.97,
+      "gwettop_mean": 0.84,
+      "precip_mean": 9.29
+    },
+    "09-21": {
+      "temp_mean": 27.7,
+      "temp_min": 24.23,
+      "temp_max": 30.26,
+      "gwettop_mean": 0.85,
+      "precip_mean": 11.11
+    },
+    "09-22": {
+      "temp_mean": 27.63,
+      "temp_min": 25.0,
+      "temp_max": 29.49,
+      "gwettop_mean": 0.84,
+      "precip_mean": 9.63
+    },
+    "09-23": {
+      "temp_mean": 27.58,
+      "temp_min": 25.39,
+      "temp_max": 29.94,
+      "gwettop_mean": 0.85,
+      "precip_mean": 9.41
+    },
+    "09-24": {
+      "temp_mean": 27.5,
+      "temp_min": 25.85,
+      "temp_max": 29.02,
+      "gwettop_mean": 0.86,
+      "precip_mean": 10.74
+    },
+    "09-25": {
+      "temp_mean": 27.46,
+      "temp_min": 25.59,
+      "temp_max": 29.47,
+      "gwettop_mean": 0.86,
+      "precip_mean": 10.77
+    },
+    "09-26": {
+      "temp_mean": 27.66,
+      "temp_min": 26.43,
+      "temp_max": 28.86,
+      "gwettop_mean": 0.85,
+      "precip_mean": 9.04
+    },
+    "09-27": {
+      "temp_mean": 27.68,
+      "temp_min": 26.39,
+      "temp_max": 29.12,
+      "gwettop_mean": 0.85,
+      "precip_mean": 4.8
+    },
+    "09-28": {
+      "temp_mean": 27.7,
+      "temp_min": 25.69,
+      "temp_max": 28.74,
+      "gwettop_mean": 0.85,
+      "precip_mean": 5.61
+    },
+    "09-29": {
+      "temp_mean": 27.6,
+      "temp_min": 24.56,
+      "temp_max": 28.75,
+      "gwettop_mean": 0.85,
+      "precip_mean": 6.5
+    },
+    "09-30": {
+      "temp_mean": 27.55,
+      "temp_min": 24.68,
+      "temp_max": 28.84,
+      "gwettop_mean": 0.84,
+      "precip_mean": 5.32
+    },
+    "10-01": {
+      "temp_mean": 27.73,
+      "temp_min": 26.27,
+      "temp_max": 29.11,
+      "gwettop_mean": 0.84,
+      "precip_mean": 7.66
+    },
+    "10-02": {
+      "temp_mean": 27.69,
+      "temp_min": 26.05,
+      "temp_max": 28.99,
+      "gwettop_mean": 0.85,
+      "precip_mean": 8.07
+    },
+    "10-03": {
+      "temp_mean": 27.72,
+      "temp_min": 25.88,
+      "temp_max": 29.03,
+      "gwettop_mean": 0.84,
+      "precip_mean": 6.79
+    },
+    "10-04": {
+      "temp_mean": 27.46,
+      "temp_min": 25.38,
+      "temp_max": 28.64,
+      "gwettop_mean": 0.85,
+      "precip_mean": 7.89
+    },
+    "10-05": {
+      "temp_mean": 27.36,
+      "temp_min": 25.47,
+      "temp_max": 28.5,
+      "gwettop_mean": 0.85,
+      "precip_mean": 9.73
+    },
+    "10-06": {
+      "temp_mean": 27.36,
+      "temp_min": 25.92,
+      "temp_max": 28.56,
+      "gwettop_mean": 0.85,
+      "precip_mean": 7.43
+    },
+    "10-07": {
+      "temp_mean": 27.24,
+      "temp_min": 24.76,
+      "temp_max": 28.82,
+      "gwettop_mean": 0.86,
+      "precip_mean": 10.59
+    },
+    "10-08": {
+      "temp_mean": 27.01,
+      "temp_min": 24.3,
+      "temp_max": 28.93,
+      "gwettop_mean": 0.86,
+      "precip_mean": 7.22
+    },
+    "10-09": {
+      "temp_mean": 26.81,
+      "temp_min": 23.76,
+      "temp_max": 29.35,
+      "gwettop_mean": 0.85,
+      "precip_mean": 5.58
+    },
+    "10-10": {
+      "temp_mean": 26.95,
+      "temp_min": 25.08,
+      "temp_max": 29.21,
+      "gwettop_mean": 0.85,
+      "precip_mean": 4.44
+    },
+    "10-11": {
+      "temp_mean": 27.02,
+      "temp_min": 24.56,
+      "temp_max": 28.5,
+      "gwettop_mean": 0.84,
+      "precip_mean": 3.58
+    },
+    "10-12": {
+      "temp_mean": 26.73,
+      "temp_min": 24.89,
+      "temp_max": 28.85,
+      "gwettop_mean": 0.84,
+      "precip_mean": 3.36
+    },
+    "10-13": {
+      "temp_mean": 26.48,
+      "temp_min": 23.39,
+      "temp_max": 29.0,
+      "gwettop_mean": 0.83,
+      "precip_mean": 1.91
+    },
+    "10-14": {
+      "temp_mean": 26.42,
+      "temp_min": 23.51,
+      "temp_max": 29.06,
+      "gwettop_mean": 0.83,
+      "precip_mean": 3.31
+    },
+    "10-15": {
+      "temp_mean": 26.17,
+      "temp_min": 22.81,
+      "temp_max": 29.28,
+      "gwettop_mean": 0.82,
+      "precip_mean": 2.43
+    },
+    "10-16": {
+      "temp_mean": 26.21,
+      "temp_min": 22.57,
+      "temp_max": 29.19,
+      "gwettop_mean": 0.82,
+      "precip_mean": 1.33
+    },
+    "10-17": {
+      "temp_mean": 26.14,
+      "temp_min": 22.39,
+      "temp_max": 28.22,
+      "gwettop_mean": 0.82,
+      "precip_mean": 2.69
+    },
+    "10-18": {
+      "temp_mean": 25.92,
+      "temp_min": 22.84,
+      "temp_max": 28.41,
+      "gwettop_mean": 0.83,
+      "precip_mean": 4.76
+    },
+    "10-19": {
+      "temp_mean": 25.56,
+      "temp_min": 23.1,
+      "temp_max": 28.42,
+      "gwettop_mean": 0.82,
+      "precip_mean": 2.43
+    },
+    "10-20": {
+      "temp_mean": 25.31,
+      "temp_min": 21.95,
+      "temp_max": 28.3,
+      "gwettop_mean": 0.82,
+      "precip_mean": 4.64
+    },
+    "10-21": {
+      "temp_mean": 25.2,
+      "temp_min": 21.83,
+      "temp_max": 27.6,
+      "gwettop_mean": 0.82,
+      "precip_mean": 5.32
+    },
+    "10-22": {
+      "temp_mean": 25.11,
+      "temp_min": 21.78,
+      "temp_max": 26.79,
+      "gwettop_mean": 0.82,
+      "precip_mean": 4.77
+    },
+    "10-23": {
+      "temp_mean": 25.01,
+      "temp_min": 21.38,
+      "temp_max": 26.85,
+      "gwettop_mean": 0.81,
+      "precip_mean": 3.18
+    },
+    "10-24": {
+      "temp_mean": 24.55,
+      "temp_min": 21.17,
+      "temp_max": 26.5,
+      "gwettop_mean": 0.81,
+      "precip_mean": 3.91
+    },
+    "10-25": {
+      "temp_mean": 24.5,
+      "temp_min": 22.02,
+      "temp_max": 26.82,
+      "gwettop_mean": 0.81,
+      "precip_mean": 3.93
+    },
+    "10-26": {
+      "temp_mean": 24.43,
+      "temp_min": 20.98,
+      "temp_max": 27.07,
+      "gwettop_mean": 0.81,
+      "precip_mean": 5.7
+    },
+    "10-27": {
+      "temp_mean": 24.16,
+      "temp_min": 19.76,
+      "temp_max": 26.76,
+      "gwettop_mean": 0.81,
+      "precip_mean": 3.61
+    },
+    "10-28": {
+      "temp_mean": 24.03,
+      "temp_min": 20.58,
+      "temp_max": 27.0,
+      "gwettop_mean": 0.8,
+      "precip_mean": 1.12
+    },
+    "10-29": {
+      "temp_mean": 23.93,
+      "temp_min": 20.65,
+      "temp_max": 26.76,
+      "gwettop_mean": 0.79,
+      "precip_mean": 0.24
+    },
+    "10-30": {
+      "temp_mean": 23.85,
+      "temp_min": 21.34,
+      "temp_max": 26.91,
+      "gwettop_mean": 0.79,
+      "precip_mean": 1.02
+    },
+    "10-31": {
+      "temp_mean": 23.86,
+      "temp_min": 21.51,
+      "temp_max": 27.42,
+      "gwettop_mean": 0.79,
+      "precip_mean": 0.91
+    },
+    "11-01": {
+      "temp_mean": 23.88,
+      "temp_min": 20.8,
+      "temp_max": 26.78,
+      "gwettop_mean": 0.78,
+      "precip_mean": 1.96
+    },
+    "11-02": {
+      "temp_mean": 23.73,
+      "temp_min": 20.3,
+      "temp_max": 26.26,
+      "gwettop_mean": 0.78,
+      "precip_mean": 0.26
+    },
+    "11-03": {
+      "temp_mean": 23.7,
+      "temp_min": 20.33,
+      "temp_max": 25.71,
+      "gwettop_mean": 0.77,
+      "precip_mean": 0.13
+    },
+    "11-04": {
+      "temp_mean": 23.57,
+      "temp_min": 20.71,
+      "temp_max": 25.41,
+      "gwettop_mean": 0.77,
+      "precip_mean": 0.86
+    },
+    "11-05": {
+      "temp_mean": 23.5,
+      "temp_min": 20.81,
+      "temp_max": 25.7,
+      "gwettop_mean": 0.77,
+      "precip_mean": 1.4
+    },
+    "11-06": {
+      "temp_mean": 23.38,
+      "temp_min": 20.19,
+      "temp_max": 25.86,
+      "gwettop_mean": 0.76,
+      "precip_mean": 0.39
+    },
+    "11-07": {
+      "temp_mean": 23.12,
+      "temp_min": 20.3,
+      "temp_max": 26.19,
+      "gwettop_mean": 0.76,
+      "precip_mean": 0.11
+    },
+    "11-08": {
+      "temp_mean": 22.83,
+      "temp_min": 20.21,
+      "temp_max": 25.86,
+      "gwettop_mean": 0.75,
+      "precip_mean": 0.04
+    },
+    "11-09": {
+      "temp_mean": 22.68,
+      "temp_min": 19.77,
+      "temp_max": 24.94,
+      "gwettop_mean": 0.75,
+      "precip_mean": 0.41
+    },
+    "11-10": {
+      "temp_mean": 22.39,
+      "temp_min": 18.84,
+      "temp_max": 24.34,
+      "gwettop_mean": 0.74,
+      "precip_mean": 0.35
+    },
+    "11-11": {
+      "temp_mean": 22.17,
+      "temp_min": 18.61,
+      "temp_max": 24.46,
+      "gwettop_mean": 0.74,
+      "precip_mean": 0.14
+    },
+    "11-12": {
+      "temp_mean": 22.13,
+      "temp_min": 18.69,
+      "temp_max": 24.29,
+      "gwettop_mean": 0.74,
+      "precip_mean": 1.03
+    },
+    "11-13": {
+      "temp_mean": 21.9,
+      "temp_min": 18.55,
+      "temp_max": 24.29,
+      "gwettop_mean": 0.73,
+      "precip_mean": 0.16
+    },
+    "11-14": {
+      "temp_mean": 21.78,
+      "temp_min": 19.15,
+      "temp_max": 24.68,
+      "gwettop_mean": 0.73,
+      "precip_mean": 0.32
+    },
+    "11-15": {
+      "temp_mean": 21.38,
+      "temp_min": 18.25,
+      "temp_max": 24.3,
+      "gwettop_mean": 0.73,
+      "precip_mean": 0.49
+    },
+    "11-16": {
+      "temp_mean": 21.47,
+      "temp_min": 18.55,
+      "temp_max": 24.74,
+      "gwettop_mean": 0.72,
+      "precip_mean": 0.61
+    },
+    "11-17": {
+      "temp_mean": 21.43,
+      "temp_min": 18.56,
+      "temp_max": 24.77,
+      "gwettop_mean": 0.72,
+      "precip_mean": 0.14
+    },
+    "11-18": {
+      "temp_mean": 21.36,
+      "temp_min": 18.58,
+      "temp_max": 24.83,
+      "gwettop_mean": 0.71,
+      "precip_mean": 0.12
+    },
+    "11-19": {
+      "temp_mean": 21.22,
+      "temp_min": 18.81,
+      "temp_max": 24.73,
+      "gwettop_mean": 0.71,
+      "precip_mean": 0.05
+    },
+    "11-20": {
+      "temp_mean": 21.16,
+      "temp_min": 18.65,
+      "temp_max": 24.59,
+      "gwettop_mean": 0.7,
+      "precip_mean": 0.02
+    },
+    "11-21": {
+      "temp_mean": 20.68,
+      "temp_min": 16.38,
+      "temp_max": 23.32,
+      "gwettop_mean": 0.7,
+      "precip_mean": 0.04
+    },
+    "11-22": {
+      "temp_mean": 20.19,
+      "temp_min": 17.32,
+      "temp_max": 23.43,
+      "gwettop_mean": 0.7,
+      "precip_mean": 0.01
+    },
+    "11-23": {
+      "temp_mean": 19.99,
+      "temp_min": 16.63,
+      "temp_max": 23.52,
+      "gwettop_mean": 0.69,
+      "precip_mean": 0.0
+    },
+    "11-24": {
+      "temp_mean": 19.87,
+      "temp_min": 16.33,
+      "temp_max": 23.21,
+      "gwettop_mean": 0.69,
+      "precip_mean": 0.01
+    },
+    "11-25": {
+      "temp_mean": 19.83,
+      "temp_min": 16.38,
+      "temp_max": 23.49,
+      "gwettop_mean": 0.68,
+      "precip_mean": 0.12
+    },
+    "11-26": {
+      "temp_mean": 19.92,
+      "temp_min": 16.81,
+      "temp_max": 23.54,
+      "gwettop_mean": 0.68,
+      "precip_mean": 0.19
+    },
+    "11-27": {
+      "temp_mean": 20.04,
+      "temp_min": 16.66,
+      "temp_max": 23.44,
+      "gwettop_mean": 0.68,
+      "precip_mean": 0.0
+    },
+    "11-28": {
+      "temp_mean": 19.96,
+      "temp_min": 15.72,
+      "temp_max": 23.49,
+      "gwettop_mean": 0.67,
+      "precip_mean": 0.0
+    },
+    "11-29": {
+      "temp_mean": 19.9,
+      "temp_min": 15.68,
+      "temp_max": 23.34,
+      "gwettop_mean": 0.67,
+      "precip_mean": 0.0
+    },
+    "11-30": {
+      "temp_mean": 19.72,
+      "temp_min": 16.71,
+      "temp_max": 23.3,
+      "gwettop_mean": 0.66,
+      "precip_mean": 0.0
+    },
+    "12-01": {
+      "temp_mean": 19.54,
+      "temp_min": 16.77,
+      "temp_max": 23.66,
+      "gwettop_mean": 0.66,
+      "precip_mean": 0.0
+    },
+    "12-02": {
+      "temp_mean": 19.39,
+      "temp_min": 16.02,
+      "temp_max": 23.19,
+      "gwettop_mean": 0.66,
+      "precip_mean": 0.0
+    },
+    "12-03": {
+      "temp_mean": 19.09,
+      "temp_min": 15.75,
+      "temp_max": 22.69,
+      "gwettop_mean": 0.65,
+      "precip_mean": 0.01
+    },
+    "12-04": {
+      "temp_mean": 18.93,
+      "temp_min": 16.09,
+      "temp_max": 22.11,
+      "gwettop_mean": 0.65,
+      "precip_mean": 0.02
+    },
+    "12-05": {
+      "temp_mean": 18.76,
+      "temp_min": 14.68,
+      "temp_max": 22.93,
+      "gwettop_mean": 0.65,
+      "precip_mean": 0.04
+    },
+    "12-06": {
+      "temp_mean": 18.76,
+      "temp_min": 15.27,
+      "temp_max": 22.85,
+      "gwettop_mean": 0.65,
+      "precip_mean": 0.62
+    },
+    "12-07": {
+      "temp_mean": 18.77,
+      "temp_min": 15.55,
+      "temp_max": 22.22,
+      "gwettop_mean": 0.65,
+      "precip_mean": 1.15
+    },
+    "12-08": {
+      "temp_mean": 18.72,
+      "temp_min": 15.77,
+      "temp_max": 21.92,
+      "gwettop_mean": 0.64,
+      "precip_mean": 0.9
+    },
+    "12-09": {
+      "temp_mean": 18.64,
+      "temp_min": 15.24,
+      "temp_max": 21.64,
+      "gwettop_mean": 0.65,
+      "precip_mean": 1.45
+    },
+    "12-10": {
+      "temp_mean": 18.75,
+      "temp_min": 15.73,
+      "temp_max": 21.91,
+      "gwettop_mean": 0.64,
+      "precip_mean": 1.2
+    },
+    "12-11": {
+      "temp_mean": 18.49,
+      "temp_min": 16.03,
+      "temp_max": 22.2,
+      "gwettop_mean": 0.64,
+      "precip_mean": 0.28
+    },
+    "12-12": {
+      "temp_mean": 18.21,
+      "temp_min": 15.49,
+      "temp_max": 21.93,
+      "gwettop_mean": 0.63,
+      "precip_mean": 0.2
+    },
+    "12-13": {
+      "temp_mean": 17.81,
+      "temp_min": 14.9,
+      "temp_max": 20.94,
+      "gwettop_mean": 0.63,
+      "precip_mean": 0.01
+    },
+    "12-14": {
+      "temp_mean": 17.54,
+      "temp_min": 14.42,
+      "temp_max": 20.22,
+      "gwettop_mean": 0.62,
+      "precip_mean": 0.01
+    },
+    "12-15": {
+      "temp_mean": 17.39,
+      "temp_min": 15.38,
+      "temp_max": 20.52,
+      "gwettop_mean": 0.62,
+      "precip_mean": 0.02
+    },
+    "12-16": {
+      "temp_mean": 17.48,
+      "temp_min": 15.44,
+      "temp_max": 20.37,
+      "gwettop_mean": 0.62,
+      "precip_mean": 0.0
+    },
+    "12-17": {
+      "temp_mean": 17.35,
+      "temp_min": 13.8,
+      "temp_max": 19.69,
+      "gwettop_mean": 0.62,
+      "precip_mean": 0.23
+    },
+    "12-18": {
+      "temp_mean": 17.16,
+      "temp_min": 14.09,
+      "temp_max": 20.59,
+      "gwettop_mean": 0.62,
+      "precip_mean": 0.57
+    },
+    "12-19": {
+      "temp_mean": 16.81,
+      "temp_min": 12.2,
+      "temp_max": 20.56,
+      "gwettop_mean": 0.61,
+      "precip_mean": 0.07
+    },
+    "12-20": {
+      "temp_mean": 16.69,
+      "temp_min": 12.07,
+      "temp_max": 20.82,
+      "gwettop_mean": 0.61,
+      "precip_mean": 0.01
+    },
+    "12-21": {
+      "temp_mean": 16.72,
+      "temp_min": 12.9,
+      "temp_max": 21.27,
+      "gwettop_mean": 0.6,
+      "precip_mean": 0.0
+    },
+    "12-22": {
+      "temp_mean": 16.8,
+      "temp_min": 12.35,
+      "temp_max": 20.7,
+      "gwettop_mean": 0.6,
+      "precip_mean": 0.04
+    },
+    "12-23": {
+      "temp_mean": 16.96,
+      "temp_min": 13.07,
+      "temp_max": 20.13,
+      "gwettop_mean": 0.6,
+      "precip_mean": 0.04
+    },
+    "12-24": {
+      "temp_mean": 16.97,
+      "temp_min": 14.02,
+      "temp_max": 19.13,
+      "gwettop_mean": 0.6,
+      "precip_mean": 0.0
+    },
+    "12-25": {
+      "temp_mean": 16.68,
+      "temp_min": 13.28,
+      "temp_max": 20.28,
+      "gwettop_mean": 0.59,
+      "precip_mean": 0.0
+    },
+    "12-26": {
+      "temp_mean": 16.33,
+      "temp_min": 12.05,
+      "temp_max": 21.01,
+      "gwettop_mean": 0.59,
+      "precip_mean": 0.05
+    },
+    "12-27": {
+      "temp_mean": 16.04,
+      "temp_min": 12.18,
+      "temp_max": 19.68,
+      "gwettop_mean": 0.59,
+      "precip_mean": 0.29
+    },
+    "12-28": {
+      "temp_mean": 15.92,
+      "temp_min": 11.51,
+      "temp_max": 18.98,
+      "gwettop_mean": 0.59,
+      "precip_mean": 0.26
+    },
+    "12-29": {
+      "temp_mean": 16.03,
+      "temp_min": 11.61,
+      "temp_max": 18.97,
+      "gwettop_mean": 0.58,
+      "precip_mean": 0.19
+    },
+    "12-30": {
+      "temp_mean": 16.05,
+      "temp_min": 12.12,
+      "temp_max": 19.25,
+      "gwettop_mean": 0.58,
+      "precip_mean": 0.1
+    },
+    "12-31": {
+      "temp_mean": 16.19,
+      "temp_min": 12.99,
+      "temp_max": 19.16,
+      "gwettop_mean": 0.58,
+      "precip_mean": 0.04
+    }
+  }
+}

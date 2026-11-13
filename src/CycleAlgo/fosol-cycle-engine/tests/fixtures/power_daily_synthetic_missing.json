@@ -1,0 +1,29 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [88.603, 24.377, 19.46]
+  },
+  "properties": {
+    "parameter": {
+      "T2M": {"20250101": -999, "20250102": null},
+      "PRECTOTCORR": {"20250101": 0, "20250102": 1.5},
+      "GWETTOP": {"20250101": -999, "20250102": -999}
+    }
+  },
+  "header": {
+    "title": "Synthetic POWER-shaped fixture with documented missing sentinels",
+    "api": {"version": "v2.10.3", "name": "POWER Daily API"},
+    "sources": ["MERRA2"],
+    "fill_value": -999.0,
+    "time_standard": "LST",
+    "start": "20250101",
+    "end": "20250102"
+  },
+  "messages": [],
+  "parameters": {
+    "T2M": {"units": "C", "longname": "Temperature at 2 Meters"},
+    "PRECTOTCORR": {"units": "mm/day", "longname": "Precipitation Corrected"},
+    "GWETTOP": {"units": "1", "longname": "Surface Soil Wetness"}
+  }
+}

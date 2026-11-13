@@ -1,0 +1,8 @@
+{
+  "schema_version": "1",
+  "error": {
+    "code": "INVALID_REQUEST",
+    "message": "start_date must be a valid YYYY-MM-DD date.",
+    "field": "start_date"
+  }
+}
