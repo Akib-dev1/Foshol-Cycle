@@ -6,6 +6,8 @@
 
 **A Rajshahi-focused pilot for exploring three-crop sequences using historical weather and crop profiles.**
 
+**[Open the live FosholCycle website](https://fosholcycle.vercel.app/)**
+
 [Quick Start](#-quick-start) · [Try the Pilot](#-try-the-rajshahi-pilot) · [How It Works](#-how-it-works) · [Run Checks](#-verification--checks) · [Engine Guide](https://github.com/hosain-ahmed/CycleAlgo/blob/main/fosol-cycle-engine/docs/CONNECT.md)
 
 </div>
@@ -96,13 +98,13 @@ The health check confirms that the Python server is reachable. Set `CYCLE_ALGO_B
 
 ### 3 · Open the pilot
 
-Visit **[http://localhost:3000/explore](http://localhost:3000/explore)** and follow the guided scenario below.
+Visit the [local Explore Map](http://localhost:3000/explore) and follow the guided scenario below.
 
 ---
 
 ## 🧪 Try the Rajshahi Pilot
 
-Open **Explore Map → Rajshahi → Rotation Planner** and use this documented scenario:
+To try the pilot online, open the [deployed Explore Map](https://fosholcycle.vercel.app/explore). Select **Rajshahi**, open **Rotation Planner**, and use the settings below.
 
 | Setting | Value |
 | --- | --- |

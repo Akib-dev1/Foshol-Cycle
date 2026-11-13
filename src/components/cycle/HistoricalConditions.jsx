@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { CloudRain, ThermometerSun } from "lucide-react";
 import { BranchStatus } from "./RotationSequence";
-import { control, CycleNotice, panel, textLink } from "./CycleLayout";
+import { control, CycleNotice, HistoricalGrid, panel, textLink } from "./CycleLayout";
+import CycleLoading from "./CycleLoading";
 import ClimateComparison, { PowerSource, UnavailableViews } from "./ClimateComparison";
 import { useCycleAnalysis } from "./useCycleAnalysis";
 import { dateRange, formatDate, rankingOptions, rotationName, scenarioLink, waterOptions } from "@/lib/cycleAlgo";
@@ -90,25 +91,30 @@ function RotationHistory({ branch, index, domains }) {
 export default function HistoricalConditions({ scenario, branchIds }) {
   const [preference, setPreference] = useState(scenario.preference);
   const analysis = useCycleAnalysis({ ...scenario, preference });
-  const back = <Link href={scenarioLink("/rotation-planner", { ...scenario, preference }, branchIds)} className={textLink}>Back to rotation comparison</Link>;
-  if (analysis.pending) return <CycleNotice pending>Loading historical conditions for your rotations…</CycleNotice>;
-  if (analysis.error) {
-    return (
-      <CycleNotice error retry={analysis.retryable ? analysis.retry : undefined}>
-        <p>{analysis.error.message}</p>
-        <p className="mt-2">{back}</p>
-      </CycleNotice>
-    );
-  }
 
-  const { data } = analysis;
+  return (
+    <section aria-labelledby="historical-ranges" className="space-y-4">
+      <div className={panel}>
+        <h2 id="historical-ranges" className="text-xl font-bold text-forest">Historical growing conditions</h2>
+        <p className="mt-1 text-sm text-muted">Rajshahi District · {formatDate(scenario.start_date)} · {waterOptions[scenario.water_access]} · {rankingOptions[preference]}</p>
+        <Link href={scenarioLink("/rotation-planner", { ...scenario, preference }, branchIds)} className={`${textLink} mt-2 inline-flex min-h-11 items-center text-sm`}>
+          Back to rotation comparison
+        </Link>
+      </div>
+      {analysis.pending && <CycleLoading key={analysis.requestKey} message="Loading historical conditions for your rotations…" variant="history" count={branchIds.length} />}
+      {analysis.error && <CycleNotice error retry={analysis.retryable ? analysis.retry : undefined}>{analysis.error.message}</CycleNotice>}
+      {analysis.data && <HistoricalResults data={analysis.data} branchIds={branchIds} preference={preference} onPreferenceChange={setPreference} />}
+    </section>
+  );
+}
+
+function HistoricalResults({ data, branchIds, preference, onPreferenceChange }) {
   const byId = new Map(data.branches.map((branch) => [branch.branch_id, branch]));
   const branches = branchIds.map((id) => byId.get(id)).filter(Boolean);
   if (!branches.length) {
     return (
       <CycleNotice>
         <p>{data.status === "data_unavailable" ? "Crop data is unavailable for this scenario." : "The selected rotations are unavailable in this run."}</p>
-        <p className="mt-2">{back}</p>
       </CycleNotice>
     );
   }
@@ -120,11 +126,9 @@ export default function HistoricalConditions({ scenario, branchIds }) {
   const hasHistoricalData = Object.values(domains).some(Boolean);
 
   return (
-    <section aria-labelledby="historical-ranges" className="space-y-4">
+    <>
       <div className={panel}>
-        <h2 id="historical-ranges" className="text-xl font-bold text-forest">Historical growing conditions</h2>
-        <p className="mt-1 text-sm text-muted">Rajshahi District · {formatDate(scenario.start_date)} · {waterOptions[scenario.water_access]} · {rankingOptions[preference]}</p>
-        <p className="mt-3 text-sm leading-relaxed text-muted">
+        <p className="text-sm leading-relaxed text-muted">
           {hasHistoricalData
             ? "Each reference-window range spans the lowest to highest season value, with a dot at the median. Bars for the same measure share a scale. These full-coverage reference ranges are context, not the common-period realized-schedule scores shown in the NASA comparison."
             : "Historical NASA POWER ranges are unavailable for these rotations."}
@@ -132,7 +136,7 @@ export default function HistoricalConditions({ scenario, branchIds }) {
         <PowerSource sources={data.data_sources} />
         <label className="mt-4 grid max-w-sm gap-1.5 text-sm font-semibold text-forest">
           Comparison view
-          <select className={control} value={preference} onChange={(event) => setPreference(event.target.value)}>
+          <select className={control} value={preference} onChange={(event) => onPreferenceChange(event.target.value)}>
             {Object.entries(rankingOptions).map(([id, label]) => {
               const reason = viewUnavailableReason(data.branches, id);
               return <option key={id} value={id} disabled={Boolean(reason)} title={reason ?? undefined}>{label}{reason ? " (unavailable)" : ""}</option>;
@@ -142,12 +146,11 @@ export default function HistoricalConditions({ scenario, branchIds }) {
         <UnavailableViews branches={data.branches} />
         {data.environment_context?.status === "unavailable" && <p className="mt-2 text-sm text-muted">SMAP soil moisture is unavailable in this run.</p>}
         {branches.length < branchIds.length && <p role="status" className="mt-2 text-sm text-muted">Some rotations from the shared comparison are unavailable in this run.</p>}
-        <p className="mt-3 text-sm">{back}</p>
       </div>
       <ClimateComparison branches={branches} ranking={data.ranking} />
-      <div className={`grid gap-4 ${branches.length === 3 ? "md:grid-cols-2 xl:grid-cols-3" : branches.length === 2 ? "md:grid-cols-2" : ""}`}>
+      <HistoricalGrid count={branches.length}>
         {branches.map((branch) => <RotationHistory key={branch.branch_id} branch={branch} index={branchIds.indexOf(branch.branch_id)} domains={domains} />)}
-      </div>
-    </section>
+      </HistoricalGrid>
+    </>
   );
 }

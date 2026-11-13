@@ -18,10 +18,18 @@ export default function CycleLayout({ title, description, children }) {
   );
 }
 
-export function CycleNotice({ children, error = false, pending = false, retry }) {
+export function HistoricalGrid({ count, children }) {
+  return (
+    <div className={`grid gap-4 ${count === 3 ? "md:grid-cols-2 xl:grid-cols-3" : count === 2 ? "md:grid-cols-2" : ""}`}>
+      {children}
+    </div>
+  );
+}
+
+export function CycleNotice({ children, error = false, retry }) {
   return (
     <div className={`${panel} text-sm leading-relaxed ${error ? "border-risk/50 text-ink" : "text-muted"}`}>
-      <div role={error ? "alert" : pending ? "status" : undefined}>{children}</div>
+      <div role={error ? "alert" : undefined}>{children}</div>
       {retry && (
         <button type="button" onClick={retry} className={`${textLink} mt-2 min-h-11 cursor-pointer`}>
           Try again

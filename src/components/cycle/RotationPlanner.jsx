@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { CalendarDays } from "lucide-react";
 import { control, CycleNotice, panel } from "./CycleLayout";
+import CycleLoading from "./CycleLoading";
 import RotationComparison from "./RotationComparison";
 import { BranchStatus } from "./RotationSequence";
 import RotationResults from "./RotationResults";
@@ -75,7 +76,7 @@ export default function RotationPlanner({ initialScenario, initialBranches }) {
         {!dateValid && <p id="start-date-error" role="alert" className="mt-3 text-sm font-medium text-[#933d35]">Choose a valid start date between {MIN_START_DATE} and {MAX_START_DATE}.</p>}
       </section>
 
-      {discovery.pending && <CycleNotice pending>Finding first crops for this scenario…</CycleNotice>}
+      {discovery.pending && <CycleLoading key={discovery.requestKey} message="Finding first crops for this scenario…" variant="picker" />}
       {discovery.error && <CycleNotice error retry={discovery.retryable ? discovery.retry : undefined}>{discovery.error.message}</CycleNotice>}
       {discovery.data && (crops.length ? (
         <section className={panel} aria-labelledby="first-crop-heading">
@@ -103,7 +104,7 @@ export default function RotationPlanner({ initialScenario, initialBranches }) {
         <CycleNotice>{discovery.data.status === "data_unavailable" ? "Crop profiles are unavailable for this scenario." : discovery.data.branch_summary.message || "No supported crop options for this scenario."}</CycleNotice>
       ))}
 
-      {analysis.pending && <CycleNotice pending>Evaluating rotations and historical growing conditions…</CycleNotice>}
+      {analysis.pending && <CycleLoading key={analysis.requestKey} message="Evaluating rotations and historical growing conditions…" variant="rotations" />}
       {analysis.error && <CycleNotice error retry={analysis.retryable ? analysis.retry : undefined}>{analysis.error.message}</CycleNotice>}
       {staleComparison && <CycleNotice>Some rotations from the shared comparison are unavailable in this run.</CycleNotice>}
       {analysis.data && (

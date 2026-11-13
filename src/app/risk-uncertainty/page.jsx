@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import CycleLayout, { CycleNotice, textLink } from "@/components/cycle/CycleLayout";
+import CycleLoading from "@/components/cycle/CycleLoading";
 import HistoricalConditions from "@/components/cycle/HistoricalConditions";
 import { primaryButton } from "@/components/layout/layoutStyles";
 import { isPlanningDate, readComparison, readScenario } from "@/lib/cycleAlgo";
@@ -32,7 +33,7 @@ export default function RiskPage({ searchParams }) {
       title="Understand the Risk Before You Plant"
       description="See how temperature and rainfall varied during comparable growing seasons for the rotations you selected in Rajshahi."
     >
-      <Suspense fallback={<CycleNotice pending>Loading historical conditions…</CycleNotice>}>
+      <Suspense fallback={<CycleLoading message="Loading historical conditions…" variant="history" route />}>
         <RiskScenario searchParams={searchParams} />
       </Suspense>
       <section aria-labelledby="what-it-means" className="max-w-2xl">

@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import districts from "@/data/bangladeshDistricts.json";
 import CycleLayout, { CycleNotice, textLink } from "@/components/cycle/CycleLayout";
+import CycleLoading from "@/components/cycle/CycleLoading";
 import RotationPlanner from "@/components/cycle/RotationPlanner";
 import { readComparison, readScenario, todayInDhaka } from "@/lib/cycleAlgo";
 
@@ -40,7 +41,7 @@ export default function RotationPlannerPage({ searchParams }) {
       title="Find the Right Rotation for Your Land"
       description="Explore planting windows and compare three-crop sequences using crop calendars and historical conditions for Rajshahi District."
     >
-      <Suspense fallback={<CycleNotice pending>Loading Rotation Planner…</CycleNotice>}>
+      <Suspense fallback={<CycleLoading message="Loading Rotation Planner…" variant="picker" route />}>
         <PlannerScenario searchParams={searchParams} />
       </Suspense>
     </CycleLayout>

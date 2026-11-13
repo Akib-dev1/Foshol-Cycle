@@ -8,6 +8,8 @@ export function useCycleAnalysis(scenario) {
   const [result, setResult] = useState(null);
   const key = body ? `${attempt}:${body}` : null;
 
+  if (result && result.key !== key) setResult(null);
+
   useEffect(() => {
     if (!body) return;
     const controller = new AbortController();
@@ -44,6 +46,7 @@ export function useCycleAnalysis(scenario) {
 
   return {
     ...(key && result?.key === key ? result : { pending: Boolean(key) }),
+    requestKey: key,
     retry: () => setAttempt((previous) => previous + 1),
   };
 }
