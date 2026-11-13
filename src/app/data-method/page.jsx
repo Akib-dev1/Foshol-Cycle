@@ -31,6 +31,8 @@ export default function DataMethodPage() {
     <CycleLayout
       title="Powered by Earth Data. Built for Better Decisions."
       description="See where the Rajshahi pilot gets its evidence, how CycleAlgo compares rotations, and which decisions still need local information."
+      language="en"
+      showLanguage={false}
     >
       <section aria-labelledby="sources-heading" className="space-y-4">
         <h2 id="sources-heading" className="text-2xl font-bold tracking-tight text-forest">Data sources</h2>

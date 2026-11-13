@@ -1,14 +1,16 @@
 "use client";
 
 import { container } from "@/components/layout/layoutStyles";
+import { cycleLocales } from "@/lib/cycleLocale";
 import { LanguageSwitch, useCycleLanguage } from "./CycleLanguage";
 
 export const panel = "min-w-0 rounded-3xl border border-line bg-white p-4 sm:p-6";
 export const control = "min-h-11 w-full min-w-0 rounded-xl border border-line bg-canvas px-3 text-sm text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf";
 export const textLink = "font-semibold text-leaf underline decoration-leaf/40 underline-offset-4 hover:decoration-leaf";
 
-export default function CycleLayout({ title, description, children, showLanguage = true }) {
-  const { language, t } = useCycleLanguage();
+export default function CycleLayout({ title, description, children, language: pageLanguage, showLanguage = true }) {
+  const currentLocale = useCycleLanguage();
+  const { language, t } = cycleLocales[pageLanguage] ?? currentLocale;
 
   return (
     <div lang={language} className={`cycle-page ${container} space-y-7 py-10 sm:space-y-9 sm:py-14 lg:py-16`}>
