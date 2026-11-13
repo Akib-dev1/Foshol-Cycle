@@ -29,13 +29,13 @@ export function useCycleAnalysis(scenario) {
         } else {
           setResult({
             key,
-            error: data.error ?? { message: "FosholCycle returned an unexpected response." },
+            error: data.error ?? { code: "CLIENT_INVALID_RESPONSE", message: "FosholCycle returned an unexpected response." },
             retryable: response.status >= 500,
           });
         }
       } catch {
         if (!controller.signal.aborted) {
-          setResult({ key, error: { message: "The planner could not reach FosholCycle. Try again." }, retryable: true });
+          setResult({ key, error: { code: "CLIENT_NETWORK_ERROR", message: "The planner could not reach FosholCycle. Try again." }, retryable: true });
         }
       }
     }

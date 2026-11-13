@@ -1,5 +1,8 @@
+"use client";
+
 import { HistoricalGrid, panel } from "./CycleLayout";
 import LoadingStatus from "./LoadingStatus";
+import { useCycleLanguage } from "./CycleLanguage";
 
 function Placeholder({ className }) {
   return <div className={`rounded-md bg-mist ${className}`} />;
@@ -71,10 +74,12 @@ function HistorySkeleton({ count }) {
 }
 
 export default function CycleLoading({ message, variant, route = false, count = 1 }) {
+  const { t } = useCycleLanguage();
+
   return (
     <div className="min-w-0 space-y-3">
-      <LoadingStatus message={message} />
-      <div aria-busy="true" aria-label={message} role="region">
+      <LoadingStatus message={t(message)} />
+      <div aria-busy="true" aria-label={t(message)} role="region">
         <div aria-hidden="true" className="space-y-4 motion-safe:animate-pulse">
           {route && (
             <div className={`${panel} space-y-3`}>

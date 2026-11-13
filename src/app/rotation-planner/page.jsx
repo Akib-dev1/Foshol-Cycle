@@ -1,8 +1,9 @@
 import { Suspense } from "react";
-import Link from "next/link";
 import districts from "@/data/bangladeshDistricts.json";
-import CycleLayout, { CycleNotice, textLink } from "@/components/cycle/CycleLayout";
+import CycleLayout from "@/components/cycle/CycleLayout";
+import { CycleLanguageProvider } from "@/components/cycle/CycleLanguage";
 import CycleLoading from "@/components/cycle/CycleLoading";
+import { UnsupportedDistrict } from "@/components/cycle/CyclePageNotes";
 import RotationPlanner from "@/components/cycle/RotationPlanner";
 import { readComparison, readScenario, todayInDhaka } from "@/lib/cycleAlgo";
 
@@ -17,17 +18,7 @@ async function PlannerScenario({ searchParams }) {
   const query = await searchParams;
   if (query.district !== undefined && query.district !== rajshahi.id) {
     const selected = districts.find((district) => district.id === query.district);
-    return (
-      <CycleNotice>
-        <h2 className="text-lg font-bold text-forest">
-          {selected ? `${selected.name} District is outside the pilot` : "This district is outside the pilot"}
-        </h2>
-        <p className="mt-2">CycleAlgo currently evaluates crop rotations for Rajshahi District.</p>
-        <Link href="/rotation-planner" className={`${textLink} mt-2 inline-flex min-h-11 items-center`}>
-          Open the Rajshahi planner
-        </Link>
-      </CycleNotice>
-    );
+    return <UnsupportedDistrict district={selected?.name} />;
   }
 
   const scenario = readScenario(query, todayInDhaka());
@@ -36,14 +27,29 @@ async function PlannerScenario({ searchParams }) {
 }
 
 export default function RotationPlannerPage({ searchParams }) {
+  const loading = <CycleLoading message="Loading Rotation Planner…" variant="picker" route />;
+
+  return (
+    <Suspense fallback={<PlannerLayout showLanguage={false}>{loading}</PlannerLayout>}>
+      <CycleLanguageProvider>
+        <PlannerLayout>
+          <Suspense fallback={loading}>
+            <PlannerScenario searchParams={searchParams} />
+          </Suspense>
+        </PlannerLayout>
+      </CycleLanguageProvider>
+    </Suspense>
+  );
+}
+
+function PlannerLayout({ children, showLanguage }) {
   return (
     <CycleLayout
       title="Find the Right Rotation for Your Land"
       description="Explore planting windows and compare three-crop sequences using crop calendars and historical conditions for Rajshahi District."
+      showLanguage={showLanguage}
     >
-      <Suspense fallback={<CycleLoading message="Loading Rotation Planner…" variant="picker" route />}>
-        <PlannerScenario searchParams={searchParams} />
-      </Suspense>
+      {children}
     </CycleLayout>
   );
 }

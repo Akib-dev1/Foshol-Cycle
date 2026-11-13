@@ -19,6 +19,10 @@
 }
 
 @layer base {
+  .cycle-page[lang="bn"] {
+    font-family: var(--font-bengali), var(--font-inter), sans-serif;
+  }
+
   :where(a, button):focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 4px;
